@@ -1,0 +1,2182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light">
+<title>CreditSwan · We build your muscle. We do not rent you ours.</title>
+<meta name="description" content="The borrower tells the story. We check every number in it. Borrower reporting and commercial diligence for private credit, inside your own Microsoft 365.">
+<link rel="canonical" href="https://creditswan.com/">
+<meta property="og:url" content="https://creditswan.com/">
+<meta property="og:title" content="CreditSwan · We build your muscle. We do not rent you ours.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22%3E%3Cpath d=%22M8 30c0-9 6-16 15-16 4 0 7 1 9 4-2-1-4-1-6 0 3 0 5 2 6 5-4-2-8-1-11 2-3 3-8 4-13 5z%22 fill=%22%2316211F%22/%3E%3Ccircle cx=%2230.5%22 cy=%2215.5%22 r=%221.4%22 fill=%22%23A98543%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16211F;--cream:#F4EFE6;--gold:#A98543;--teal:#1C4A45;--gilt:#E9C583;--claret:#5C2B2E;--coral:#FF8A80;
+  --line:rgba(22,33,31,.14);--line-s:rgba(22,33,31,.30);--soft:rgba(22,33,31,.78);--faint:rgba(22,33,31,.55);
+  --tint:#ECE6DA;--tint2:#E5E3DB;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Manrope',-apple-system,'Segoe UI',sans-serif;--mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --ease:cubic-bezier(.2,.7,.2,1);--max:1240px;--gut:clamp(16px,4vw,40px)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);font-weight:500}
+.label.gold{color:var(--gold)}
+.label.faint{color:var(--faint)}
+.mono{font-family:var(--mono)}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:600;letter-spacing:-.6px;line-height:1.06}
+h1{font-size:clamp(44px,6.6vw,88px);letter-spacing:-1.5px;line-height:.98}
+h2{font-size:clamp(32px,4.2vw,54px);letter-spacing:-1px}
+h3{font-size:clamp(23px,2.2vw,29px);letter-spacing:-.4px;line-height:1.12}
+p{max-width:68ch}
+.lede{font-size:clamp(17px,1.5vw,19.5px);color:var(--soft);line-height:1.6}
+.muted{color:var(--soft)}
+.faint{color:var(--faint)}
+em.it{font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.08em}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:1.3px;text-transform:uppercase;padding:14px 20px;border-radius:3px;text-decoration:none;border:1px solid var(--ink);transition:background .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease);white-space:nowrap}
+.btn-gold{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gilt);border-color:var(--gilt)}
+.btn-line:hover{background:var(--ink);color:var(--cream)}
+.btn .arr{transition:transform .2s var(--ease)}
+.btn:hover .arr{transform:translateX(3px)}
+.ink .btn-line{border-color:rgba(244,239,230,.5);color:var(--cream)}
+.ink .btn-line:hover{background:var(--cream);color:var(--ink)}
+.tlink{font-family:var(--mono);font-size:12px;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
+.tlink:hover{color:var(--gold)}
+
+/* Header */
+.goldrule{height:4px;background:var(--gold)}
+header.top{position:sticky;top:0;z-index:50;background:rgba(244,239,230,.97);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.brand{display:flex;align-items:center;text-decoration:none;color:var(--ink);flex:none}
+.lockup{height:36px;width:auto;display:block}
+nav.primary{display:flex;align-items:center;gap:2px;margin-left:auto}
+nav.primary a{font-size:14px;font-weight:500;color:var(--soft);text-decoration:none;padding:8px 11px;position:relative;white-space:nowrap}
+nav.primary a:hover{color:var(--ink)}
+nav.primary a[aria-current=page]{color:var(--ink)}
+nav.primary a[aria-current=page]::after{content:"";position:absolute;left:11px;right:11px;bottom:-1px;height:2px;background:var(--gold)}
+nav.primary .btn{margin-left:14px;padding:11px 16px}
+nav.primary .btn::after{display:none}
+.menu{display:none;margin-left:auto;font-family:var(--mono);font-size:12px;letter-spacing:1.3px;text-transform:uppercase;border:1px solid var(--line-s);padding:9px 12px;border-radius:3px}
+@media (max-width:1120px){
+  .menu{display:block}
+  nav.primary{display:none;position:absolute;left:0;right:0;top:100%;background:var(--cream);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:10px var(--gut) 22px;gap:0}
+  nav.primary.open{display:flex}
+  nav.primary a{padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
+  nav.primary a[aria-current=page]::after{left:0;right:auto;width:28px}
+  nav.primary .btn{margin:16px 0 0;justify-content:center;border-bottom:1px solid var(--gold)}
+}
+
+/* Sections */
+section.band{padding:clamp(64px,9vw,120px) 0;position:relative}
+section.band.tight{padding:clamp(48px,6vw,80px) 0}
+section.band+section.band{border-top:1px solid var(--line)}
+section.band.ink+section.band,section.band+section.band.ink{border-top:0}
+.ink{background:var(--ink);color:var(--cream)}
+.ink .label{color:var(--gilt)}
+.ink .muted,.ink .lede{color:rgba(244,239,230,.72)}
+.ink .faint{color:rgba(244,239,230,.45)}
+.teal{background:var(--tint)}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.head .label{display:block;margin-bottom:18px}
+.head.single{grid-template-columns:minmax(0,1fr);max-width:900px}
+@media (max-width:860px){.head{grid-template-columns:minmax(0,1fr)}}
+.grid{display:grid;gap:0}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:980px){.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){.g2,.g4{grid-template-columns:minmax(0,1fr)}}
+.cell{padding:28px 28px 30px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.ruled{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ink .cell,.ink .ruled{border-color:rgba(244,239,230,.18)}
+.cell h3{margin:12px 0 10px}
+.cell p{font-size:15px;color:var(--soft)}
+.ink .cell p{color:rgba(244,239,230,.72)}
+
+/* Reveal motion */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:calc(var(--i,0)*70ms)}
+.rv.in{opacity:1;transform:none}
+.draw{stroke-dasharray:var(--len,1200);stroke-dashoffset:var(--len,1200);transition:stroke-dashoffset 1.4s var(--ease);transition-delay:calc(var(--i,0)*90ms)}
+.in .draw,.draw.in{stroke-dashoffset:0}
+.grow{transform:scaleX(0);transform-origin:left center;transition:transform .9s var(--ease);transition-delay:calc(var(--i,0)*45ms)}
+.in .grow{transform:scaleX(1)}
+.growy{transform:scaleY(0);transform-box:fill-box;transform-origin:bottom;transition:transform .8s var(--ease);transition-delay:calc(var(--i,0)*45ms)}
+.in .growy{transform:scaleY(1)}
+.pop{opacity:0;transition:opacity .5s var(--ease);transition-delay:calc(300ms + var(--i,0)*60ms)}
+.in .pop{opacity:1}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv,.draw,.grow,.growy,.pop{transition:none!important;opacity:1!important;transform:none!important;stroke-dashoffset:0!important}
+}
+
+/* Hero */
+.hero{padding:clamp(56px,7vw,96px) 0 clamp(64px,8vw,104px);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:56px;align-items:center}
+@media (max-width:1020px){.hero .wrap{grid-template-columns:minmax(0,1fr)}}
+.hero .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:26px}
+.hero .eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(42px,4.3vw,64px)}
+.hero h1 .l2{display:block;color:var(--teal)}
+.hero .sub{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(24px,2.6vw,33px);line-height:1.18;margin-top:26px;color:var(--ink);letter-spacing:-.3px;max-width:26ch;padding-left:18px;border-left:2px solid var(--gold)}
+.cov{background:var(--ink);color:var(--cream);border-radius:4px;padding:clamp(20px,2.4vw,30px);position:relative}
+.cov .label{color:rgba(244,239,230,.6)}.cov .label.gold{color:var(--gilt)}.cov .label.faint{color:rgba(244,239,230,.5)}
+.cov-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid rgba(244,239,230,.14)}
+.cov .syn{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;border:1px solid rgba(244,239,230,.3);color:rgba(244,239,230,.7);padding:2px 7px;border-radius:2px}
+.cov-metric{font-family:var(--serif);font-size:22px;font-weight:500;margin-top:18px}
+.cov-nums{display:flex;align-items:flex-end;gap:clamp(14px,2vw,26px);margin-top:8px}
+.cov-nums div:not(.arrow){display:flex;flex-direction:column;gap:2px}
+.cov-nums b{font-family:var(--serif);font-weight:600;font-size:clamp(48px,5vw,68px);line-height:1;letter-spacing:-1px}
+.cov-nums .was{color:rgba(244,239,230,.45);text-decoration:line-through;text-decoration-thickness:2px;text-decoration-color:rgba(244,239,230,.35)}
+.cov-nums .now{color:var(--gilt)}
+.cov-nums .arrow{font-family:var(--mono);font-size:22px;color:rgba(244,239,230,.4);padding-bottom:12px}
+.cov .track{margin:22px 0 4px}
+.cov .scale{position:relative;height:16px;font-family:var(--mono);font-size:10px;color:rgba(244,239,230,.45)}
+.cov .scale span{position:absolute;transform:translateX(-50%)}
+.cov .scale span:first-child{transform:none}.cov .scale span:last-child{transform:translateX(-100%)}
+.cov .rail{position:relative;height:10px;background:rgba(244,239,230,.1);border-radius:2px;margin-top:6px}
+.cov .room{position:absolute;top:0;bottom:0;left:45%;right:25%;background:rgba(233,197,131,.28);transition:left 1.4s var(--ease) .5s}
+.cov .limit{position:absolute;top:-6px;bottom:-6px;left:75%;width:2px;background:var(--coral)}
+.cov .mk{position:absolute;top:-5px;width:20px;height:20px;border-radius:50%;margin-left:-10px;left:45%}
+.cov .mk.rep{border:2px solid rgba(244,239,230,.5);background:var(--ink)}
+.cov .mk.chk{background:var(--gilt);transition:left 1.4s var(--ease) .5s;box-shadow:0 0 0 4px var(--ink)}
+.cov.in .mk.chk,.cov.in .room{left:70%}
+.cov .tags2{position:relative;height:18px;margin-top:10px;font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase}
+.cov .tags2 span{position:absolute;white-space:nowrap}
+.cov .t-rep{left:45%;transform:translateX(-50%);color:rgba(244,239,230,.55)}
+.cov .t-chk{left:70%;transform:translateX(-100%);color:var(--gilt);opacity:0;transition:opacity .4s 1.6s}
+.cov.in .t-chk{opacity:1}
+.cov .t-rep{transition:opacity .3s 1.2s}.cov.in .t-rep{opacity:0}
+.cov .t-lim{left:75%;margin-left:8px;color:var(--coral)}
+.cov-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:18px;padding-top:14px;border-top:1px solid rgba(244,239,230,.14)}
+.cov-head .mono{font-size:15px}.cov-head s{color:rgba(244,239,230,.45)}.cov-head b{color:var(--coral);font-weight:500;margin-left:6px}
+.cov .receipts{list-style:none;margin-top:12px}
+.cov .receipts li{display:grid;grid-template-columns:66px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:9px 0;border-top:1px dashed rgba(244,239,230,.14);font-size:13.5px;color:rgba(244,239,230,.82);opacity:0;transform:translateY(6px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+.cov.in .receipts li{opacity:1;transform:none}
+.cov.in .receipts li:nth-child(1){transition-delay:1.8s}.cov.in .receipts li:nth-child(2){transition-delay:2.05s}.cov.in .receipts li:nth-child(3){transition-delay:2.3s}
+.cov .receipts b{color:var(--gilt);font-weight:500}
+.cov .receipts em{font-style:normal;font-size:10.5px;color:rgba(244,239,230,.5);white-space:nowrap}
+.cov-foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:12px;padding-top:12px;border-top:1px solid rgba(244,239,230,.14);font-family:var(--mono);font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;color:rgba(244,239,230,.5)}
+@media (max-width:560px){.cov .receipts li{grid-template-columns:58px minmax(0,1fr)}.cov .receipts em{grid-column:2}}
+@media (prefers-reduced-motion:reduce){.cov .mk.chk,.cov .room{left:70%;transition:none}.cov .receipts li,.cov .t-chk{opacity:1;transform:none;transition:none}.cov .t-rep{opacity:0}}
+table.cmp.dark th{color:var(--gilt);border-bottom-color:rgba(244,239,230,.3)}
+table.cmp.dark td{color:rgba(244,239,230,.78);border-bottom-color:rgba(244,239,230,.14)}
+table.cmp.dark td:first-child{color:var(--cream)}
+.hero .lede{margin-top:22px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.jobs-chips{display:flex;flex-wrap:wrap;gap:0;margin-top:40px;border-top:1px solid var(--line)}
+.jobs-chips a{flex:1 1 140px;padding:14px 16px 0 0;text-decoration:none}
+.jobs-chips a b{display:block;font-weight:500;font-size:14.5px}
+.jobs-chips a span{font-family:var(--mono);font-size:10.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--faint)}
+.jobs-chips a:hover b{color:var(--gold)}
+.watermark{position:absolute;right:-90px;bottom:-140px;width:560px;opacity:.05;pointer-events:none;color:var(--ink)}
+
+/* Product cards */
+.card{background:var(--cream);border:1px solid var(--line-s);border-radius:4px;position:relative}
+.card .bar{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--faint)}
+.card .bar .dot{width:7px;height:7px;border-radius:50%;background:var(--teal)}
+.card .bar .tag{margin-left:auto;border:1px solid var(--line-s);padding:2px 7px;border-radius:2px;color:var(--soft)}
+.card .body{padding:18px 20px 20px;overflow-x:auto}
+.mail-from{font-size:12.5px;color:var(--faint)}
+.mail-subj{font-weight:700;font-size:15px;margin:3px 0 10px}
+.mail-p{font-size:14px;color:var(--soft);line-height:1.55;margin-bottom:14px}
+table.t{width:100%;border-collapse:collapse;font-size:13.5px}
+table.t th{font-family:var(--mono);font-size:10px;letter-spacing:1.3px;text-transform:uppercase;color:var(--teal);font-weight:500;text-align:left;padding:8px 8px 8px 0;border-bottom:1px solid var(--line-s)}
+table.t td{padding:9px 8px 9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+table.t .n{font-family:var(--mono);text-align:right;white-space:nowrap}
+table.t th.n{text-align:right}
+table.t tr:last-child td{border-bottom:0}
+.v{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;letter-spacing:.9px;text-transform:uppercase;white-space:nowrap}
+.v::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
+.v-ok{color:var(--teal)}.v-part{color:#8A6A2F}.v-no{color:var(--claret)}.v-ins{color:var(--faint)}
+.v-part::before{background:var(--gilt);box-shadow:inset 0 0 0 1px #8A6A2F}
+.ink .v-ok{color:#8FC2B8}.ink .v-no{color:var(--coral)}.ink .v-part{color:var(--gilt)}
+.rc{position:relative;display:inline-block}
+.recompute .rc .old{animation:fadeOld 2.6s var(--ease) forwards;animation-delay:calc(.5s + var(--i,0)*.18s)}
+.rc .new{position:absolute;right:0;top:0;opacity:0}
+.recompute .rc .new{animation:fadeNew 2.6s var(--ease) forwards;animation-delay:calc(.5s + var(--i,0)*.18s)}
+@keyframes fadeOld{0%,30%{opacity:1}55%,100%{opacity:0}}
+@keyframes fadeNew{0%,40%{opacity:0}65%,100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.recompute .rc .old{animation:none;opacity:0}.recompute .rc .new{animation:none;opacity:1}}
+.foot-note{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:12px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--faint)}
+
+/* Two questions */
+.twoq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-top:1px solid var(--line-s)}
+.twoq>div{padding:40px 40px 44px 0}
+.twoq>div+div{padding-left:40px;border-left:1px solid var(--line)}
+@media (max-width:820px){.twoq{grid-template-columns:minmax(0,1fr)}.twoq>div{padding:32px 0}.twoq>div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+.twoq h3{font-size:clamp(28px,3vw,40px);margin:14px 0 14px}
+.twoq ul{list-style:none;margin-top:20px}
+.twoq li{padding:10px 0;border-top:1px solid var(--line);font-size:15px;display:flex;gap:12px}
+.twoq li .mono{color:var(--faint);font-size:11px;letter-spacing:1px;padding-top:3px;min-width:22px}
+
+/* Lifecycle */
+.life{margin-top:8px}
+.life svg{width:100%;height:auto;overflow:visible}
+.life text{font-family:var(--mono);font-size:11px;letter-spacing:1.2px;text-transform:uppercase;fill:var(--faint)}
+.life .tl{font-family:var(--sans);font-size:15px;letter-spacing:0;text-transform:none;fill:var(--ink);font-weight:500}
+.life-mob{display:none}
+@media (max-width:760px){.life svg{display:none}.life-mob{display:block}}
+
+/* Stat strip */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line-s)}
+.stats>div{padding:26px 20px 22px 0;border-right:1px solid var(--line)}
+.stats>div+div{padding-left:22px}
+.stats>div:last-child{border-right:0}
+.stats .k{font-family:var(--mono);font-size:clamp(30px,3.4vw,46px);font-weight:400;letter-spacing:-1px;line-height:1;display:block;margin:12px 0 8px}
+.stats .k.g{color:var(--gold)}
+.stats p{font-size:13.5px;color:var(--soft)}
+.ink .stats{border-color:rgba(244,239,230,.3)}
+.ink .stats>div{border-color:rgba(244,239,230,.18)}
+.ink .stats p{color:rgba(244,239,230,.68)}
+@media (max-width:860px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats>div:nth-child(2){border-right:0}.stats>div:nth-child(3){padding-left:0}.stats>div:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* Tenant diagram */
+.tenant{border:1px solid rgba(244,239,230,.3);border-radius:4px;padding:26px;position:relative}
+.tenant .tlabel{position:absolute;top:-9px;left:20px;background:var(--ink);padding:0 10px}
+.apps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:760px){.apps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.app{border:1px solid rgba(244,239,230,.18);border-radius:3px;padding:16px;background:rgba(244,239,230,.04)}
+.app .ic{width:30px;height:30px;border-radius:4px;display:grid;place-items:center;font-family:var(--sans);font-weight:700;font-size:14px;color:#fff;margin-bottom:12px}
+.app b{display:block;font-weight:500;font-size:15px}
+.app span{font-size:13px;color:rgba(244,239,230,.65)}
+.engine{margin-top:12px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:760px){.engine{grid-template-columns:minmax(0,1fr)}}
+.engine div{border:1px dashed rgba(233,197,131,.45);border-radius:3px;padding:14px 16px}
+.engine b{display:block;font-weight:500;font-size:14.5px;color:var(--gilt)}
+.engine span{font-size:13px;color:rgba(244,239,230,.65)}
+.flows{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:40px;border-top:1px solid rgba(244,239,230,.18)}
+.flows>div{padding:22px 22px 0 0}
+.flows>div+div{padding-left:22px;border-left:1px solid rgba(244,239,230,.18)}
+.flows b{display:block;font-weight:500;margin:8px 0 6px;font-size:16px}
+.flows p{font-size:14.5px;color:rgba(244,239,230,.7)}
+@media (max-width:820px){.flows{grid-template-columns:minmax(0,1fr)}.flows>div+div{padding-left:0;border-left:0;border-top:1px solid rgba(244,239,230,.18);margin-top:18px}}
+
+/* Matrix */
+.mx-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.mx{width:100%;border-collapse:collapse;min-width:720px}
+table.mx th,table.mx td{padding:15px 12px;border-bottom:1px solid var(--line);text-align:center;font-size:14px}
+table.mx th{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--teal);font-weight:500;vertical-align:bottom;border-bottom:1px solid var(--line-s)}
+table.mx td:first-child,table.mx th:first-child{text-align:left;padding-left:0;font-size:15px}
+table.mx .us{background:rgba(169,133,67,.08)}
+table.mx th.us{color:var(--gold)}
+.hb{display:inline-block;width:14px;height:14px;border-radius:50%;border:1.5px solid var(--ink);vertical-align:middle}
+.hb.f{background:var(--ink)}
+.hb.h{background:linear-gradient(90deg,var(--ink) 50%,transparent 50%)}
+.hb.us{border-color:var(--gold)}.hb.us.f{background:var(--gold)}
+.legend{display:flex;gap:22px;flex-wrap:wrap;margin-top:14px;font-family:var(--mono);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--faint)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+
+/* Ladder */
+.ladder{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--line-s);position:relative}
+.ladder>div{padding:30px 28px 32px 0;position:relative}
+.ladder>div+div{padding-left:28px;border-left:1px solid var(--line)}
+@media (max-width:900px){.ladder{grid-template-columns:minmax(0,1fr)}.ladder>div{padding:28px 0}.ladder>div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+.ladder .lvl{display:flex;align-items:center;justify-content:space-between}
+.ladder .pips{display:flex;gap:4px}
+.ladder .pips i{width:18px;height:4px;background:var(--line-s)}
+.ladder .pips i.on{background:var(--teal)}
+.ladder .rec .pips i.on{background:var(--gold)}
+.ladder h3{margin:14px 0 4px;font-size:clamp(28px,2.8vw,36px)}
+.ladder .who{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--teal);margin-bottom:14px}
+.ladder p{font-size:15px;color:var(--soft)}
+.ladder ul{list-style:none;margin-top:18px}
+.ladder li{font-size:14px;padding:9px 0;border-top:1px solid var(--line);display:flex;gap:10px}
+.ladder li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal);margin-top:8px;flex:none}
+.ladder .tag{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:3px 7px;border-radius:2px}
+.callout{border-left:3px solid var(--gold);background:rgba(169,133,67,.07);padding:22px 26px;margin-top:40px}
+.callout.teal{border-color:var(--teal);background:rgba(28,74,69,.06)}
+.callout .label{display:block;margin-bottom:8px}
+.callout p{font-size:15.5px}
+
+/* Footer CTA */
+.cta-band{padding:clamp(64px,8vw,104px) 0}
+.cta-band .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:end}
+@media (max-width:860px){.cta-band .wrap{grid-template-columns:minmax(0,1fr)}}
+footer.site{border-top:1px solid rgba(244,239,230,.18);background:var(--ink);color:var(--cream);padding:56px 0 40px}
+footer.site .cols{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:32px}
+@media (max-width:820px){footer.site .cols{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}footer.site .cols>div:first-child{grid-column:1/-1}}
+footer.site a{display:block;text-decoration:none;color:rgba(244,239,230,.75);font-size:14px;padding:4px 0}
+footer.site a:hover{color:var(--gilt)}
+footer.site .lockup{height:34px;color:var(--cream)}
+footer.site .base{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:48px;padding-top:20px;border-top:1px solid rgba(244,239,230,.14);font-family:var(--mono);font-size:10.5px;letter-spacing:1.1px;text-transform:uppercase;color:rgba(244,239,230,.45)}
+
+/* Page heads */
+.phead{padding:clamp(56px,7vw,96px) 0 clamp(40px,5vw,64px);position:relative;overflow:hidden}
+.phead .label{display:block;margin-bottom:22px}
+.phead h1{font-size:clamp(40px,5.2vw,72px);max-width:21ch}
+.phead .lede{margin-top:24px;max-width:62ch}
+.crumbs{display:flex;gap:10px;flex-wrap:wrap;margin-top:32px}
+.crumbs a{font-family:var(--mono);font-size:11px;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;border:1px solid var(--line-s);padding:8px 12px;border-radius:3px;color:var(--soft)}
+.crumbs a:hover{border-color:var(--ink);color:var(--ink)}
+
+/* Jobs detail */
+.job{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;padding:56px 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:1px solid var(--line-s)}
+@media (max-width:900px){.job{grid-template-columns:minmax(0,1fr);gap:28px}}
+.job .num{font-family:var(--mono);font-size:12px;letter-spacing:1.5px;color:var(--gold)}
+.job h2{font-size:clamp(34px,3.6vw,48px);margin:12px 0 16px}
+.job p{color:var(--soft);margin-bottom:14px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);margin-top:22px}
+.facts div{padding:14px 14px 0 0}
+.facts div+div{padding-left:14px;border-left:1px solid var(--line)}
+.facts b{display:block;font-weight:500;font-size:14px;margin-top:6px}
+@media (max-width:560px){.facts{grid-template-columns:minmax(0,1fr)}.facts div+div{padding-left:0;border-left:0;border-top:1px solid var(--line);margin-top:12px}}
+
+/* Commercial modules */
+.mods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line-s)}
+@media (max-width:860px){.mods{grid-template-columns:minmax(0,1fr)}}
+.mod{padding:30px 30px 30px 0;border-bottom:1px solid var(--line)}
+.mod:nth-child(even){padding-left:30px;padding-right:0;border-left:1px solid var(--line)}
+@media (max-width:860px){.mod,.mod:nth-child(even){padding:28px 0;border-left:0}}
+.mod .top{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.mod h3{margin:10px 0 8px}
+.mod .q{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--teal);line-height:1.3;margin-bottom:14px}
+.mod dl{display:grid;grid-template-columns:110px minmax(0,1fr);gap:8px 14px;font-size:14px;margin-top:6px}
+.mod dt{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--faint);padding-top:3px}
+.mod dd{color:var(--soft)}
+.mod .find{margin-top:16px;padding:14px 16px;background:var(--tint);border-left:2px solid var(--teal);font-size:14px}
+.mod .find .label{display:block;margin-bottom:6px;font-size:9.5px}
+
+/* Readings grid */
+.readings{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px;align-items:start}
+@media (max-width:960px){.readings{grid-template-columns:minmax(0,1fr)}}
+.rgrid{display:grid;gap:10px}
+.rrow{display:grid;grid-template-columns:96px repeat(6,minmax(0,1fr));gap:6px;align-items:center}
+.rrow .dl{font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
+.tile{aspect-ratio:1/1;border-radius:3px;border:1px solid var(--line-s);display:grid;place-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.5px;cursor:pointer;position:relative;transition:transform .2s var(--ease),outline-color .2s;outline:2px solid transparent;outline-offset:2px}
+.tile:hover{transform:translateY(-2px)}
+.tile[aria-pressed=true]{outline-color:var(--gold)}
+.tile.c{background:var(--claret);color:var(--cream);border-color:var(--claret)}
+.tile.i{background:repeating-linear-gradient(135deg,transparent 0 5px,rgba(22,33,31,.08) 5px 6px);color:var(--soft)}
+.tile.p{background:var(--gilt);border-color:#C9A563}
+.tile.l{background:var(--gilt);border-color:var(--teal);box-shadow:inset 0 0 0 2px var(--teal)}
+.tile.empty{visibility:hidden}
+.rkey{display:flex;flex-wrap:wrap;gap:16px;margin-top:18px;font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
+.rkey span{display:inline-flex;align-items:center;gap:7px}
+.rkey i{width:14px;height:14px;border-radius:2px;border:1px solid var(--line-s);display:inline-block}
+.rpanel{border:1px solid var(--line-s);border-radius:4px;padding:24px 26px;min-height:340px;background:var(--cream)}
+.rpanel h3{margin:10px 0 12px;font-size:24px}
+.rpanel .sec{border-top:1px solid var(--line);padding-top:12px;margin-top:12px}
+.rpanel .sec p{font-size:14.5px;color:var(--soft);margin-top:4px}
+.counts{display:flex;gap:0;margin-top:22px;border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.counts div{flex:1;padding:12px 14px;border-right:1px solid var(--line)}
+.counts div:last-child{border-right:0}
+.counts b{display:block;font-family:var(--mono);font-size:26px;font-weight:400}
+.counts span{font-family:var(--mono);font-size:9.5px;letter-spacing:1px;text-transform:uppercase;color:var(--faint)}
+
+/* Claims chart */
+.claims{border-top:1px solid var(--line-s)}
+.claim{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1.3fr) 150px;gap:24px;padding:20px 0;border-bottom:1px solid var(--line);align-items:center}
+@media (max-width:900px){.claim{grid-template-columns:minmax(0,1fr);gap:12px}}
+.claim .what b{display:block;font-weight:500;font-size:15.5px}
+.claim .what span{font-size:13.5px;color:var(--faint)}
+.dbell{position:relative;height:44px}
+.dbell .axis{position:absolute;left:0;right:0;top:22px;height:1px;background:var(--line)}
+.dbell .seg{position:absolute;top:21px;height:3px;background:var(--ink);opacity:.35}
+.dbell .pt{position:absolute;top:15px;width:15px;height:15px;border-radius:50%;margin-left:-7.5px;transition:left 1.1s var(--ease)}
+.dbell .pt.claim-pt{background:var(--cream);border:2px solid var(--ink)}
+.dbell .pt.found{background:var(--gold)}
+.dbell .pt b{position:absolute;top:-17px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:10.5px;font-weight:500;white-space:nowrap}
+.dbell .pt.found b{top:18px}
+
+/* EBITDA ladder */
+.ebit{display:grid;gap:10px}
+.erow{display:grid;grid-template-columns:150px minmax(0,1fr) 70px;gap:14px;align-items:center}
+.erow .nm{font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
+.erow .tr{height:26px;background:var(--tint);position:relative;border-radius:2px;overflow:hidden}
+.erow .fl{position:absolute;inset:0 auto 0 0;background:var(--teal)}
+.erow:last-child .fl{background:var(--gold)}
+.erow .vv{font-family:var(--mono);font-size:13px;text-align:right}
+@media (max-width:560px){.erow{grid-template-columns:96px minmax(0,1fr) 52px}.erow .nm{font-size:9.5px}}
+
+/* hbars */
+.hb-list{display:grid;gap:7px}
+.hbr{display:grid;grid-template-columns:190px minmax(0,1fr) 40px;gap:12px;align-items:center;font-size:13.5px}
+.hbr .t2{height:14px;position:relative}
+.hbr .t2 i{position:absolute;inset:0 auto 0 0;background:var(--teal);border-radius:1px}
+.hbr.live .t2 i{background:var(--gold)}
+.hbr.ctx .t2 i{background:rgba(22,33,31,.3)}
+.hbr .n{font-family:var(--mono);text-align:right;font-size:12.5px}
+@media (max-width:560px){.hbr{grid-template-columns:120px minmax(0,1fr) 32px;font-size:12px}}
+.tags{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:1px solid var(--line-s);margin-top:8px}
+.tags div{padding:16px 14px 0 0}
+.tags div+div{padding-left:14px;border-left:1px solid var(--line)}
+.tags b{font-family:var(--mono);font-size:22px;font-weight:500;display:block}
+.tags p{font-size:13px;color:var(--soft);margin-top:4px}
+@media (max-width:760px){.tags{grid-template-columns:repeat(2,minmax(0,1fr))}.tags div{padding:14px 10px 6px 0!important;border-left:0!important;border-top:1px solid var(--line)}}
+.stackbar{display:flex;height:30px;border-radius:2px;overflow:hidden;margin:18px 0 8px}
+.stackbar i{display:block;height:100%}
+
+/* Sample tabs */
+.stabs{display:flex;gap:0;border-bottom:1px solid var(--line-s);margin-bottom:36px;flex-wrap:wrap}
+.stabs button{padding:16px 22px 15px;font-size:15px;font-weight:500;color:var(--soft);position:relative;display:flex;align-items:center;gap:10px}
+.stabs button .mono{font-size:11px;color:var(--faint)}
+.stabs button[aria-selected=true]{color:var(--ink)}
+.stabs button[aria-selected=true] .mono{color:var(--gold)}
+.stabs button[aria-selected=true]::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--gold)}
+@media (max-width:640px){.stabs button{padding:12px 12px;font-size:14px}}
+.parts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:22px}
+@media (max-width:900px){.parts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.parts{grid-template-columns:minmax(0,1fr)}}
+.part{text-align:left;display:flex;flex-direction:column;justify-content:flex-start;border:1px solid var(--line);border-radius:3px;padding:14px 16px;transition:border-color .2s,background .2s}
+.part:hover{border-color:var(--ink)}
+.part[aria-pressed=true]{border-color:var(--gold);background:rgba(169,133,67,.07)}
+.part .mono{font-size:10.5px;letter-spacing:1.2px;color:var(--gold)}
+.part b{display:block;font-weight:500;font-size:15px;margin:4px 0 2px}
+.part span{font-size:13px;color:var(--soft);display:block;line-height:1.45}
+.viewer{border:1px solid var(--line-s);border-radius:4px;overflow:hidden;background:var(--cream)}
+.viewer .chrome{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--tint2);flex-wrap:wrap}
+.viewer .chrome .dots{display:flex;gap:6px}
+.viewer .chrome .dots i{width:9px;height:9px;border-radius:50%;border:1px solid var(--line-s)}
+.viewer .chrome .addr{flex:1;min-width:160px;font-family:var(--mono);font-size:11px;color:var(--faint);background:var(--cream);border:1px solid var(--line);padding:5px 10px;border-radius:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.viewer .chrome a{font-family:var(--mono);font-size:10.5px;letter-spacing:1.1px;text-transform:uppercase;text-decoration:none;border:1px solid var(--line-s);padding:5px 9px;border-radius:2px;white-space:nowrap}
+.viewer .chrome a:hover{border-color:var(--ink)}
+.viewer iframe{display:block;width:100%;height:min(82vh,860px);border:0;background:var(--cream)}
+.formats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line-s);margin-top:28px}
+.formats>div{padding:20px 20px 0 0}
+.formats>div+div{padding-left:20px;border-left:1px solid var(--line)}
+.formats b{display:block;font-weight:500;margin:6px 0 4px}
+.formats p{font-size:14px;color:var(--soft)}
+@media (max-width:760px){.formats{grid-template-columns:minmax(0,1fr)}.formats>div+div{padding-left:0;border-left:0;border-top:1px solid var(--line);margin-top:16px}}
+
+/* Package check (trace) */
+.pkg{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px;align-items:start}
+@media (max-width:960px){.pkg{grid-template-columns:minmax(0,1fr)}}
+.toggle{display:inline-flex;border:1px solid var(--line-s);border-radius:3px;overflow:hidden}
+.toggle button{font-family:var(--mono);font-size:10.5px;letter-spacing:1.1px;text-transform:uppercase;padding:7px 11px}
+.toggle button[aria-pressed=true]{background:var(--ink);color:var(--cream)}
+#sampleTable tbody tr{cursor:pointer;transition:background .15s}
+#sampleTable tbody tr:hover{background:rgba(22,33,31,.035)}
+#sampleTable tbody tr[aria-selected=true]{background:rgba(169,133,67,.10)}
+#sampleTable tbody tr[aria-selected=true] td:first-child{box-shadow:inset 3px 0 0 var(--gold);padding-left:10px}
+#sampleTable td:first-child{padding-left:10px}
+#sampleTable .rep-val{display:none}
+#sampleTable.show-reported .rep-val{display:inline}
+#sampleTable.show-reported .rec-val{display:none}
+.trace{border:1px solid var(--line-s);border-radius:4px;padding:22px 24px;display:grid;gap:14px;position:sticky;top:96px}
+.trace .nums{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:3px}
+.trace .nums div{padding:10px 14px}
+.trace .nums div+div{border-left:1px solid var(--line)}
+.trace .nums b{display:block;font-family:var(--mono);font-size:24px;font-weight:400}
+.trace ol{padding-left:18px;font-size:14.5px;color:var(--soft)}
+.trace ol li{margin:4px 0}
+
+/* Teams alert + control chart */
+.watch{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:28px;align-items:start}
+@media (max-width:960px){.watch{grid-template-columns:minmax(0,1fr)}}
+.teams .bar .dot{background:#5B5FC7}
+.chat{display:flex;gap:12px}
+.chat .av{width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--cream);display:grid;place-items:center;flex:none}
+.chat .av svg{width:22px}
+.chat .who{font-size:13px;color:var(--faint)}
+.chat .who b{color:var(--ink);font-weight:700;margin-right:8px}
+.chat .msg{font-size:14.5px;margin-top:4px}
+.chat .msg p{margin-bottom:10px}
+.chart svg text{font-family:var(--mono);font-size:10px;fill:var(--faint);letter-spacing:.6px}
+.monitors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);margin-top:28px}
+.monitors div{padding:14px 14px 14px 0;border-bottom:1px solid var(--line);font-size:14px;display:flex;gap:10px;align-items:baseline}
+.monitors div::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--teal);flex:none;transform:translateY(-1px)}
+.monitors div.warn::before{background:var(--gold)}
+@media (max-width:760px){.monitors{grid-template-columns:minmax(0,1fr)}}
+
+/* Pilot steps */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--line-s);counter-reset:s}
+.steps>div{padding:22px 18px 0 0;position:relative}
+.steps>div+div{padding-left:18px;border-left:1px solid var(--line)}
+.steps b{display:block;font-weight:500;margin:8px 0 6px;font-size:16px}
+.steps p{font-size:14px;color:var(--soft)}
+@media (max-width:980px){.steps{grid-template-columns:minmax(0,1fr)}.steps>div+div{padding-left:0;border-left:0;border-top:1px solid var(--line);margin-top:18px}}
+table.cmp{width:100%;border-collapse:collapse;min-width:680px}
+table.cmp th,table.cmp td{text-align:left;padding:14px 14px 14px 0;border-bottom:1px solid var(--line);font-size:14.5px;vertical-align:top}
+table.cmp th{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--teal);font-weight:500;border-bottom:1px solid var(--line-s)}
+table.cmp td:first-child{font-weight:500;width:24%}
+table.cmp td.hi{color:var(--ink)}
+table.cmp td{color:var(--soft)}
+
+/* FAQ */
+.faq{border-top:1px solid var(--line-s)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-weight:500;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:16px;font-family:var(--mono);font-size:20px;color:var(--gold);transition:transform .25s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 22px;color:var(--soft);font-size:15.5px}
+
+/* Form */
+form.talk{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form.talk .full{grid-column:1/-1}
+@media (max-width:640px){form.talk{grid-template-columns:minmax(0,1fr)}}
+form.talk label{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
+form.talk input,form.talk select,form.talk textarea{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1px solid var(--line-s);border-radius:3px;background:var(--cream);color:var(--ink)}
+form.talk input:focus,form.talk select:focus,form.talk textarea:focus{outline:none;border-color:var(--gold)}
+form.talk textarea{min-height:110px;resize:vertical}
+.err{color:var(--claret);font-size:14px}
+pre.msg{white-space:pre-wrap;font-family:var(--mono);font-size:13px;background:var(--tint);padding:16px;border-radius:3px;margin:14px 0}
+
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+@media (max-width:900px){.split{grid-template-columns:minmax(0,1fr);gap:36px}}
+.qlist{list-style:none;border-top:1px solid var(--line-s)}
+.qlist li{padding:16px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;font-size:15px}
+.qlist li .mono{color:var(--gold);font-size:12px;padding-top:3px}
+.qlist li b{font-weight:500;display:block}
+.qlist li span{color:var(--soft);font-size:14.5px}
+.page[hidden]{display:none}
+.syn{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:1.1px;text-transform:uppercase;color:var(--soft);border:1px solid var(--line-s);padding:3px 8px;border-radius:2px}
+.ink .syn{color:rgba(244,239,230,.7);border-color:rgba(244,239,230,.3)}
+
+/* What strip under the hero */
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+section.what{background:var(--ink);color:var(--cream);padding:clamp(40px,5vw,64px) 0}
+.what-line{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3vw,40px);line-height:1.18;letter-spacing:-.4px;max-width:34ch}
+.what-line .label{display:block;margin-bottom:14px;color:var(--gilt)}
+.what-line b{font-weight:600;color:var(--gilt)}
+.what-jobs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:clamp(28px,3.5vw,44px);border-top:1px solid rgba(244,239,230,.18)}
+.what-jobs a{display:flex;flex-direction:column;gap:6px;padding:22px 24px 4px 0;text-decoration:none}
+.what-jobs a+a{padding-left:24px;border-left:1px solid rgba(244,239,230,.14)}
+.what-jobs .mono{font-size:10.5px;letter-spacing:1.3px;text-transform:uppercase;color:rgba(244,239,230,.55)}
+.what-jobs b{font-family:var(--serif);font-weight:600;font-size:24px;letter-spacing:-.3px}
+.what-jobs a>span:last-child{font-size:14.5px;color:rgba(244,239,230,.75);max-width:40ch}
+.what-jobs a:hover b{color:var(--gilt)}
+@media (max-width:820px){.what-jobs{grid-template-columns:minmax(0,1fr)}.what-jobs a+a{padding-left:0;border-left:0;border-top:1px solid rgba(244,239,230,.14)}.what-jobs a{padding:18px 0}}
+/* Sample previews on home */
+section.band.tint{background:var(--tint2)}
+.pv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,2.4vw,32px)}
+@media (max-width:820px){.pv-grid{grid-template-columns:minmax(0,1fr)}}
+.pv{border:1px solid var(--line-s);border-radius:4px;background:var(--cream);overflow:hidden}
+.pv-img{position:relative;aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line);pointer-events:none;user-select:none}
+.pv-img img{width:100%;height:100%;object-fit:cover;object-position:top left;filter:blur(1.2px) saturate(.9);transform:scale(1.02)}
+.pv-img::after,.gate-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(244,239,230,0) 45%,rgba(244,239,230,.92))}
+.pv-cap{padding:22px 24px 26px}
+.pv-cap h3{margin:8px 0 6px}
+.pv-cap p{font-size:15px;color:var(--soft);margin-bottom:16px}
+/* Email gate */
+.gate{position:relative;border:1px solid var(--line-s);border-radius:4px;overflow:hidden;background:var(--cream)}
+.gate-img{position:relative;height:clamp(300px,46vw,540px);overflow:hidden;pointer-events:none;user-select:none}
+.gate-img img{width:100%;height:100%;object-fit:cover;object-position:top left;filter:blur(2px) saturate(.85);transform:scale(1.02)}
+.gate-form{position:absolute;left:50%;bottom:clamp(18px,3vw,36px);transform:translateX(-50%);width:min(560px,calc(100% - 32px));background:var(--cream);border:1px solid var(--line-s);border-top:3px solid var(--gold);border-radius:4px;padding:clamp(20px,2.6vw,30px)}
+.gate-form h3{margin:10px 0 8px;font-size:clamp(22px,2.2vw,28px)}
+.gate-form p{font-size:14.5px;color:var(--soft)}
+.gate-row{display:flex;gap:10px;margin-top:16px}
+.gate-row input{flex:1;min-width:0;font:inherit;font-size:15px;padding:12px 14px;border:1px solid var(--line-s);border-radius:3px;background:#fff;color:var(--ink)}
+.gate-row input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.gate-err{color:var(--claret);font-size:13.5px;min-height:1.2em;margin-top:8px}
+@media (max-width:560px){.gate-img{height:560px}.gate-row{flex-direction:column}.gate-row .btn{justify-content:center}}
+/* Named engineer add-on inside Self-service */
+.ladder .addon{margin-top:22px;padding:18px 20px;border:1px dashed var(--gold);border-radius:4px;background:rgba(169,133,67,.06)}
+.ladder .addon b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;margin:6px 0 4px}
+.ladder .addon p{font-size:14.5px}
+
+/* Hero: commercial diligence areas (synthetic) */
+.cdv{background:var(--ink);color:var(--cream);border-radius:4px;padding:clamp(18px,2.2vw,28px)}
+.cdv .label{color:rgba(244,239,230,.6)}
+.cdv .syn{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;border:1px solid rgba(244,239,230,.3);color:rgba(244,239,230,.7);padding:2px 7px;border-radius:2px}
+.cdv-title{font-family:var(--serif);font-size:clamp(22px,2vw,27px);font-weight:500;margin:14px 0 12px;letter-spacing:-.3px}
+.cdv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid rgba(244,239,230,.14)}
+.cdt{padding:12px 14px 11px 0;border-bottom:1px solid rgba(244,239,230,.1);opacity:0;transform:translateY(8px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.cdt:nth-child(even){padding:12px 0 11px 14px;border-left:1px solid rgba(244,239,230,.1)}
+.cdv.in .cdt{opacity:1;transform:none}
+.cdv.in .cdt:nth-child(1){transition-delay:.15s}.cdv.in .cdt:nth-child(2){transition-delay:.25s}.cdv.in .cdt:nth-child(3){transition-delay:.35s}.cdv.in .cdt:nth-child(4){transition-delay:.45s}.cdv.in .cdt:nth-child(5){transition-delay:.55s}.cdv.in .cdt:nth-child(6){transition-delay:.65s}.cdv.in .cdt:nth-child(7){transition-delay:.75s}.cdv.in .cdt:nth-child(8){transition-delay:.85s}
+.cdt-h{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:10px;letter-spacing:1.3px;text-transform:uppercase;color:var(--gilt)}
+.cdt-h i,.cdv-foot i{width:7px;height:7px;border-radius:50%;display:inline-block;flex:none}
+.v-neg{background:var(--coral)}.v-part{background:var(--gilt)}.v-ok{background:#7FB5A8}
+.cdt-k{font-size:12px;color:rgba(244,239,230,.55);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cdt svg{display:block;width:100%;height:auto;margin:10px 0 8px;overflow:visible}
+.cdt p{font-size:12.5px;line-height:1.4;color:rgba(244,239,230,.82)}
+.cdt p b{color:var(--cream);font-weight:600}
+.cdt .base{stroke:rgba(244,239,230,.14);stroke-dasharray:2 3}
+.cdt .ln{fill:none;stroke:var(--coral);stroke-width:1.8}
+.cdt .pk{fill:none;stroke:rgba(244,239,230,.45);stroke-width:1.4}
+.cdt .pk2{fill:none;stroke:rgba(244,239,230,.28);stroke-width:1.4}
+.cdt .dot{fill:var(--coral)}.cdt .dot.ok{fill:var(--gilt)}
+.cdt .old{fill:rgba(244,239,230,.35)}
+.cdt .org{fill:rgba(244,239,230,.28)}.cdt .paid{fill:var(--gilt)}
+.cdt .peer{fill:rgba(244,239,230,.25)}.cdt .us{fill:var(--coral)}
+.cdt .ring{fill:none;stroke:rgba(244,239,230,.18);stroke-width:5}
+.cdt .ring.tz{stroke-width:1;stroke-dasharray:2 3;stroke:rgba(244,239,230,.35)}
+.cdt .arc{fill:none;stroke:var(--gilt);stroke-width:5}
+.cdt .vt{fill:var(--cream);font-family:var(--serif);font-size:17px;font-weight:600}
+.cdt .vs{fill:rgba(244,239,230,.55);font-family:var(--mono);font-size:8px;letter-spacing:.5px}
+.cdt .track{fill:rgba(244,239,230,.1)}.cdt .fill{fill:var(--gilt)}.cdt .peerf{fill:rgba(244,239,230,.35)}.cdt .ok2{fill:none;stroke:var(--gilt);stroke-width:1.8}
+.cdt .mark{stroke:var(--coral);stroke-width:1.5}
+.cdv-foot{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:12px;font-family:var(--mono);font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:rgba(244,239,230,.5)}
+.cdv-foot span{display:inline-flex;align-items:center;gap:6px}
+.cdv-foot .r{margin-left:auto}
+@media (max-width:420px){.cdt{padding-right:10px}.cdt:nth-child(even){padding-left:10px}.cdt p{font-size:12px}.cdv-foot .r{margin-left:0}}
+@media (prefers-reduced-motion:reduce){.cdt{opacity:1;transform:none;transition:none}}
+/* Outside evidence strip */
+.evid{margin-top:clamp(28px,3.5vw,44px);padding-top:22px;border-top:1px solid rgba(244,239,230,.18)}
+.evid ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 14px}
+.evid li{font-size:14px;padding:7px 12px;border:1px solid rgba(244,239,230,.25);border-radius:2px;color:var(--cream)}
+.evid p{font-size:14.5px;color:rgba(244,239,230,.7)}
+.evid.light{margin:0 0 40px;border-top:1px solid var(--line-s)}
+.evid.light li{border-color:var(--line-s);color:var(--ink);background:var(--cream)}
+.evid.light p{color:var(--soft)}
+.job .cov{align-self:start}
+.cdt .arc{stroke-dasharray:0 101;transition:stroke-dasharray 1.3s var(--ease) .6s}
+.cdv.in .cdt .arc{stroke-dasharray:53.5 101}
+.cov-wb{margin-top:16px;padding-top:14px;border-top:1px solid rgba(244,239,230,.14)}
+.cov-wb table.t th{color:var(--gilt);border-bottom-color:rgba(244,239,230,.3)}
+.cov-wb table.t td{color:rgba(244,239,230,.82);border-bottom-color:rgba(244,239,230,.1)}
+.cov-wb table.t td[style*="claret"]{color:var(--coral)!important}
+
+/* Hero story: who, why, why us, how, your way */
+.hero{padding:clamp(36px,4.5vw,64px) 0 clamp(48px,6vw,80px)}
+.hero .eyebrow{margin-bottom:18px}
+.hero h1{font-size:clamp(40px,3.9vw,58px)}
+.hero .sub{margin-top:16px;font-size:clamp(22px,2.1vw,28px);max-width:none}
+.story{margin-top:22px;border-top:1px solid var(--line-s)}
+.story>div{display:grid;grid-template-columns:86px minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
+.story dt{font-family:var(--mono);font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold);padding-top:3px}
+.story dd{font-size:15px;line-height:1.5;color:var(--soft)}
+.story dd b{color:var(--ink);font-weight:600}
+.story dd a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+.story .jobs3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:8px}
+.story .jobs3 a{border:1px solid var(--line-s);border-bottom:1px solid var(--line-s);border-radius:3px;padding:7px 10px;font-size:14px;font-weight:500;line-height:1.25;background:var(--cream);transition:border-color .2s}
+.story .jobs3 a:hover{border-color:var(--gold)}
+.story .jobs3 i{display:block;font-style:normal;font-family:var(--mono);font-size:9.5px;letter-spacing:1.1px;text-transform:uppercase;color:var(--faint);margin-bottom:2px}
+.hero .cta-row{margin-top:22px}
+@media (max-width:520px){.story>div{grid-template-columns:minmax(0,1fr);gap:2px}.story .jobs3{gap:6px}.story .jobs3 a{padding:6px 7px;font-size:13px}.story .jobs3 i{font-size:8.5px;letter-spacing:.6px}}
+/* Hero card, compact */
+.cdv-title{font-size:clamp(20px,1.7vw,24px);margin:12px 0 10px}
+.cdt{padding:9px 12px 9px 0}.cdt:nth-child(even){padding:9px 0 9px 12px}
+.cdt svg{margin:6px 0 5px;max-height:40px}
+.cdt p{font-size:12px;line-height:1.35}
+.cdv-foot{margin-top:10px}
+.cdv-more{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;margin-top:10px;padding-top:10px;border-top:1px solid rgba(244,239,230,.14)}
+.cdv-more .label{color:var(--gilt);font-size:10px;white-space:nowrap}
+.cdv-more a{font-family:var(--mono);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--cream);text-decoration:none;border-bottom:1px solid var(--gold);white-space:nowrap}
+.marq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marq>div{display:flex;width:max-content;animation:marq 70s linear infinite}
+.marq span{font-size:12.5px;color:rgba(244,239,230,.82);padding:0 14px;white-space:nowrap;position:relative}
+.marq span::after{content:"";position:absolute;right:-2px;top:50%;width:3px;height:3px;border-radius:50%;background:var(--gold)}
+@keyframes marq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marq>div{animation:none;flex-wrap:wrap;width:auto}}
+@media (max-width:520px){.cdv-more{grid-template-columns:minmax(0,1fr) auto}.cdv-more .marq{grid-column:1/-1;grid-row:2}}
+/* Angles library */
+.ang-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.ang-tabs button{border:1px solid var(--line-s);border-radius:3px;padding:8px 14px;font-size:14px;font-weight:500;color:var(--soft)}
+.ang-tabs button .mono{font-size:11px;color:var(--faint);margin-left:4px}
+.ang-tabs button[aria-selected=true]{background:var(--ink);border-color:var(--ink);color:var(--cream)}
+.ang-tabs button[aria-selected=true] .mono{color:var(--gilt)}
+.ang-list{columns:2 420px;column-gap:48px}
+.ang-g{break-inside:avoid;margin-bottom:30px}
+.ang-g h3{font-size:24px;padding-bottom:10px;border-bottom:1px solid var(--line-s)}
+.ang-g ol{list-style:none}
+.ang-g li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}
+.ang-g li .mono{font-size:11px;color:var(--gold);padding-top:3px}
+.ang-g li b{display:block;font-weight:600;font-size:15px}
+.ang-g li div span{font-size:14px;color:var(--soft)}
+
+</style>
+<style id="cs-pipeline">
+  
+  
+  
+  .cs-pl .csp-pipeline-wrap { width: min(100%, 1600px); }
+  .cs-pl .csp-pipeline {
+    display: grid;
+    grid-template-columns: minmax(210px, 1fr) minmax(120px, .9fr) minmax(350px, 1.65fr) minmax(120px, .9fr) minmax(210px, 1fr);
+    min-height: 364px;
+    border: 1px solid rgba(22,33,31,.2);
+    position: relative;
+    isolation: isolate;
+  }
+  .cs-pl .csp-list {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+    z-index: 2;
+  }
+  .cs-pl .csp-list span {
+    display: flex;
+    align-items: center;
+    min-height: 39px;
+    padding: 0 24px;
+    border-bottom: 1px solid rgba(22,33,31,.15);
+    color: #4f5956;
+    font-size: clamp(10px, .78vw, 14px);
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0;
+    animation: rowIn .55s ease-out forwards;
+  }
+  .cs-pl .csp-list span:last-child { border-bottom: 0; }
+  .cs-pl .csp-list .csp-head {
+    min-height: 49px;
+    color: #f4efe6;
+    background: #16211f;
+    border-bottom: 0;
+    letter-spacing: 1.45px;
+  }
+  .csp-right .csp-head { background: #204d47; }
+  .cs-pl .csp-list span:nth-child(1) { animation-delay: .08s; }
+  .cs-pl .csp-list span:nth-child(2) { animation-delay: .20s; }
+  .cs-pl .csp-list span:nth-child(3) { animation-delay: .30s; }
+  .cs-pl .csp-list span:nth-child(4) { animation-delay: .40s; }
+  .cs-pl .csp-list span:nth-child(5) { animation-delay: .50s; }
+  .cs-pl .csp-list span:nth-child(6) { animation-delay: .60s; }
+  .cs-pl .csp-list span:nth-child(7) { animation-delay: .70s; }
+  .cs-pl .csp-list span:nth-child(8) { animation-delay: .80s; }
+  .cs-pl .csp-list span:nth-child(9) { animation-delay: .90s; }
+
+  .cs-pl .csp-flow {
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn .8s ease forwards .35s;
+  }
+  .cs-pl .csp-flow svg { width: 100%; height: 100%; display: block; }
+  .cs-pl .csp-flow path {
+    stroke-dasharray: 5 8;
+    animation: dash 2.2s linear infinite;
+  }
+  .cs-pl .csp-flow path:nth-child(even) { animation-delay: -.9s; }
+  .cs-pl .csp-core {
+    background: #16211f;
+    border-left: 3px solid #a98543;
+    border-right: 3px solid #a98543;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+    padding: 28px 18px;
+    opacity: 0;
+    transform: translateY(8px);
+    animation: coreIn .9s cubic-bezier(.2,.7,.2,1) forwards 1.05s;
+    position: relative;
+    z-index: 3;
+  }
+  .cs-pl .csp-core::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(105deg, transparent 30%, rgba(169,133,67,.08) 50%, transparent 70%);
+    transform: translateX(-120%);
+    animation: sheen 3.8s ease-in-out infinite 2s;
+  }
+  .cs-pl .csp-core strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    color: #f4efe6;
+    font-size: clamp(21px, 2vw, 34px);
+    line-height: 1.18;
+    position: relative;
+    z-index: 1;
+  }
+  .cs-pl .csp-core small {
+    color: #c6a25e;
+    font-size: clamp(9px, .72vw, 13px);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+  }
+  @keyframes rowIn {
+    from { opacity: 0; transform: translateY(7px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn { to { opacity: 1; } }
+  @keyframes coreIn { to { opacity: 1; transform: translateY(0); } }
+  @keyframes dash { to { stroke-dashoffset: -52; } }
+  @keyframes sheen {
+    0%, 28% { transform: translateX(-120%); }
+    62%, 100% { transform: translateX(120%); }
+  }
+  @media (max-width: 900px) {
+    
+    .cs-pl .csp-pipeline {
+      grid-template-columns: minmax(0, 1fr) minmax(26px, .18fr) minmax(130px, .82fr) minmax(26px, .18fr) minmax(0, 1fr);
+      min-height: 310px;
+    }
+    .cs-pl .csp-list span { padding: 0 8px; white-space: normal; line-height: 1.2; letter-spacing: .5px; font-size: 9px; }
+    .cs-pl .csp-list .csp-head { font-size: 9px; letter-spacing: .7px; }
+    .cs-pl .csp-core { padding: 12px 6px; border-width: 2px; gap: 10px; }
+    .cs-pl .csp-core strong { font-size: clamp(16px, 3.2vw, 23px); }
+    .cs-pl .csp-core small { font-size: 8px; letter-spacing: .8px; line-height: 1.5; }
+  }
+  
+
+  .cs-pl{margin-top:56px;overflow-x:auto}
+  .cs-pl .csp-list span{font-family:"IBM Plex Mono",monospace}
+  .cs-pl .csp-core strong{font-family:"Cormorant Garamond",Georgia,serif}
+  .cs-pl .csp-core small{font-family:"IBM Plex Mono",monospace}
+  .cs-pl:not(.in) *,.cs-pl:not(.in) *::after{animation-play-state:paused!important}
+  .cs-pl.rv{opacity:1!important;transform:none!important}
+  @media (prefers-reduced-motion: reduce){.cs-pl *,.cs-pl *::after{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+</style>
+</head>
+<body>
+<a href="#main" class="label" style="position:absolute;left:-9999px">Skip to content</a>
+<div class="goldrule"></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="CreditSwan home"><svg class="lockup" role="img" aria-label="CreditSwan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 712.5 191.1" fill="none" xmlns:c2pa="http://c2pa.org/manifest"> <g transform="translate(35.0,39.5) scale(2.8000)"> <path d="M8 30c0-9 6-16 15-16 4 0 7 1 9 4-2-1-4-1-6 0 3 0 5 2 6 5-4-2-8-1-11 2-3 3-8 4-13 5z" fill="currentColor"/> <circle cx="30.5" cy="15.5" r="1.4" fill="#A98543"/> </g> <g transform="translate(191.0,127.4) scale(0.10000)" fill="currentColor"> <path d="M421 -636Q456 -636 488.5 -632.5Q521 -629 549.5 -622.5Q578 -616 601 -605Q609 -601 611.5 -597.0Q614 -593 615 -582L627 -450Q627 -447 622.0 -446.0Q617 -445 615 -449Q589 -530 538.0 -573.5Q487 -617 410 -617Q336 -617 279.0 -580.5Q222 -544 190.0 -476.5Q158 -409 158 -316Q158 -248 177.5 -191.0Q197 -134 232.5 -93.0Q268 -52 315.0 -29.5Q362 -7 418 -7Q493 -7 541.0 -46.0Q589 -85 625 -168Q626 -171 631.0 -170.0Q636 -169 636 -167L623 -48Q622 -36 619.5 -32.5Q617 -29 609 -25Q560 -5 513.0 3.5Q466 12 417 12Q310 12 227.0 -28.5Q144 -69 96.5 -142.5Q49 -216 49 -311Q49 -383 77.0 -443.0Q105 -503 155.5 -546.0Q206 -589 274.0 -612.5Q342 -636 421 -636Z"/><path d="M858.0 -271 851.0 -283Q889.0 -328 915.5 -352.5Q942.0 -377 960.0 -386.5Q978.0 -396 994.0 -396Q1015.0 -396 1036.5 -381.5Q1058.0 -367 1058.0 -345Q1058.0 -327 1047.0 -315.0Q1036.0 -303 1016.0 -303Q998.0 -303 988.0 -313.0Q978.0 -323 969.0 -332.0Q960.0 -341 944.0 -341Q936.0 -341 927.0 -336.5Q918.0 -332 902.0 -317.0Q886.0 -302 858.0 -271ZM744.0 0Q741.0 0 741.0 -6.0Q741.0 -12 744.0 -12Q778.0 -12 789.0 -26.0Q800.0 -40 800.0 -81V-272Q800.0 -304 793.0 -319.0Q786.0 -334 768.0 -334Q759.0 -334 746.0 -330.0Q733.0 -326 718.0 -319Q714.0 -318 711.5 -323.5Q709.0 -329 712.0 -330L843.0 -394Q848.0 -396 850.0 -396Q860.0 -396 870.5 -373.0Q881.0 -350 881.0 -306V-81Q881.0 -54 889.0 -38.5Q897.0 -23 917.0 -17.5Q937.0 -12 973.0 -12Q977.0 -12 977.0 -6.0Q977.0 0 973.0 0Q947.0 0 913.5 -1.0Q880.0 -2 841.0 -2Q814.0 -2 788.5 -1.0Q763.0 0 744.0 0Z"/><path d="M1314.0 12Q1251.0 12 1207.0 -15.0Q1163.0 -42 1140.5 -86.5Q1118.0 -131 1118.0 -181Q1118.0 -241 1147.0 -289.0Q1176.0 -337 1226.0 -366.0Q1276.0 -395 1339.0 -395Q1398.0 -395 1431.0 -367.0Q1464.0 -339 1464.0 -280Q1464.0 -267 1462.0 -259.0Q1460.0 -251 1453.0 -251H1371.0Q1374.0 -309 1357.5 -342.0Q1341.0 -375 1303.0 -375Q1258.0 -375 1232.5 -333.5Q1207.0 -292 1207.0 -223Q1207.0 -165 1225.0 -122.5Q1243.0 -80 1278.0 -56.0Q1313.0 -32 1364.0 -32Q1395.0 -32 1416.0 -40.5Q1437.0 -49 1461.0 -62Q1463.0 -64 1466.5 -60.0Q1470.0 -56 1468.0 -53Q1432.0 -18 1394.5 -3.0Q1357.0 12 1314.0 12ZM1178.0 -250 1177.0 -267 1399.0 -271V-251Z"/><path d="M1703.0 13Q1661.0 13 1625.0 -10.5Q1589.0 -34 1567.5 -77.0Q1546.0 -120 1546.0 -181Q1546.0 -240 1568.0 -281.5Q1590.0 -323 1624.5 -349.0Q1659.0 -375 1699.0 -387.0Q1739.0 -399 1775.0 -399Q1811.0 -399 1842.0 -389.0Q1873.0 -379 1898.0 -363L1879.0 -287Q1857.0 -330 1828.5 -352.5Q1800.0 -375 1756.0 -375Q1701.0 -375 1668.5 -336.5Q1636.0 -298 1636.0 -212Q1636.0 -155 1651.0 -114.5Q1666.0 -74 1693.0 -52.5Q1720.0 -31 1753.0 -31Q1794.0 -31 1826.0 -54.0Q1858.0 -77 1887.0 -109L1896.0 -101Q1875.0 -77 1846.5 -50.5Q1818.0 -24 1782.5 -5.5Q1747.0 13 1703.0 13ZM1940.0 -714V-114Q1940.0 -79 1947.0 -64.5Q1954.0 -50 1971.0 -50Q1979.0 -50 1990.5 -53.0Q2002.0 -56 2016.0 -62Q2019.0 -64 2022.0 -58.5Q2025.0 -53 2022.0 -51L1894.0 11Q1891.0 12 1888.0 12Q1877.0 12 1868.0 -12.0Q1859.0 -36 1859.0 -82V-592Q1859.0 -626 1853.0 -642.0Q1847.0 -658 1829.0 -658Q1821.0 -658 1811.0 -654.5Q1801.0 -651 1789.0 -646Q1785.0 -644 1782.0 -650.0Q1779.0 -656 1782.0 -657L1922.0 -724Q1924.0 -725 1926.0 -725Q1930.0 -725 1935.0 -721.0Q1940.0 -717 1940.0 -714Z"/><path d="M2088.0 0Q2085.0 0 2085.0 -6.0Q2085.0 -12 2088.0 -12Q2122.0 -12 2133.5 -26.0Q2145.0 -40 2145.0 -81V-263Q2145.0 -297 2138.0 -312.5Q2131.0 -328 2114.0 -328Q2106.0 -328 2096.0 -325.0Q2086.0 -322 2074.0 -316Q2070.0 -315 2067.5 -321.0Q2065.0 -327 2068.0 -328L2212.0 -395Q2214.0 -396 2215.0 -396Q2219.0 -396 2223.5 -391.5Q2228.0 -387 2228.0 -384Q2228.0 -373 2227.0 -344.0Q2226.0 -315 2226.0 -264V-81Q2226.0 -40 2237.5 -26.0Q2249.0 -12 2283.0 -12Q2286.0 -12 2286.0 -6.0Q2286.0 0 2283.0 0Q2263.0 0 2238.0 -1.0Q2213.0 -2 2185.0 -2Q2158.0 -2 2132.5 -1.0Q2107.0 0 2088.0 0ZM2180.0 -501Q2154.0 -501 2139.5 -515.0Q2125.0 -529 2125.0 -555Q2125.0 -579 2139.5 -593.0Q2154.0 -607 2180.0 -607Q2205.0 -607 2218.5 -593.0Q2232.0 -579 2232.0 -555Q2232.0 -501 2180.0 -501Z"/><path d="M2515.0 12Q2491.0 12 2467.5 4.0Q2444.0 -4 2428.5 -23.0Q2413.0 -42 2413.0 -77V-303Q2413.0 -325 2408.5 -337.0Q2404.0 -349 2393.0 -353.5Q2382.0 -358 2362.0 -358Q2358.0 -358 2358.0 -366.0Q2358.0 -374 2362.0 -374Q2409.0 -376 2438.5 -396.5Q2468.0 -417 2480.0 -455Q2481.0 -459 2488.0 -459.0Q2495.0 -459 2495.0 -455V-110Q2495.0 -69 2515.5 -51.0Q2536.0 -33 2569.0 -33Q2593.0 -33 2613.5 -42.5Q2634.0 -52 2648.0 -63Q2651.0 -65 2655.0 -60.5Q2659.0 -56 2655.0 -53Q2618.0 -19 2585.5 -3.5Q2553.0 12 2515.0 12ZM2624.0 -336Q2584.0 -345 2546.5 -348.5Q2509.0 -352 2466.0 -352V-376Q2507.0 -376 2545.5 -379.0Q2584.0 -382 2628.0 -386Q2630.0 -386 2632.5 -379.0Q2635.0 -372 2635.0 -362Q2635.0 -353 2631.5 -344.0Q2628.0 -335 2624.0 -336Z"/><path d="M2851.0 -518Q2851.0 -479 2871.0 -450.5Q2891.0 -422 2922.5 -399.0Q2954.0 -376 2989.0 -354Q3027.0 -331 3061.5 -305.0Q3096.0 -279 3118.5 -245.5Q3141.0 -212 3141.0 -164Q3141.0 -112 3114.0 -72.5Q3087.0 -33 3039.5 -10.5Q2992.0 12 2928.0 12Q2901.0 12 2871.5 7.0Q2842.0 2 2816.5 -7.0Q2791.0 -16 2775.0 -26Q2771.0 -29 2768.5 -33.0Q2766.0 -37 2765.0 -45L2759.0 -196Q2758.0 -201 2763.5 -201.5Q2769.0 -202 2770.0 -198Q2782.0 -168 2798.5 -134.5Q2815.0 -101 2837.0 -73.0Q2859.0 -45 2887.5 -27.5Q2916.0 -10 2953.0 -10Q2979.0 -10 3002.0 -19.0Q3025.0 -28 3040.0 -50.5Q3055.0 -73 3055.0 -112Q3055.0 -159 3033.5 -192.5Q3012.0 -226 2979.0 -251.0Q2946.0 -276 2910.0 -298Q2875.0 -321 2843.0 -345.0Q2811.0 -369 2790.5 -400.5Q2770.0 -432 2770.0 -477Q2770.0 -532 2800.0 -567.0Q2830.0 -602 2876.5 -619.0Q2923.0 -636 2972.0 -636Q3005.0 -636 3039.0 -630.0Q3073.0 -624 3097.0 -613Q3106.0 -610 3109.0 -605.0Q3112.0 -600 3112.0 -594L3114.0 -459Q3114.0 -455 3109.5 -454.0Q3105.0 -453 3103.0 -456Q3098.0 -471 3088.0 -497.5Q3078.0 -524 3060.0 -551.0Q3042.0 -578 3015.0 -597.0Q2988.0 -616 2949.0 -616Q2919.0 -616 2897.0 -604.0Q2875.0 -592 2863.0 -570.5Q2851.0 -549 2851.0 -518Z"/><path d="M3669.0 -1 3520.0 -303Q3499.0 -347 3486.5 -360.5Q3474.0 -374 3455.0 -374Q3453.0 -374 3453.0 -380.0Q3453.0 -386 3455.0 -386Q3470.0 -386 3488.5 -385.0Q3507.0 -384 3535.0 -384Q3571.0 -384 3596.5 -385.0Q3622.0 -386 3644.0 -386Q3646.0 -386 3646.0 -380.0Q3646.0 -374 3644.0 -374Q3617.0 -374 3602.5 -364.5Q3588.0 -355 3598.0 -335L3720.0 -94L3678.0 -22L3789.0 -292Q3805.0 -332 3788.0 -353.0Q3771.0 -374 3728.0 -374Q3725.0 -374 3725.0 -380.0Q3725.0 -386 3728.0 -386Q3751.0 -386 3772.5 -385.0Q3794.0 -384 3828.0 -384Q3852.0 -384 3866.5 -385.0Q3881.0 -386 3902.0 -386Q3905.0 -386 3905.0 -380.0Q3905.0 -374 3902.0 -374Q3875.0 -374 3854.5 -354.5Q3834.0 -335 3814.0 -290L3691.0 -1Q3690.0 3 3680.5 3.0Q3671.0 3 3669.0 -1ZM3426.0 -1 3278.0 -303Q3256.0 -348 3241.0 -361.0Q3226.0 -374 3205.0 -374Q3202.0 -374 3202.0 -380.0Q3202.0 -386 3205.0 -386Q3221.0 -386 3241.0 -385.0Q3261.0 -384 3292.0 -384Q3327.0 -384 3353.0 -385.0Q3379.0 -386 3401.0 -386Q3404.0 -386 3404.0 -380.0Q3404.0 -374 3401.0 -374Q3374.0 -374 3357.5 -366.0Q3341.0 -358 3353.0 -335L3479.0 -94L3435.0 -22L3544.0 -285L3568.0 -280L3448.0 -1Q3447.0 3 3437.5 3.0Q3428.0 3 3426.0 -1Z"/><path d="M4219.0 6Q4215.0 8 4210.0 8Q4194.0 8 4178.0 -15.0Q4162.0 -38 4162.0 -82V-258Q4162.0 -321 4149.5 -349.0Q4137.0 -377 4110.0 -377Q4085.0 -377 4071.5 -362.5Q4058.0 -348 4052.0 -329.5Q4046.0 -311 4045.0 -298Q4042.0 -273 4029.5 -260.0Q4017.0 -247 3994.0 -247Q3971.0 -247 3961.0 -257.5Q3951.0 -268 3951.0 -282Q3951.0 -304 3971.5 -324.5Q3992.0 -345 4023.5 -361.0Q4055.0 -377 4089.0 -386.5Q4123.0 -396 4149.0 -396Q4190.0 -396 4216.5 -370.0Q4243.0 -344 4243.0 -288V-108Q4243.0 -77 4253.0 -61.0Q4263.0 -45 4282.0 -45Q4298.0 -45 4318.0 -54Q4323.0 -56 4325.0 -50.5Q4327.0 -45 4322.0 -43ZM4031.0 7Q3989.0 7 3968.5 -13.0Q3948.0 -33 3948.0 -64Q3948.0 -92 3963.0 -109.5Q3978.0 -127 4005.0 -138.5Q4032.0 -150 4065.0 -162L4172.0 -202L4175.0 -187L4102.0 -156Q4090.0 -152 4076.0 -144.5Q4062.0 -137 4052.5 -125.0Q4043.0 -113 4043.0 -93Q4043.0 -69 4059.0 -54.5Q4075.0 -40 4095.0 -40Q4104.0 -40 4113.0 -42.5Q4122.0 -45 4134.0 -53L4188.0 -89L4189.0 -74L4118.0 -24Q4095.0 -8 4075.5 -0.5Q4056.0 7 4031.0 7Z"/><path d="M4652.0 0Q4649.0 0 4649.0 -6.0Q4649.0 -12 4652.0 -12Q4686.0 -12 4697.0 -26.0Q4708.0 -40 4708.0 -81V-231Q4708.0 -287 4687.5 -313.5Q4667.0 -340 4623.0 -340Q4591.0 -340 4557.5 -322.5Q4524.0 -305 4502.0 -274L4497.0 -286Q4536.0 -339 4579.5 -368.5Q4623.0 -398 4673.0 -398Q4729.0 -398 4759.0 -364.5Q4789.0 -331 4789.0 -274V-81Q4789.0 -40 4800.5 -26.0Q4812.0 -12 4846.0 -12Q4849.0 -12 4849.0 -6.0Q4849.0 0 4846.0 0Q4827.0 0 4802.0 -1.0Q4777.0 -2 4749.0 -2Q4722.0 -2 4696.5 -1.0Q4671.0 0 4652.0 0ZM4383.0 0Q4380.0 0 4380.0 -6.0Q4380.0 -12 4383.0 -12Q4417.0 -12 4428.0 -26.0Q4439.0 -40 4439.0 -81V-272Q4439.0 -304 4432.0 -319.0Q4425.0 -334 4407.0 -334Q4398.0 -334 4385.0 -330.0Q4372.0 -326 4357.0 -319Q4353.0 -318 4350.5 -323.5Q4348.0 -329 4351.0 -330L4482.0 -394Q4487.0 -396 4489.0 -396Q4499.0 -396 4509.5 -373.0Q4520.0 -350 4520.0 -306V-81Q4520.0 -40 4531.5 -26.0Q4543.0 -12 4577.0 -12Q4580.0 -12 4580.0 -6.0Q4580.0 0 4577.0 0Q4558.0 0 4533.0 -1.0Q4508.0 -2 4480.0 -2Q4453.0 -2 4427.5 -1.0Q4402.0 0 4383.0 0Z"/> </g> </svg></a>
+    <button class="menu" id="menuToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+    <nav class="primary" id="primaryNav" aria-label="Primary">
+      <a href="#how-it-works" data-page="how-it-works">How it works</a>
+      <a href="#commercial-diligence" data-page="commercial-diligence">Commercial diligence</a>
+      <a href="#samples" data-page="samples">Samples</a>
+      <a href="#security" data-page="security">Security</a>
+      <a href="#ways-to-work" data-page="ways-to-work">Ways to work</a>
+      <a class="btn btn-gold" href="#pilot" data-page="pilot">Start a pilot <span class="arr">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================ HOME ============================ -->
+<div class="page" id="page-home" data-title="CreditSwan · We build your muscle. We do not rent you ours.">
+  <section class="hero">
+    <svg class="watermark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 30c0-9 6-16 15-16 4 0 7 1 9 4-2-1-4-1-6 0 3 0 5 2 6 5-4-2-8-1-11 2-3 3-8 4-13 5z" fill="currentColor"/></svg>
+    <div class="wrap">
+      <div>
+        <div class="eyebrow label rv">For private-credit lenders and consumer PE</div>
+        <h1 class="rv" style="--i:1">We build your muscle.<span class="l2">We do not rent you ours.</span></h1>
+        <p class="sub rv" style="--i:2">Commercial diligence that doesn't stop at close.</p>
+        <dl class="story rv" style="--i:3">
+          <div><dt>Who</dt><dd>Direct lenders, BDCs and consumer PE, on every borrower from first look to final payment.</dd></div>
+          <div><dt>Why</dt><dd>The package is the borrower's story. Covenant EBITDA drifts from the agreement, and the thesis drifts from the market.</dd></div>
+          <div><dt>Why us</dt><dd><b>40 commercial angles</b> tested against outside evidence, and every reported figure rebuilt to your credit agreement. Your analyst signs.</dd></div>
+          <div><dt>How</dt><dd>Inside your own Microsoft 365, nothing copied to a vendor cloud.
+            <span class="jobs3"><a href="#how-it-works/job1"><i>Before you lend</i>Diligence File</a><a href="#how-it-works/job2"><i>Every month</i>Package check</a><a href="#how-it-works/job3"><i>Every week</i>Weekly watch</a></span></dd></div>
+          <div><dt>Your way</dt><dd><a href="#ways-to-work">Run it yourself</a>, with a named engineer if you want one. Or <a href="#ways-to-work">let us run it with you</a>.</dd></div>
+          <div><dt>Proof</dt><dd>A full <a href="#samples/file">Diligence File</a> and a live <a href="#samples/m365">Microsoft 365 demo</a>, open with a work email.</dd></div>
+        </dl>
+        <div class="cta-row rv" style="--i:4">
+          <a class="btn btn-gold" href="#samples">See the samples <span class="arr">→</span></a>
+          <a class="btn btn-line" href="#pilot">Start with three borrowers</a>
+        </div>
+      </div>
+
+      <div class="cdv rv" style="--i:2" data-anim aria-label="Synthetic examples of the commercial diligence areas tested on every deal">
+        <div class="cov-top"><span class="label">Commercial diligence · 8 of 40 angles</span><span class="syn">Synthetic</span></div>
+        <div class="cdv-title">Forty questions the package can't answer.</div>
+        <div class="cdv-grid">
+          <div class="cdt"><div class="cdt-h"><span>Foot traffic</span><i class="v-neg" title="Contradicted"></i></div><svg viewBox="0 0 200 42" aria-hidden="true"><line x1="0" y1="22" x2="200" y2="22" class="base"/><path class="draw pk" style="--len:260;--i:1" d="M0 15 L25 15 L50 16 L75 16 L100 17 L125 18 L150 19 L175 19 L200 20"/><path class="draw ln" style="--len:260;--i:2" d="M0 12 L25 12 L50 15 L75 15 L100 19 L125 23 L150 27 L175 30 L200 34"/><circle class="pop dot" style="--i:4" cx="200" cy="34" r="2.8"/></svg><p>Same-site visits <b>−4.1%</b> a year; peers <b>−1.6%</b></p></div>
+          <div class="cdt"><div class="cdt-h"><span>Marketing</span><i class="v-part" title="Partly supported"></i></div><svg viewBox="0 0 200 42" aria-hidden="true"><rect class="growy org" style="--i:0" x="2" y="11" width="17" height="30"/><rect class="growy paid" style="--i:1" x="2" y="4" width="17" height="7"/><rect class="growy org" style="--i:1" x="27" y="12" width="17" height="29"/><rect class="growy paid" style="--i:2" x="27" y="4" width="17" height="8"/><rect class="growy org" style="--i:2" x="52" y="14" width="17" height="27"/><rect class="growy paid" style="--i:3" x="52" y="4" width="17" height="10"/><rect class="growy org" style="--i:3" x="77" y="16" width="17" height="25"/><rect class="growy paid" style="--i:4" x="77" y="4" width="17" height="12"/><rect class="growy org" style="--i:4" x="102" y="18" width="17" height="23"/><rect class="growy paid" style="--i:5" x="102" y="4" width="17" height="14"/><rect class="growy org" style="--i:5" x="127" y="20" width="17" height="21"/><rect class="growy paid" style="--i:6" x="127" y="4" width="17" height="16"/><rect class="growy org" style="--i:6" x="152" y="22" width="17" height="19"/><rect class="growy paid" style="--i:7" x="152" y="4" width="17" height="18"/><rect class="growy org" style="--i:7" x="177" y="23" width="17" height="18"/><rect class="growy paid" style="--i:8" x="177" y="3" width="17" height="20"/></svg><p>Paid share of new clients <b>19% → 44%</b></p></div>
+          <div class="cdt"><div class="cdt-h"><span>Pricing</span><i class="v-ok" title="Supported"></i></div><svg viewBox="0 0 200 42" aria-hidden="true"><path class="draw pk" style="--len:260;--i:1" d="M0 38 C50 32, 100 24, 200 9"/><path class="draw ok2" style="--len:260;--i:2" d="M0 38 C50 31, 100 21, 200 5"/><circle class="pop dot ok" style="--i:4" cx="200" cy="5" r="2.8"/></svg><p>Ticket <b>+27.4%</b> against category CPI <b>+24.9%</b></p></div>
+          <div class="cdt"><div class="cdt-h"><span>Customer file</span><i class="v-neg" title="Contradicted"></i></div><svg viewBox="0 0 200 42" aria-hidden="true"><path class="draw pk2" style="--len:260;--i:1" d="M0 4 C50 9, 100 12, 200 14"/><path class="draw pk" style="--len:260;--i:2" d="M0 4 C50 11, 100 15, 200 18"/><path class="draw ln" style="--len:260;--i:3" d="M0 4 C50 18, 100 25, 200 30"/><circle class="pop dot" style="--i:5" cx="200" cy="30" r="2.8"/></svg><p>Newest cohort keeps <b>66%</b> at a year, not <b>81%</b></p></div>
+          <div class="cdt"><div class="cdt-h"><span>Labor</span><i class="v-neg" title="Contradicted"></i></div><svg viewBox="0 0 200 42" aria-hidden="true"><rect class="growy peer" style="--i:0" x="2" y="8" width="15" height="33"/><rect class="growy peer" style="--i:1" x="24" y="10" width="15" height="31"/><rect class="growy peer" style="--i:2" x="46" y="11" width="15" height="30"/><rect class="growy peer" style="--i:3" x="68" y="13" width="15" height="28"/><rect class="growy peer" style="--i:4" x="90" y="14" width="15" height="27"/><rect class="growy peer" style="--i:5" x="112" y="15" width="15" height="26"/><rect class="growy peer" style="--i:6" x="134" y="16" width="15" height="25"/><rect class="growy peer" style="--i:7" x="156" y="17" width="15" height="24"/><rect class="growy us" style="--i:8" x="178" y="25" width="15" height="16"/></svg><p>Employer rating <b>2.3</b>, lowest of nine</p></div>
+          <div class="cdt"><div class="cdt-h"><span>Supply chain</span><i class="v-part" title="Partly supported"></i></div><svg viewBox="0 0 200 42" aria-hidden="true"><g transform="translate(21 21)"><circle r="16" class="ring"/><circle r="16" class="arc" transform="rotate(-90)"/></g><rect x="56" y="8" width="144" height="5" class="track"/><rect class="grow fill" style="--i:1" x="56" y="8" width="144" height="5"/><rect x="56" y="19" width="144" height="5" class="track"/><rect class="grow peerf" style="--i:2" x="56" y="19" width="60" height="5"/><rect x="56" y="30" width="144" height="5" class="track"/><rect class="grow peerf" style="--i:3" x="56" y="30" width="38" height="5"/></svg><p>One distributor, <b>53%</b> of supply spend</p></div>
+          <div class="cdt"><div class="cdt-h"><span>Unit economics</span><i class="v-part" title="Partly supported"></i></div><svg viewBox="0 0 200 42" aria-hidden="true"><rect x="0" y="16" width="200" height="7" class="track"/><rect class="grow fill" style="--i:1" x="0" y="16" width="108" height="7"/><line x1="142" y1="8" x2="142" y2="31" class="mark"/><text x="142" y="40" class="vs" text-anchor="middle">PEERS</text></svg><p>Four-wall margin <b>13%</b>; peers <b>17%</b></p></div>
+          <div class="cdt"><div class="cdt-h"><span>Competition</span><i class="v-neg" title="Contradicted"></i></div><svg viewBox="0 0 200 42" aria-hidden="true"><circle cx="100" cy="21" r="19" class="ring tz"/><circle cx="100" cy="21" r="3.4" class="dot ok"/><circle class="pop dot" style="--i:3" cx="88" cy="11" r="2.6"/><circle class="pop dot" style="--i:4" cx="113" cy="14" r="2.6"/><circle class="pop dot" style="--i:5" cx="110" cy="32" r="2.6"/><circle class="pop old" style="--i:1" cx="14" cy="9" r="2"/><circle class="pop old" style="--i:2" cx="36" cy="26" r="2"/><circle class="pop old" style="--i:3" cx="58" cy="8" r="2"/><circle class="pop old" style="--i:4" cx="150" cy="12" r="2"/><circle class="pop old" style="--i:5" cx="172" cy="30" r="2"/><circle class="pop old" style="--i:6" cx="190" cy="14" r="2"/><circle class="pop old" style="--i:7" cx="62" cy="36" r="2"/><circle class="pop old" style="--i:8" cx="140" cy="36" r="2"/></svg><p><b>3</b> rivals opened inside the trade area</p></div>
+        </div>
+        <div class="cdv-foot"><span><i class="v-neg"></i>Contradicted</span><span><i class="v-part"></i>Partly supported</span><span><i class="v-ok"></i>Supported</span></div>
+        <div class="cdv-more"><span class="label">Also on every deal</span><div class="marq" aria-hidden="true"><div id="angMarq"></div></div><a href="#commercial-diligence/angles">All 40 →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="what">
+    <div class="wrap">
+      <p class="what-line rv"><span class="label gold">What we do</span>CreditSwan runs <b>commercial diligence on every borrower</b>: before you lend, and every month after, inside your own Microsoft&nbsp;365.</p>
+      <div class="what-jobs">
+        <a class="rv" style="--i:1" href="#how-it-works/job1"><span class="mono">01 · Before you lend</span><b>The Diligence File</b><span>Sector, unit economics, multiples, rivals and a ruling on every part of the thesis.</span></a>
+        <a class="rv" style="--i:2" href="#how-it-works/job2"><span class="mono">02 · Every month</span><b>The package check</b><span>Each reported figure rebuilt to your agreement's definitions, then signed by your analyst.</span></a>
+        <a class="rv" style="--i:3" href="#how-it-works/job3"><span class="mono">03 · Every week</span><b>The weekly watch</b><span>Foot traffic, card spend, demand and reviews held against the baseline set at close.</span></a>
+      </div>
+      <div class="evid rv" style="--i:4">
+        <span class="label gold">Tested against outside evidence</span>
+        <ul><li>Foot traffic</li><li>Card spend</li><li>Search demand</li><li>Customer and employer reviews</li><li>Job postings</li><li>Local prices</li><li>Census trade areas</li><li>Public price and wage series</li><li>SEC filings</li><li>Regulatory and court records</li></ul>
+        <p>Licensed and public sources, read inside your Microsoft 365. Every figure carries its source and the date it was read.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band tight teal">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Ways to work</span><h2 class="rv">Run it yourself. Or let us run it with you.</h2></div>
+        <p class="lede rv" style="--i:1">Same system, same standard, same signature at the bottom: your analyst's. The only question is who does the daily lifting. Both start with the same 90-day pilot.</p>
+      </div>
+      <div class="ladder" id="ladderHome"></div>
+      <p style="margin-top:28px"><a class="tlink" href="#ways-to-work">Who does what at each level →</a></p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">What we do</span><h2 class="rv">Every credit raises two questions. We answer both.</h2></div>
+        <p class="lede rv" style="--i:1">A quality of earnings report tells you whether last year's numbers hold. Your committee also wants to know whether next year's will. Most lenders buy that second answer for their biggest deals. We put it in every one.</p>
+      </div>
+      <div class="twoq">
+        <div class="rv">
+          <span class="label">The numbers</span>
+          <h3>Do they hold?</h3>
+          <p class="muted">Every figure in the deal room and every monthly package, rebuilt in code from the schedules underneath. Your agreement's definitions, not the borrower's presentation.</p>
+          <ul>
+            <li><span class="mono">01</span>Add-backs tested clause by clause</li>
+            <li><span class="mono">02</span>Leverage, coverage and headroom recomputed, never copied</li>
+            <li><span class="mono">03</span>One verdict per figure, traced to page and clause, signed by your analyst</li>
+          </ul>
+        </div>
+        <div class="rv" style="--i:1">
+          <span class="label gold">The story · our signature</span>
+          <h3>Will it last?</h3>
+          <p class="muted">Commercial diligence on every deal. Unit economics against the sector. Price and multiple against comparable deals. Demand against what customers actually do. Position against named rivals.</p>
+          <ul>
+            <li><span class="mono">01</span>The thesis broken into claims a committee can rule on</li>
+            <li><span class="mono">02</span>Foot traffic, card panels, reviews, census and price data</li>
+            <li><span class="mono">03</span>The same signals watched every week after close</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cs-pl rv" aria-label="CreditSwan financial and commercial diligence pipeline">
+      <div class="csp-pipeline">
+      <div class="csp-list csp-left">
+        <span class="csp-head">Financial diligence</span>
+        <span>Revenue quality</span>
+        <span>Quality of earnings</span>
+        <span>Unit economics</span>
+        <span>Cash conversion</span>
+        <span>Working capital</span>
+        <span>Capital structure</span>
+        <span>Covenants &amp; protections</span>
+        <span>Debt capacity</span>
+      </div>
+      <div class="csp-flow" aria-hidden="true">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+          <g fill="none" stroke="#16211f" stroke-width="1.25">
+            <path d="M0 6 C55 6 75 50 98 50" stroke-opacity=".50"/>
+            <path d="M0 17 C55 17 75 50 98 50" stroke-opacity=".35"/>
+            <path d="M0 28 C55 28 75 50 98 50" stroke-opacity=".50"/>
+            <path d="M0 39 C55 39 75 50 98 50" stroke-opacity=".35"/>
+            <path d="M0 61 C55 61 75 50 98 50" stroke-opacity=".50"/>
+            <path d="M0 72 C55 72 75 50 98 50" stroke-opacity=".35"/>
+            <path d="M0 83 C55 83 75 50 98 50" stroke-opacity=".50"/>
+            <path d="M0 94 C55 94 75 50 98 50" stroke-opacity=".35"/>
+          </g>
+        </svg>
+      </div>
+      <div class="csp-core">
+        <strong>One decision-grade answer.</strong>
+        <small>Traced · Auditable · In days</small>
+      </div>
+      <div class="csp-flow" aria-hidden="true">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+          <g fill="none" stroke="#1c4a45" stroke-width="1.25">
+            <path d="M100 6 C45 6 25 50 2 50" stroke-opacity=".55"/>
+            <path d="M100 17 C45 17 25 50 2 50" stroke-opacity=".40"/>
+            <path d="M100 28 C45 28 25 50 2 50" stroke-opacity=".55"/>
+            <path d="M100 39 C45 39 25 50 2 50" stroke-opacity=".40"/>
+            <path d="M100 61 C45 61 25 50 2 50" stroke-opacity=".55"/>
+            <path d="M100 72 C45 72 25 50 2 50" stroke-opacity=".40"/>
+            <path d="M100 83 C45 83 25 50 2 50" stroke-opacity=".55"/>
+            <path d="M100 94 C45 94 25 50 2 50" stroke-opacity=".40"/>
+          </g>
+        </svg>
+      </div>
+      <div class="csp-list csp-right">
+        <span class="csp-head">Commercial diligence</span>
+        <span>Customer transactions</span>
+        <span>Marketing &amp; digital</span>
+        <span>Retail &amp; service centers</span>
+        <span>Supply chain &amp; sourcing</span>
+        <span>Merchandising</span>
+        <span>Brand health</span>
+        <span>Weekly monitoring</span>
+        <span>Competitive research</span>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section class="band tint">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Samples</span><h2 class="rv">Don't take our word for it. Open the work.</h2></div>
+        <p class="lede rv" style="--i:1">A full Diligence File on three invented veterinary care deals, and CreditSwan running inside a lender's Microsoft 365. Both are synthetic, and both open in full with a work email.</p>
+      </div>
+      <div class="pv-grid">
+        <div class="pv rv"><div class="pv-img" aria-hidden="true"><img src="img/preview-diligence-file.jpg" alt="" loading="lazy" width="1280" height="800"></div><div class="pv-cap"><span class="label">Sample · synthetic</span><h3>The Diligence File</h3><p>A ruling on every part of the thesis, a benchmark of comparable operators, every exhibit sourced. Interactive, PDF and Excel.</p><a class="tlink" href="#samples/file">Open it with your work email →</a></div></div>
+        <div class="pv rv" style="--i:1"><div class="pv-img" aria-hidden="true"><img src="img/preview-microsoft-365.jpg" alt="" loading="lazy" width="1280" height="800"></div><div class="pv-cap"><span class="label">Demo · synthetic</span><h3>Inside your Microsoft 365</h3><p>Click through Outlook, Teams, SharePoint and Excel the way your analysts would use it, with a guided tour.</p><a class="tlink" href="#samples/m365">Open it with your work email →</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">The life of a loan</span><h2 class="rv">One system, from first look to final payment</h2></div>
+        <p class="lede rv" style="--i:1">The Diligence File sets the baseline. The monthly check and the weekly watch hold the borrower to it. Loans already on your book join one at a time.</p>
+      </div>
+      <div class="life" data-anim>
+        <svg viewBox="0 0 1200 250" role="img" aria-label="Loan lifecycle: Diligence File before close, monthly package checks and weekly watch after close, back-book loans added">
+          <line x1="20" y1="130" x2="1180" y2="130" stroke="rgba(22,33,31,.18)"/>
+          <rect class="grow" x="20" y="116" width="300" height="28" fill="#A98543" style="--i:0"/>
+          <line x1="330" y1="70" x2="330" y2="200" stroke="#16211F" stroke-dasharray="3 4"/>
+          <text x="338" y="76">Close · baseline set</text>
+          <g class="pop" style="--i:2">
+            <rect x="360" y="150" width="2" height="18" fill="#1C4A45"/><rect x="420" y="150" width="2" height="18" fill="#1C4A45"/><rect x="480" y="150" width="2" height="18" fill="#1C4A45"/><rect x="540" y="150" width="2" height="18" fill="#1C4A45"/><rect x="600" y="150" width="2" height="18" fill="#1C4A45"/><rect x="660" y="150" width="2" height="18" fill="#1C4A45"/><rect x="720" y="150" width="2" height="18" fill="#1C4A45"/><rect x="780" y="150" width="2" height="18" fill="#1C4A45"/><rect x="840" y="150" width="2" height="18" fill="#1C4A45"/><rect x="900" y="150" width="2" height="18" fill="#1C4A45"/><rect x="960" y="150" width="2" height="18" fill="#1C4A45"/><rect x="1020" y="150" width="2" height="18" fill="#1C4A45"/><rect x="1080" y="150" width="2" height="18" fill="#1C4A45"/><rect x="1140" y="150" width="2" height="18" fill="#1C4A45"/>
+          </g>
+          <path class="draw" d="M340 104 C 380 96, 400 110, 430 100 S 480 92, 510 104 S 560 112, 590 98 S 640 90, 670 102 S 720 110, 750 96 S 800 88, 830 104 S 880 116, 910 100 S 960 92, 990 106 S 1040 112, 1070 98 S 1120 92, 1180 102" fill="none" stroke="#1C4A45" stroke-width="2" style="--len:900;--i:3"/>
+          <circle class="pop" cx="990" cy="106" r="6" fill="#A98543" style="--i:6"/>
+          <text x="20" y="100" class="tl">Diligence File</text><text x="20" y="176">Before you lend · numbers and story</text>
+          <text x="560" y="62" class="tl">Weekly watch</text><text x="560" y="80">Outside signals against the baseline</text>
+          <text x="560" y="206" class="tl">Package check, every month</text><text x="560" y="226">Rebuilt with the agreement's definitions</text>
+          <text x="1000" y="140" style="fill:#8A6A2F">Exception to Teams</text>
+          <g class="pop" style="--i:8"><rect x="1060" y="10" width="120" height="30" fill="none" stroke="#16211F"/><text x="1072" y="30" style="fill:#16211F">+ Back-book loan</text></g>
+        </svg>
+        <div class="life-mob">
+          <ol class="qlist">
+            <li><span class="mono">01</span><div><b>Diligence File, before you lend</b><span>Every claim tested. The baseline the loan is held to.</span></div></li>
+            <li><span class="mono">02</span><div><b>Package check, every month</b><span>Each figure rebuilt with your agreement's definitions.</span></div></li>
+            <li><span class="mono">03</span><div><b>Weekly watch</b><span>Outside signals against the baseline. Teams only on exceptions.</span></div></li>
+            <li><span class="mono">04</span><div><b>Back-book adds</b><span>Loans you already hold, one at a time.</span></div></li>
+          </ol>
+        </div>
+      </div>
+      <div class="grid g4 ruled" style="margin-top:40px">
+        <div class="cell rv"><span class="label">01 · Before you lend</span><h3>Diligence File</h3><p>Every claim in the deal room, tested before you commit. Interactive for the deal team, a PDF for committee, the tables in Excel.</p></div>
+        <div class="cell rv" style="--i:1"><span class="label">02 · Every month</span><h3>Package check</h3><p>Forward the package. The checked reply lands in the same thread, and the covenant workbook updates itself.</p></div>
+        <div class="cell rv" style="--i:2"><span class="label">03 · Every week</span><h3>Weekly watch</h3><p>Foot traffic, digital demand and reviews, read against the baseline. Silent until something moves.</p></div>
+        <div class="cell rv" style="--i:3"><span class="label">04 · Your book</span><h3>Back-book adds</h3><p>Bring in loans you already hold, one at a time, from the files you already have.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band ink">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Inside one Diligence File</span><h2 class="rv">This is what thorough looks like.</h2></div>
+        <p class="lede rv" style="--i:1">Our sample file covers three veterinary care deals for a fictional lender. The companies are invented. The depth is not.</p>
+      </div>
+      <div class="stats" data-anim>
+        <div class="rv"><span class="label">Source files read</span><span class="k" data-count="266">266</span><p>Across 13 deal-room folders, each one logged and cited</p></div>
+        <div class="rv" style="--i:1"><span class="label">Figures extracted</span><span class="k" data-count="59863">59,863</span><p>Each tagged as fact, claim, hypothesis or our own computation</p></div>
+        <div class="rv" style="--i:2"><span class="label">Public series</span><span class="k" data-count="134">134</span><p>Plus 366 public figures from 149 sources, each dated</p></div>
+        <div class="rv" style="--i:3"><span class="label">Thesis rulings</span><span class="k g" data-count="16">16</span><p>Four contradicted, seven partly supported, five waiting on evidence</p></div>
+      </div>
+      <div class="cta-row" style="margin-top:40px">
+        <a class="btn btn-gold" href="#commercial-diligence">How commercial diligence works <span class="arr">→</span></a>
+        <a class="btn btn-line" href="#samples">Open the sample file</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Security</span><h2 class="rv">It lives in your tenant. So does everything it learns.</h2></div>
+        <p class="lede rv" style="--i:1">CreditSwan installs in your own Microsoft 365 and Azure. Your identity, access and retention rules govern it. Models run through your Azure. Nothing is copied to ours.</p>
+      </div>
+      <div class="grid g4 ruled">
+        <div class="cell rv"><span class="label">Starts in</span><h3>Outlook</h3><p>Forward the package the way it arrived. The checked reply comes back in the same thread.</p></div>
+        <div class="cell rv" style="--i:1"><span class="label">Lives in</span><h3>SharePoint</h3><p>The portfolio view, every Diligence File and your deal history, as a graph you own.</p></div>
+        <div class="cell rv" style="--i:2"><span class="label">Updates</span><h3>Excel</h3><p>The covenant workbook stays current. Every figure traces to its page and clause.</p></div>
+        <div class="cell rv" style="--i:3"><span class="label">Speaks up in</span><h3>Teams</h3><p>Only on exceptions. It names the borrower and what moved.</p></div>
+      </div>
+      <div class="stats" style="margin-top:40px" data-anim>
+        <div><span class="label">New logins</span><span class="k" data-count="0">0</span><p>Your team stays in the tools it knows</p></div>
+        <div><span class="label">Seats to buy</span><span class="k" data-count="0">0</span><p>Priced per file and per borrower</p></div>
+        <div><span class="label">Copies in a vendor cloud</span><span class="k g" data-count="0">0</span><p>Your data stays where it is</p></div>
+        <div><span class="label">Verdicts signed</span><span class="k">100%</span><p>By your analyst, before anything goes out</p></div>
+      </div>
+      <p style="margin-top:28px"><a class="tlink" href="#security">What IT and counsel will ask →</a></p>
+    </div>
+  </section>
+
+  <section class="band teal">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">How we compare</span><h2 class="rv">Everyone reads the deal room. We check it.</h2></div>
+        <p class="lede rv" style="--i:1">The tools you already own each cover part of the job. Here is where each one stops. Ratings are our reading of each category's public positioning.</p>
+      </div>
+      <div class="mx-wrap"><table class="mx" id="matrix"></table></div>
+      <div class="legend"><span><i class="hb f"></i>Yes</span><span><i class="hb h"></i>Partly</span><span><i class="hb"></i>No</span></div>
+    </div>
+  </section>
+  <div data-cta></div>
+</div>
+
+<!-- ============================ HOW IT WORKS ============================ -->
+<div class="page" id="page-how-it-works" data-title="How it works · CreditSwan" hidden>
+  <section class="phead">
+    <div class="wrap">
+      <span class="label">How it works</span>
+      <h1>Four jobs. One system. Files you already have.</h1>
+      <p class="lede">Each job starts where your team already works and ends there too. Code does the arithmetic. AI reads and drafts. Your analyst signs. Borrowers are not asked for anything new.</p>
+      <div class="crumbs"><a href="#how-it-works/job1">Diligence File</a><a href="#how-it-works/job2">Package check</a><a href="#how-it-works/job3">Weekly watch</a><a href="#how-it-works/job4">Back-book adds</a><a href="#how-it-works/history">Ask your history</a></div>
+    </div>
+  </section>
+  <section class="band" style="padding-top:0">
+    <div class="wrap">
+      <div class="job" id="job1">
+        <div>
+          <span class="num">01 · BEFORE YOU LEND</span>
+          <h2>Diligence File</h2>
+          <p>Every financial and commercial claim in the deal room and the management deck gets tested. Financial claims are rebuilt from the schedules. Commercial claims go up against licensed outside data and your own past deals.</p>
+          <p>The thesis is split into parts. Each part gets one of four rulings: supported, partly supported, contradicted, or not enough evidence yet. The file then becomes the baseline the loan is held to.</p>
+          <div class="facts"><div><span class="label">Starts in</span><b>Your deal room, in SharePoint</b></div><div><span class="label">Lands as</span><b>Interactive, PDF and Excel</b></div><div><span class="label">Your analyst</span><b>Signs every ruling</b></div></div>
+          <p style="margin-top:22px"><a class="tlink" href="#samples">Open the sample file →</a></p>
+        </div>
+        <div class="card rv">
+          <div class="bar"><span class="dot"></span>Diligence File · Overview<span class="tag">Synthetic</span></div>
+          <div class="body">
+            <span class="label">Exhibit 1.04 · rulings by deal</span>
+            <div class="rgrid" id="miniGrid" style="margin-top:12px"></div>
+            <p class="faint" style="font-size:13px;margin-top:14px">Sixteen rulings across three theses. On the evidence supplied, not one held outright.</p>
+          </div>
+        </div>
+      </div>
+      <div class="job" id="job2">
+        <div>
+          <span class="num">02 · EVERY MONTH</span>
+          <h2>Package check</h2>
+          <p>The package arrives the way it always has. Your team forwards it to an intake mailbox inside your tenant. Code rebuilds each figure from the schedules and the deal-room baseline using your credit agreement's definitions, so covenant EBITDA follows the agreement, not the borrower's presentation of it.</p>
+          <p>Most lenders start here. It pays back from the first month, it works on loans you already hold, and the only new task is forwarding an email.</p>
+          <div class="facts"><div><span class="label">Starts in</span><b>Outlook, a forwarded package</b></div><div><span class="label">Lands in</span><b>Same thread, covenant workbook</b></div><div><span class="label">Your analyst</span><b>Signs before the reply goes</b></div></div>
+          <p style="margin-top:22px"><a class="tlink" href="#samples/monthly">Trace a checked package →</a></p>
+        </div>
+        <div class="cov rv" data-anim aria-label="Synthetic example: total net leverage reported at 3.4 times, checked at 3.9 times, against a 4.0 times limit">
+          <div class="cov-top"><span class="label">Project Juniper · August package</span><span class="syn">Synthetic</span></div>
+          <div class="cov-metric">Total net leverage</div>
+          <div class="cov-nums">
+            <div><span class="label faint">Borrower says</span><b class="was">3.4x</b></div>
+            <div class="arrow" aria-hidden="true">→</div>
+            <div><span class="label gold">We found</span><b class="now">3.9x</b></div>
+          </div>
+          <div class="track" aria-hidden="true">
+            <div class="scale"><span style="left:0">2.5x</span><span style="left:25%">3.0x</span><span style="left:50%">3.5x</span><span style="left:75%">4.0x</span><span style="left:100%">4.5x</span></div>
+            <div class="rail"><i class="room"></i><i class="limit"></i><i class="mk rep"></i><i class="mk chk"></i></div>
+            <div class="tags2"><span class="t-rep">Reported</span><span class="t-chk">Checked</span><span class="t-lim">Limit 4.0x</span></div>
+          </div>
+          <div class="cov-head"><span class="label">Covenant headroom</span><span class="mono"><s>15%</s> <b>2.5%</b></span></div>
+          <ol class="receipts">
+            <li><b class="mono">−$0.7m</b><span>Restructuring add-back above the 10% cap</span><em class="mono">cl. 1.1(c)</em></li>
+            <li><b class="mono">−$0.5m</b><span>Synergies with no identified action</span><em class="mono">cl. 1.1(c)</em></li>
+            <li><b class="mono">+3%</b><span>Same-site visits on foot traffic, not the +12% claimed</span><em class="mono">licensed data</em></li>
+          </ol>
+          <div class="cov-foot"><span>Signed · J. Analyst</span><span>Every line traced to page and clause</span></div>
+          <div class="cov-wb">
+            <div class="label" style="margin-bottom:6px">Excel · covenant workbook, updated</div>
+            <div class="mx-wrap"><table class="t">
+              <thead><tr><th>Test</th><th class="n">Limit</th><th class="n">Reported</th><th class="n">Checked</th><th class="n">Headroom</th></tr></thead>
+              <tbody>
+                <tr><td>Total net leverage</td><td class="n">4.0x</td><td class="n">3.4x</td><td class="n">3.9x</td><td class="n" style="color:var(--claret)">2.5%</td></tr>
+                <tr><td>Interest cover</td><td class="n">2.0x</td><td class="n">2.9x</td><td class="n">2.6x</td><td class="n">30%</td></tr>
+                <tr><td>Fixed charge cover</td><td class="n">1.2x</td><td class="n">1.6x</td><td class="n">1.4x</td><td class="n">17%</td></tr>
+                <tr><td>Minimum liquidity</td><td class="n">$1.0m</td><td class="n">$2.1m</td><td class="n">$2.1m</td><td class="n">110%</td></tr>
+              </tbody>
+            </table></div>
+            <div class="cov-foot" style="margin-top:8px"><span>Illustrative · Project Juniper</span><span>Clause 22.1 · Schedule 4</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="job" id="job3">
+        <div>
+          <span class="num">03 · EVERY WEEK</span>
+          <h2>Weekly watch</h2>
+          <p>Packages arrive monthly. Customers decide daily. Between packages, the watch reads foot traffic, digital demand and reviews for each borrower against the baseline set in its Diligence File.</p>
+          <p>It stays silent until something moves. Then it tells you what moved, by how much, and what to ask for.</p>
+          <div class="facts"><div><span class="label">Starts in</span><b>Licensed outside data</b></div><div><span class="label">Lands in</span><b>Teams, exceptions only</b></div><div><span class="label">Your analyst</span><b>Reviews every alert</b></div></div>
+          <p style="margin-top:22px"><a class="tlink" href="#samples/weekly">See a weekly alert →</a></p>
+        </div>
+        <div class="card rv chart" data-anim>
+          <div class="bar"><span class="dot"></span>Weekly watch · same-site visits<span class="tag">Illustrative</span></div>
+          <div class="body"><svg viewBox="0 0 480 190" id="watchMini"></svg></div>
+        </div>
+      </div>
+      <div class="job" id="job4">
+        <div>
+          <span class="num">04 · YOUR BOOK</span>
+          <h2>Back-book adds</h2>
+          <p>Your existing loans deserve the same scrutiny as your next one. Bring them in one at a time, from the deal rooms and packages you already hold. Each gets a confirmed baseline, the monthly check and the watch, in the same portfolio view.</p>
+          <p>The pilot starts here, on three of them.</p>
+          <div class="facts"><div><span class="label">Starts in</span><b>Loans you hold, in SharePoint</b></div><div><span class="label">Lands in</span><b>One portfolio view</b></div><div><span class="label">Your analyst</span><b>Confirms each baseline</b></div></div>
+        </div>
+        <div class="card rv">
+          <div class="bar"><span class="dot"></span>SharePoint · portfolio view<span class="tag">Synthetic</span></div>
+          <div class="body">
+            <table class="t">
+              <thead><tr><th>Borrower</th><th>Last package</th><th>Watch</th><th class="n">Open items</th></tr></thead>
+              <tbody>
+                <tr><td>Project Juniper</td><td><span class="v v-part">2 partly</span></td><td><span class="v v-part">Visits below band</span></td><td class="n">3</td></tr>
+                <tr><td>Project Alder</td><td><span class="v v-ok">All supported</span></td><td><span class="v v-ok">Quiet</span></td><td class="n">0</td></tr>
+                <tr><td>Project Kestrel</td><td><span class="v v-ok">All supported</span></td><td><span class="v v-ok">Quiet</span></td><td class="n">1</td></tr>
+                <tr><td>Project Linden <span class="syn" style="margin-left:6px">Added</span></td><td><span class="v v-ins">Baseline set</span></td><td><span class="v v-ok">Running</span></td><td class="n">0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="job" id="history">
+        <div>
+          <span class="num">ACROSS ALL FOUR</span>
+          <h2>Ask your history</h2>
+          <p>Your deal rooms and memos become a knowledge graph in your tenant, linked by sector, borrower and outcome. Ask about a past deal and the answer comes from your own memos, with citations. Every new Diligence File is benchmarked against the deals you have already seen.</p>
+        </div>
+        <div class="callout teal" style="margin-top:0">
+          <span class="label">When a credit needs more</span>
+          <p>The standard work runs on the deal room and the packages you already receive. When a credit calls for a closer look, a diagnostic can read the borrower's own sales, payments, ledger and bank records: read-only, with the borrower's consent, which we arrange.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band teal">
+    <div class="wrap">
+      <div class="head"><div><span class="label">Who we work with</span><h2>Built for the people who lend to operating companies, and the people who buy them</h2></div><p class="lede">Consumer products and services, commercial services, food and beverage. Two paid pilots are under way.</p></div>
+      <div class="grid g3 ruled">
+        <div class="cell"><span class="label">Direct lenders and BDCs</span><h3>Portfolio teams</h3><p>Every package and covenant test checked across a growing book, without growing the team.</p></div>
+        <div class="cell"><span class="label">Credit arms of asset managers</span><h3>Deal teams</h3><p>Commercial diligence on every credit, not only the big ones, beside the QoE you already buy.</p></div>
+        <div class="cell"><span class="label">Consumer-focused private equity</span><h3>Sponsors</h3><p>Demand, pricing and competitive position tested before the LOI, then watched after close.</p></div>
+      </div>
+    </div>
+  </section>
+  <div data-cta></div>
+</div>
+
+<!-- ============================ COMMERCIAL DILIGENCE ============================ -->
+<div class="page" id="page-commercial-diligence" data-title="Commercial diligence · CreditSwan" hidden>
+  <section class="phead ink">
+    <div class="wrap">
+      <span class="label">Our signature · commercial diligence</span>
+      <h1>The financials say what happened. Commercial diligence says whether it lasts.</h1>
+      <p class="lede">Most lenders buy commercial diligence for their biggest deals, once, before close. We build it into every Diligence File. We break the thesis into claims a committee can rule on, test each one against the deal room, licensed outside data and your own past deals, and keep watching after the money goes out.</p>
+      <div class="stats" style="margin-top:48px" data-anim>
+        <div><span class="label">Commercial angles</span><span class="k" data-count="40">40</span><p>From foot traffic to franchise health, chosen for each deal</p></div>
+        <div><span class="label">Industry groups</span><span class="k" data-count="5">5</span><p>Each with the angles its economics turn on</p></div>
+        <div><span class="label">Exhibits</span><span class="k" data-count="305">305</span><p>Each with its source, basis and assumptions</p></div>
+        <div><span class="label">Rulings that held outright</span><span class="k g" data-count="0">0</span><p>Out of sixteen, on the evidence supplied</p></div>
+      </div>
+      <p class="faint mono" style="font-size:10.5px;letter-spacing:1px;margin-top:16px;text-transform:uppercase">Counts from our synthetic veterinary care Diligence File. Companies and figures are invented.</p>
+    </div>
+  </section>
+
+  <section class="band" id="angles">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">The angles</span><h2 class="rv">Forty angles. We pick the ones your deal turns on.</h2></div>
+        <p class="lede rv" style="--i:1">Nineteen apply to almost every consumer and services credit. The rest depend on how the business makes its money: a brand selling online, a chain of service sites, a restaurant group, a contractor. Each angle ends in a finding a committee can use.</p>
+      </div>
+      <div class="ang-tabs" role="tablist" aria-label="Angles by industry" id="angTabs"></div>
+      <div class="ang-list" id="angList" aria-live="polite"></div>
+      <p class="faint" style="font-size:13px;margin-top:18px">Findings are synthetic, written to show the kind of answer each angle gives. No real company is described.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">What we test</span><h2 class="rv">Eight angles in depth, from our sample file.</h2></div>
+        <p class="lede rv" style="--i:1">Each one is something your committee will ask. Each finding carries its period, an evidence tag and a reference to the file, tab and cell it came from. The examples are real findings from our sample file.</p>
+      </div>
+      <div class="mods" id="mods"></div>
+    </div>
+  </section>
+
+  <section class="band teal">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">The thesis, ruled on</span><h2 class="rv">Your thesis, taken apart and tested claim by claim</h2></div>
+        <p class="lede rv" style="--i:1">We split each thesis into the parts that can be tested and rule on every part. Four verdicts, no adjectives. Tap a tile to see what holds, what doesn't, and what would change our mind.</p>
+      </div>
+      <div class="readings">
+        <div>
+          <div class="rgrid" id="bigGrid"></div>
+          <div class="rkey"><span><i style="background:var(--claret);border-color:var(--claret)"></i>Contradicted</span><span><i style="background:var(--gilt)"></i>Partly supported</span><span><i style="background:var(--gilt);box-shadow:inset 0 0 0 2px var(--teal)"></i>Leans supported</span><span><i style="background:repeating-linear-gradient(135deg,transparent 0 3px,rgba(22,33,31,.15) 3px 4px)"></i>Not enough evidence</span></div>
+          <div class="counts"><div><b>0</b><span>Supported</span></div><div><b>7</b><span>Partly</span></div><div><b style="color:var(--claret)">4</b><span>Contradicted</span></div><div><b>5</b><span>Not enough</span></div></div>
+        </div>
+        <div class="rpanel" id="rpanel" aria-live="polite"></div>
+      </div>
+      <p class="faint" style="font-size:13px;margin-top:18px">Synthetic: Deal A, Deal B and Deal C are invented, and so are their figures. A ruling is not an approval or rejection of a transaction.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Claims tested</span><h2 class="rv">Sometimes the seller is right. We say so.</h2></div>
+        <p class="lede rv" style="--i:1">Diligence is not a hunt for bad news. Two of these six claims reproduce from the company's own data. Four don't. The open circle is the claim. Gold is the evidence.</p>
+      </div>
+      <div class="claims" id="claims" data-anim></div>
+    </div>
+  </section>
+
+  <section class="band teal">
+    <div class="wrap split">
+      <div>
+        <span class="label">Earnings, by name</span>
+        <h2 class="rv" style="margin:16px 0 18px">Six kinds of EBITDA. We never mix them.</h2>
+        <p class="muted">On an acquisitive platform, adjusted, pro forma and run-rate earnings drift away from cash. Every EBITDA figure in a Diligence File keeps its name. Cash EBITDA is pro forma minus the "one-time" costs that keep coming back.</p>
+        <div class="callout" style="margin-top:28px"><span class="label gold">From the sample file</span><p>Cash EBITDA ran at 24% to 86% of the top adjusted figure across the core platforms. "One-time" cash costs recurred for three to nine years straight at every acquisitive platform.</p></div>
+      </div>
+      <div data-anim>
+        <div class="ebit" id="ebit"></div>
+        <p class="faint mono" style="font-size:10.5px;letter-spacing:1px;text-transform:uppercase;margin-top:14px">Illustrative, one platform · top adjusted figure = 100</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">The evidence</span><h2 class="rv">Every source logged. Every figure tagged.</h2></div>
+        <p class="lede rv" style="--i:1">Three layers sit behind every file: the deal room, licensed outside data and your own deal history. Every figure carries a tag, so your committee sees at a glance how much is fact and how much is someone's claim.</p>
+      </div>
+      <div class="evid light rv">
+        <span class="label gold">Tested against outside evidence</span>
+        <ul><li>Foot traffic</li><li>Card spend</li><li>Search demand</li><li>Customer and employer reviews</li><li>Job postings</li><li>Local prices</li><li>Census trade areas</li><li>Public price and wage series</li><li>SEC filings</li><li>Regulatory and court records</li></ul>
+        <p>Licensed and public sources, read inside your Microsoft 365. Every figure carries its source and the date it was read.</p>
+      </div>
+
+      <div class="split">
+        <div data-anim>
+          <span class="label">Deal-room files read, by folder · sample file</span>
+          <div class="hb-list" id="folders" style="margin-top:16px"></div>
+          <div class="legend"><span><i class="hb f us" style="border-radius:1px;width:12px;height:12px"></i>Live deals</span><span><i class="hb f" style="background:var(--teal);border-color:var(--teal);border-radius:1px;width:12px;height:12px"></i>Comparables</span><span><i class="hb" style="background:rgba(22,33,31,.3);border-color:transparent;border-radius:1px;width:12px;height:12px"></i>Adjacent sectors</span></div>
+        </div>
+        <div>
+          <span class="label">Outside data, licensed per use</span>
+          <div class="grid g2 ruled" style="margin-top:16px">
+            <div class="cell" style="padding:18px"><b style="font-weight:500">Foot traffic</b><p>Visits by location and trade area</p></div>
+            <div class="cell" style="padding:18px"><b style="font-weight:500">Card and receipt panels</b><p>Spend, ticket and share by category</p></div>
+            <div class="cell" style="padding:18px"><b style="font-weight:500">Digital demand</b><p>Search, web, app and marketplace</p></div>
+            <div class="cell" style="padding:18px"><b style="font-weight:500">Reviews and ratings</b><p>Customers and employees, by site and rival</p></div>
+            <div class="cell" style="padding:18px"><b style="font-weight:500">Competitor locations</b><p>Every rival in every trade area</p></div>
+            <div class="cell" style="padding:18px"><b style="font-weight:500">Public data</b><p>Census, prices, wages and filings</p></div>
+          </div>
+          <p class="faint" style="font-size:13px;margin-top:12px">Licensed under each vendor's terms. Subscriptions you already hold plug in as yours.</p>
+        </div>
+      </div>
+      <div style="margin-top:56px" data-anim>
+        <span class="label">A tag on every figure</span>
+        <div class="stackbar" aria-label="Documented facts 38 percent of fact rows">
+          <i class="grow" style="width:38%;background:var(--teal)"></i><i class="grow" style="width:44%;background:var(--gilt);--i:2"></i><i class="grow" style="width:12%;background:rgba(22,33,31,.35);--i:4"></i><i class="grow" style="width:6%;background:rgba(22,33,31,.15);--i:6"></i>
+        </div>
+        <p class="faint mono" style="font-size:10.5px;letter-spacing:1px;text-transform:uppercase">Documented facts: 38% of 59,863 figures in the sample file. Other shares illustrative.</p>
+        <div class="tags">
+          <div><b style="color:var(--teal)">[F]</b><p>Documented fact. A filing, a ledger, an audited statement.</p></div>
+          <div><b style="color:#8A6A2F">[M]</b><p>Management or sponsor claim. Always labelled as theirs.</p></div>
+          <div><b>[A]</b><p>Your own hypothesis or model, kept apart from the evidence.</p></div>
+          <div><b>[I]</b><p>Our computation, with every step written out.</p></div>
+          <div><b class="faint">[U]</b><p>Unresolved. Seen only second-hand, source named.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band ink">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">After close</span><h2 class="rv">The file says what would change its mind. Then it keeps watching.</h2></div>
+        <p class="lede rv" style="--i:1">Every Diligence File ends with the measures that would move a ruling. After close, the weekly watch reads them again, against the level that matters, beside the public signals.</p>
+      </div>
+      <div class="mx-wrap"><table class="cmp dark" style="min-width:640px">
+        <thead><tr><th>Measure</th><th>Rulings it affects</th><th>What a change would look like</th></tr></thead>
+        <tbody>
+          <tr><td>Comparable traffic and ticket, by month</td><td>M1, M4, MS1, ST1</td><td>Traffic declines narrowing toward the peer range, or price no longer covering them</td></tr>
+          <tr><td>Share of clinics losing money</td><td>M1, M4</td><td>The share falling below the 19.5% it reached in FY26</td></tr>
+          <tr><td>Cohort results by months owned</td><td>MS1</td><td>The newest cohort holding its first-year level into year two</td></tr>
+          <tr><td>Cash share of adjusted EBITDA</td><td>MS3, ST3, ST4</td><td>Recurring deal costs falling, so cash moves toward the 0.73 peer median</td></tr>
+          <tr><td>Employer ratings and review counts (public)</td><td>M1, M4, ST1</td><td>Ratings moving against the operator's own record or its peers</td></tr>
+          <tr><td>Rival clinics within three miles (public)</td><td>M1, MS2</td><td>The share rising as the largest operator opens nearby</td></tr>
+        </tbody>
+      </table></div>
+      <p class="faint" style="font-size:13px;margin-top:14px">From Exhibit 1.19 of the synthetic sample file.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Beside the QoE</span><h2 class="rv">Keep your QoE provider. Add the question it doesn't answer.</h2></div>
+        <p class="lede rv" style="--i:1">A QoE tests revenue, covenant EBITDA, add-backs, working capital and cash. We rebuild those from the deal room too, then add the commercial view on every deal.</p>
+      </div>
+      <div class="mx-wrap"><table class="cmp">
+        <thead><tr><th></th><th>Quality of earnings</th><th>Commercial DD adviser</th><th style="color:var(--gold)">CreditSwan</th></tr></thead>
+        <tbody>
+          <tr><td>Reported financials</td><td>Tested once</td><td>Out of scope</td><td class="hi">Rebuilt, then every month</td></tr>
+          <tr><td>Commercial view</td><td>Out of scope</td><td>Biggest deals, bought separately</td><td class="hi">Every deal, same file</td></tr>
+          <tr><td>The thesis</td><td>Not addressed</td><td>A narrative</td><td class="hi">Ruled on claim by claim</td></tr>
+          <tr><td>Outside data</td><td>Rarely</td><td>Selected studies</td><td class="hi">Licensed per use, cited per figure</td></tr>
+          <tr><td>Your past deals</td><td>No</td><td>No</td><td class="hi">Benchmarked from your own graph</td></tr>
+          <tr><td>After close</td><td>Ends at delivery</td><td>Ends at delivery</td><td class="hi">Watched every week</td></tr>
+        </tbody>
+      </table></div>
+      <div class="cta-row" style="margin-top:36px"><a class="btn btn-gold" href="#samples">Read the sample Diligence File <span class="arr">→</span></a></div>
+    </div>
+  </section>
+  <div data-cta></div>
+</div>
+
+<!-- ============================ SAMPLES ============================ -->
+<div class="page" id="page-samples" data-title="Samples · CreditSwan" hidden>
+  <section class="phead">
+    <div class="wrap">
+      <span class="label">Samples</span>
+      <h1>See the work.</h1>
+      <p class="lede">Built on invented companies so we can show them in full. The Diligence File and the Microsoft 365 demo open with a work email. The monthly check and the weekly alert are right here.</p>
+    </div>
+  </section>
+  <section class="band" style="padding-top:0">
+    <div class="wrap">
+      <div class="stabs" role="tablist" aria-label="Samples">
+        <button role="tab" id="st-file" aria-controls="sp-file" aria-selected="true"><span class="mono">01</span>Diligence File</button>
+        <button role="tab" id="st-m365" aria-controls="sp-m365" aria-selected="false"><span class="mono">02</span>Inside Microsoft 365</button>
+        <button role="tab" id="st-monthly" aria-controls="sp-monthly" aria-selected="false"><span class="mono">03</span>Monthly check</button>
+        <button role="tab" id="st-weekly" aria-controls="sp-weekly" aria-selected="false"><span class="mono">04</span>Weekly alert</button>
+      </div>
+
+      <div role="tabpanel" id="sp-file" aria-labelledby="st-file">
+        <div class="head" style="margin-bottom:28px">
+          <div><span class="label">Sample · veterinary care · three deals</span><h2 style="font-size:clamp(28px,3.2vw,42px)">The Diligence File</h2></div>
+          <p class="lede" style="font-size:16.5px">What a deal team gets before committee: the sector, the multiples, a benchmark of comparable operators, a ruling on every part of the thesis and a read on each financing. Pick a section to jump straight to it.</p>
+        </div>
+        <div class="gate" data-gate="dd" data-img="img/preview-diligence-file.jpg" data-what="the full Diligence File"></div>
+        <div class="gated" data-for="dd" hidden>
+        <div class="parts" id="parts"></div>
+        <div class="viewer">
+          <div class="chrome">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="addr">your-firm.sharepoint.com · Diligence Files · Veterinary care</span>
+            <a data-g="dd.html" target="_blank" rel="noopener">Full screen ↗</a>
+            <a data-g="CreditSwan_Sample_Diligence_File.pdf" target="_blank" rel="noopener">PDF ↗</a>
+            <a data-g="CreditSwan_Sample_Diligence_File_Tables.xlsx" download>Excel tables ↓</a>
+          </div>
+          <iframe id="ddFrame" title="Sample Diligence File, interactive" data-g="dd.html#dd01"></iframe>
+        </div>
+        <div class="formats">
+          <div><span class="label">Interactive</span><b>For the deal team</b><p>Every chart animated, every table sortable, every exhibit one click from its source.</p></div>
+          <div><span class="label">PDF</span><b>For committee and counsel</b><p>The record copy, with the assumptions register, method, sources and workings.</p></div>
+          <div><span class="label">Excel</span><b>For your analysts</b><p>Every table in the file, ready to drop into your own models.</p></div>
+        </div>
+        </div>
+      </div>
+
+      <div role="tabpanel" id="sp-m365" aria-labelledby="st-m365" hidden>
+        <div class="head" style="margin-bottom:28px">
+          <div><span class="label">Demo · Alder Point Credit, a fictional lender</span><h2 style="font-size:clamp(28px,3.2vw,42px)">Inside Microsoft 365</h2></div>
+          <p class="lede" style="font-size:16.5px">CreditSwan the way your team would meet it: a package arriving in Outlook, the check in Excel, an exception in Teams, the Diligence File in SharePoint. Click anything, or take the guided tour.</p>
+        </div>
+        <div class="gate" data-gate="m365" data-img="img/preview-microsoft-365.jpg" data-what="the Microsoft 365 demo"></div>
+        <div class="gated" data-for="m365" hidden>
+          <div class="viewer">
+            <div class="chrome">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="addr">Microsoft 365 · Alder Point Credit · synthetic</span>
+              <a data-g="m365/index.html" target="_blank" rel="noopener">Full screen ↗</a>
+            </div>
+            <iframe id="m365Frame" title="CreditSwan inside Microsoft 365, interactive demo" data-g="m365/index.html"></iframe>
+          </div>
+          <p class="muted" style="margin-top:16px;font-size:14.5px">Best at full screen on a laptop or larger. Every company, person and figure in the demo is invented.</p>
+        </div>
+      </div>
+
+      <div role="tabpanel" id="sp-monthly" aria-labelledby="st-monthly" hidden>
+        <div class="head" style="margin-bottom:28px">
+          <div><span class="label">Sample · Project Juniper · August</span><h2 style="font-size:clamp(28px,3.2vw,42px)">The monthly check</h2></div>
+          <p class="lede" style="font-size:16.5px">One package. Six figures. Three verdicts. Click any line to see the clause, the arithmetic and the source behind it.</p>
+        </div>
+        <div class="pkg">
+          <div class="card">
+            <div class="bar"><span class="dot"></span>Reply to the portfolio team · same thread<span class="tag">Synthetic</span></div>
+            <div class="body">
+              <p class="mail-p" style="margin-top:2px"><b style="color:var(--ink)">Two of six figures hold.</b> Two add-backs fall outside the agreement's definition, so leverage is 3.9x, not 3.4x, against a 4.0x limit. The largest customer is 26% of revenue, not 18%. Foot traffic puts visit growth at 3%, not 12%.</p>
+              <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px">
+                <span class="label">Click a line to trace it</span>
+                <div class="toggle"><button id="tRec" aria-pressed="true">Checked</button><button id="tRep" aria-pressed="false">As reported</button></div>
+              </div>
+              <div class="mx-wrap"><table class="t" id="sampleTable" style="min-width:460px"><thead><tr><th>Figure</th><th class="n">Value</th><th class="n">Change</th><th>Verdict</th></tr></thead><tbody></tbody></table></div>
+              <div class="foot-note"><span>Supported 2 · Partly 2 · Not supported 2</span><span>Signed · J. Analyst</span></div>
+            </div>
+          </div>
+          <div class="trace" id="trace" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div role="tabpanel" id="sp-weekly" aria-labelledby="st-weekly" hidden>
+        <div class="head" style="margin-bottom:28px">
+          <div><span class="label">Sample · Project Juniper · this week</span><h2 style="font-size:clamp(28px,3.2vw,42px)">The weekly alert</h2></div>
+          <p class="lede" style="font-size:16.5px">One signal left its band this week, so one message went out. Most weeks, nothing does.</p>
+        </div>
+        <div class="watch">
+          <div class="card teams">
+            <div class="bar"><span class="dot"></span>Teams · Portfolio · Juniper<span class="tag">Synthetic</span></div>
+            <div class="body">
+              <div class="chat">
+                <div class="av"><svg viewBox="0 0 40 40"><path d="M8 30c0-9 6-16 15-16 4 0 7 1 9 4-2-1-4-1-6 0 3 0 5 2 6 5-4-2-8-1-11 2-3 3-8 4-13 5z" fill="#F4EFE6"/><circle cx="30.5" cy="15.5" r="1.4" fill="#A98543"/></svg></div>
+                <div>
+                  <div class="who"><b>CreditSwan watch</b>Monday 07:40</div>
+                  <div class="msg">
+                    <p><span class="v v-part">Watch item</span></p>
+                    <p>Same-site visits across Juniper's 42 locations are down 6.8% year on year over the last four weeks. That is below the band set at close (−3% to +5%) for the third week running.</p>
+                    <p class="muted" style="font-size:13.5px">Card spend in the same trade areas is down 2.1%, so most of the fall is Juniper's own. Reviews are steady. Worth asking for with the next package: same-location sales for August.</p>
+                    <p class="mono faint" style="font-size:11px;letter-spacing:.8px">REVIEWED · J. ANALYST · SOURCES LINKED</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card chart" data-anim>
+            <div class="bar"><span class="dot"></span>Same-site visits, YoY % · weekly<span class="tag">Illustrative</span></div>
+            <div class="body"><svg viewBox="0 0 560 240" id="watchBig"></svg></div>
+          </div>
+        </div>
+        <div class="monitors">
+          <div>Same-site visits, foot traffic</div><div class="warn">Visits below band, week 3</div><div>Card spend, trade area</div>
+          <div>Search demand, brand and category</div><div>Customer reviews, volume and rating</div><div>Employer reviews and job postings</div>
+          <div>Rival openings within three miles</div><div>Prices against rivals</div><div>Next package · checked on arrival</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div data-cta></div>
+</div>
+
+<!-- ============================ SECURITY ============================ -->
+<div class="page" id="page-security" data-title="Security · CreditSwan" hidden>
+  <section class="phead ink">
+    <div class="wrap">
+      <span class="label">Security</span>
+      <h1>Your tenant. Your controls. Your data, staying put.</h1>
+      <p class="lede">CreditSwan installs inside your own Microsoft 365 and Azure tenant. Our engineers build it beside your team, then hand it over. Your identity, access and retention rules apply from day one. Model usage runs through your own Azure agreement. Nothing is copied to a CreditSwan cloud.</p>
+      <div class="tenant" style="margin-top:48px">
+        <span class="label tlabel">Your Microsoft 365 and Azure tenant</span>
+        <div class="apps">
+          <div class="app"><div class="ic" style="background:#0F6CBD">O</div><b>Outlook</b><span>Packages in, checked replies out</span></div>
+          <div class="app"><div class="ic" style="background:#03787C">S</div><b>SharePoint</b><span>Portfolio view and Diligence Files</span></div>
+          <div class="app"><div class="ic" style="background:#107C41">X</div><b>Excel</b><span>Covenant workbook, always current</span></div>
+          <div class="app"><div class="ic" style="background:#5B5FC7">T</div><b>Teams</b><span>Exceptions only</span></div>
+        </div>
+        <div class="engine">
+          <div><b>Checking engine</b><span>Code does every calculation</span></div>
+          <div><b>Models via Foundry</b><span>You choose the model for each job</span></div>
+          <div><b>Knowledge graph</b><span>Your deal history, your property</span></div>
+        </div>
+      </div>
+      <div class="flows">
+        <div><span class="label">In</span><b>Your deal rooms and packages</b><p>What you already receive. Borrowers are asked for nothing new.</p></div>
+        <div><span class="label">In</span><b>Licensed outside data</b><p>Brought in under each vendor's terms, for your use.</p></div>
+        <div><span class="label">Out</span><b>Nothing</b><p>Data comes in and stays. Nothing of yours trains anyone else's model.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Your muscle, not ours</span><h2>Four questions worth asking any vendor</h2></div>
+        <p class="lede">Most AI tools for credit run in the vendor's cloud. Our answers are different because we are built into yours.</p>
+      </div>
+      <div class="mx-wrap"><table class="cmp">
+        <thead><tr><th>Question</th><th>A tool in the vendor's cloud</th><th style="color:var(--gold)">CreditSwan</th></tr></thead>
+        <tbody>
+          <tr><td>Where does our deal history live?</td><td>Copied into the vendor's platform</td><td class="hi">In your tenant</td></tr>
+          <tr><td>Who picks the model for each job?</td><td>Usually the platform</td><td class="hi">You, job by job, on one screen</td></tr>
+          <tr><td>Who gets smarter with use?</td><td>The vendor's product, for every client</td><td class="hi">Your graph and your analysts</td></tr>
+          <tr><td>What do we keep if we leave?</td><td>Whatever the export allows</td><td class="hi">Everything: graph, files, workbook</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </section>
+  <section class="band teal" id="trust">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Before you sign</span><h2>What your committee, counsel and IT will ask</h2></div>
+        <p class="lede">Straight answers. Your controls apply first. We complete your security questionnaire in writing. We don't hold a SOC 2 report yet, and we say so up front.</p>
+      </div>
+      <div class="grid g3 ruled">
+        <div class="cell"><span class="label">Security</span><h3>Your controls apply</h3><p>It runs in your tenant, so your identity, access and retention controls govern it. Your questionnaire gets a written answer. No SOC 2 report yet.</p></div>
+        <div class="cell"><span class="label">Exit</span><h3>Leave, and keep it all</h3><p>The graph, the files and the workbook already sit in your tenant. We remove our engine. Everything else stays.</p></div>
+        <div class="cell"><span class="label">Audit</span><h3>A trail for every figure</h3><p>Every verdict links to the source document, the definition used and the analyst who signed. Ready for committee and LPs.</p></div>
+        <div class="cell"><span class="label">Cost</span><h3>Built on what you own</h3><p>Your Microsoft 365. Your Azure. Model usage runs through the agreement you already have.</p></div>
+        <div class="cell"><span class="label">Borrowers</span><h3>Nothing new to send</h3><p>The work runs on what borrowers already send you. Their own systems are read only in a diagnostic, with consent.</p></div>
+        <div class="cell"><span class="label">Copilot</span><h3>Works alongside it</h3><p>Copilot helps a person work a spreadsheet. CreditSwan rebuilds each figure against your agreement, keeps the audit trail and runs on the same Microsoft.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap split">
+      <div><span class="label">Straight answers</span><h2 style="margin-top:16px">Questions buyers ask first</h2></div>
+      <div class="faq">
+        <details><summary>Is this another AI tool?</summary><p>No. AI reads the documents and drafts the reply. Code does every calculation, using your credit agreement's definitions. Your analyst signs every verdict.</p></details>
+        <details><summary>Copilot in Excel is coming. Why not wait?</summary><p>Copilot's finance skills help a person work a spreadsheet. CreditSwan rebuilds each figure against your agreement, tests the commercial case against outside data, keeps the audit trail and is wired into your workflow by our engineers. It runs on the Microsoft you already pay for.</p></details>
+        <details><summary>We already have a portfolio monitoring platform.</summary><p>Keep it. Monitoring platforms load and test the figures as reported. We rebuild them against the agreement first, add the commercial view and keep your covenant workbook current.</p></details>
+        <details><summary>Our borrowers won't give us system access.</summary><p>They don't need to. The work runs on the deal rooms and packages you already hold. Borrower systems come in only for a diagnostic, and only with consent.</p></details>
+        <details><summary>Do you hold a SOC 2 report?</summary><p>Not yet. CreditSwan runs inside your tenant, so your own identity, access and retention controls apply to it. We complete your questionnaire in writing and say plainly what is in place.</p></details>
+        <details><summary>What does IT need to approve?</summary><p>An app install in your Microsoft 365 and Azure tenant, and model access through Azure AI Foundry under your own subscription. Our engineer walks your IT team through every permission before anything is installed.</p></details>
+      </div>
+    </div>
+  </section>
+  <div data-cta></div>
+</div>
+
+<!-- ============================ WAYS TO WORK ============================ -->
+<div class="page" id="page-ways-to-work" data-title="Ways to work · CreditSwan" hidden>
+  <section class="phead">
+    <div class="wrap">
+      <span class="label">Ways to work</span>
+      <h1>Run it yourself. Or let us run it with you.</h1>
+      <p class="lede">One installation in your tenant. One standard of checking. One signature on every verdict: your analyst's. What changes is who does the daily work. Run it yourself, with a named engineer on call if you want one, or let us run it with you. Switch whenever your team is ready.</p>
+    </div>
+  </section>
+  <section class="band" style="padding-top:0">
+    <div class="wrap">
+      <div class="ladder" id="ladderFull"></div>
+      <div class="callout">
+        <span class="label gold">Concierge, and why it doesn't contradict our line</span>
+        <p>Concierge is where our people do the daily work, so it is built to hand back. Everything it produces lives in your tenant. Your analyst signs every verdict. Every job has a handover plan and moves to your team when they are ready. Borrow our muscle while you build your own.</p>
+      </div>
+    </div>
+  </section>
+  <section class="band teal">
+    <div class="wrap">
+      <div class="head single"><span class="label">Side by side</span><h2>Who does what</h2></div>
+      <div class="mx-wrap"><table class="cmp">
+        <thead><tr><th></th><th>Self-service <span style="color:var(--faint)">· named engineer optional</span></th><th style="color:var(--gold)">Concierge</th></tr></thead>
+        <tbody>
+          <tr><td>Install and set-up</td><td>Our engineers</td><td>Our engineers</td></tr>
+          <tr><td>Forwarding packages</td><td>Your team</td><td>Your team, or a rule we set up</td></tr>
+          <tr><td>Preparing package checks</td><td>The system; your analysts review</td><td>Our team, every one</td></tr>
+          <tr><td>Signing verdicts</td><td>Your analyst</td><td>Your analyst</td></tr>
+          <tr><td>Diligence Files</td><td>Your deal team runs them; we review the first few with you. With a named engineer, they work each file beside you.</td><td>We build each file; your team reads and signs</td></tr>
+          <tr><td>Weekly alerts</td><td>Your analysts triage</td><td>We triage and summarise; your analyst decides</td></tr>
+          <tr><td>New jobs, borrowers, definitions</td><td>Your team, with our playbooks. With a named engineer, built with you.</td><td>We build and run them</td></tr>
+          <tr><td>Support</td><td>Business hours. Any hour with a named engineer.</td><td>Any hour, a named team</td></tr>
+          <tr><td>Handover</td><td>Day one</td><td>Planned per job, at your pace</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted" style="margin-top:22px;font-size:15px">Priced per file and per borrower, never per seat. Model usage runs through your own Azure. We quote after scoping.</p>
+    </div>
+  </section>
+  <div data-cta></div>
+</div>
+
+<!-- ============================ PILOT ============================ -->
+<div class="page" id="page-pilot" data-title="Start a pilot · CreditSwan" hidden>
+  <section class="phead">
+    <div class="wrap">
+      <span class="label">The pilot</span>
+      <h1>Ninety days. Three borrowers you already hold.</h1>
+      <p class="lede">Nothing waits on us, and no borrower is asked for anything. We install in your tenant, baseline three loans already on your book, check their real packages and watch them in between. Then you decide, with the results in hand. The pilot is paid, and it runs at whichever level you choose.</p>
+    </div>
+  </section>
+  <section class="band" style="padding-top:0">
+    <div class="wrap">
+      <div class="steps">
+        <div><span class="label">01</span><b>Scope</b><p>Pick the three borrowers, the packages to check and the level of service.</p></div>
+        <div><span class="label">02</span><b>Install</b><p>Your IT approves the install. We answer the security questionnaire in writing.</p></div>
+        <div><span class="label">03</span><b>Baseline</b><p>Each deal room and credit agreement goes in. Your analyst confirms the financial and commercial baseline.</p></div>
+        <div><span class="label">04</span><b>Check</b><p>Packages are checked as they land. The weekly watch runs in between.</p></div>
+        <div><span class="label">05</span><b>Decide</b><p>We go through the verdicts and the hours saved with you, and you decide on the rest of the book.</p></div>
+      </div>
+      <div class="split" style="margin-top:64px">
+        <div>
+          <span class="label">What we need from you</span>
+          <ol class="qlist" style="margin-top:16px">
+            <li><span class="mono">IT</span><div><b>Approval to install</b><span>In your Microsoft 365 and Azure tenant</span></div></li>
+            <li><span class="mono">01</span><div><b>Documents</b><span>Credit agreements, deal rooms and recent packages for three borrowers</span></div></li>
+            <li><span class="mono">02</span><div><b>One named analyst</b><span>To confirm baselines and sign verdicts</span></div></li>
+            <li><span class="mono">03</span><div><b>Your security questionnaire</b><span>We answer it in writing</span></div></li>
+          </ol>
+        </div>
+        <div id="talk">
+          <span class="label">Talk to us</span>
+          <h2 style="margin:14px 0 10px;font-size:clamp(30px,3vw,40px)">Tell us where you'd start</h2>
+          <p class="muted" style="margin-bottom:22px">A person answers, not a sequence. Or write to <a href="mailto:sales@creditswan.com">sales@creditswan.com</a>.</p>
+          <form class="talk" id="contactForm" novalidate>
+            <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name"></div>
+            <div><label for="f-firm">Firm</label><input id="f-firm" name="firm" autocomplete="organization"></div>
+            <div class="full"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+            <div class="full"><label for="f-role">You are</label><select id="f-role" name="role"><option>A direct lender or BDC</option><option>A credit arm of an asset manager</option><option>A private equity sponsor</option><option>Something else</option></select></div>
+            <div class="full"><label for="f-level">The level you're leaning toward</label><select id="f-level" name="level"><option>Not sure yet</option><option>Self-service</option><option>Self-service with a named engineer</option><option>Concierge</option></select></div>
+            <div class="full"><label for="f-msg">What would you check first?</label><textarea id="f-msg" name="msg"></textarea></div>
+            <div class="full"><p class="err" id="formErr" hidden></p><button class="btn btn-gold" type="submit">Send message <span class="arr">→</span></button></div>
+          </form>
+          <div id="formSent" hidden>
+            <span class="label">Message sent</span>
+            <h3 style="margin:10px 0 8px">Thank you. Your message is with us.</h3>
+            <p class="muted">We'll write back to the work email you gave us.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<template id="ctaTpl">
+  <section class="cta-band ink">
+    <div class="wrap">
+      <div><span class="label">Start with the back book</span><h2 style="margin-top:16px">Pick three borrowers. We'll show you what their packages say when someone checks.</h2></div>
+      <div class="cta-row" style="margin-top:0"><a class="btn btn-gold" href="#pilot">Start a pilot <span class="arr">→</span></a><a class="btn btn-line" href="#samples">See the samples</a></div>
+    </div>
+  </section>
+</template>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div><svg class="lockup" role="img" aria-label="CreditSwan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 712.5 191.1" fill="none" xmlns:c2pa="http://c2pa.org/manifest"> <g transform="translate(35.0,39.5) scale(2.8000)"> <path d="M8 30c0-9 6-16 15-16 4 0 7 1 9 4-2-1-4-1-6 0 3 0 5 2 6 5-4-2-8-1-11 2-3 3-8 4-13 5z" fill="currentColor"/> <circle cx="30.5" cy="15.5" r="1.4" fill="#A98543"/> </g> <g transform="translate(191.0,127.4) scale(0.10000)" fill="currentColor"> <path d="M421 -636Q456 -636 488.5 -632.5Q521 -629 549.5 -622.5Q578 -616 601 -605Q609 -601 611.5 -597.0Q614 -593 615 -582L627 -450Q627 -447 622.0 -446.0Q617 -445 615 -449Q589 -530 538.0 -573.5Q487 -617 410 -617Q336 -617 279.0 -580.5Q222 -544 190.0 -476.5Q158 -409 158 -316Q158 -248 177.5 -191.0Q197 -134 232.5 -93.0Q268 -52 315.0 -29.5Q362 -7 418 -7Q493 -7 541.0 -46.0Q589 -85 625 -168Q626 -171 631.0 -170.0Q636 -169 636 -167L623 -48Q622 -36 619.5 -32.5Q617 -29 609 -25Q560 -5 513.0 3.5Q466 12 417 12Q310 12 227.0 -28.5Q144 -69 96.5 -142.5Q49 -216 49 -311Q49 -383 77.0 -443.0Q105 -503 155.5 -546.0Q206 -589 274.0 -612.5Q342 -636 421 -636Z"/><path d="M858.0 -271 851.0 -283Q889.0 -328 915.5 -352.5Q942.0 -377 960.0 -386.5Q978.0 -396 994.0 -396Q1015.0 -396 1036.5 -381.5Q1058.0 -367 1058.0 -345Q1058.0 -327 1047.0 -315.0Q1036.0 -303 1016.0 -303Q998.0 -303 988.0 -313.0Q978.0 -323 969.0 -332.0Q960.0 -341 944.0 -341Q936.0 -341 927.0 -336.5Q918.0 -332 902.0 -317.0Q886.0 -302 858.0 -271ZM744.0 0Q741.0 0 741.0 -6.0Q741.0 -12 744.0 -12Q778.0 -12 789.0 -26.0Q800.0 -40 800.0 -81V-272Q800.0 -304 793.0 -319.0Q786.0 -334 768.0 -334Q759.0 -334 746.0 -330.0Q733.0 -326 718.0 -319Q714.0 -318 711.5 -323.5Q709.0 -329 712.0 -330L843.0 -394Q848.0 -396 850.0 -396Q860.0 -396 870.5 -373.0Q881.0 -350 881.0 -306V-81Q881.0 -54 889.0 -38.5Q897.0 -23 917.0 -17.5Q937.0 -12 973.0 -12Q977.0 -12 977.0 -6.0Q977.0 0 973.0 0Q947.0 0 913.5 -1.0Q880.0 -2 841.0 -2Q814.0 -2 788.5 -1.0Q763.0 0 744.0 0Z"/><path d="M1314.0 12Q1251.0 12 1207.0 -15.0Q1163.0 -42 1140.5 -86.5Q1118.0 -131 1118.0 -181Q1118.0 -241 1147.0 -289.0Q1176.0 -337 1226.0 -366.0Q1276.0 -395 1339.0 -395Q1398.0 -395 1431.0 -367.0Q1464.0 -339 1464.0 -280Q1464.0 -267 1462.0 -259.0Q1460.0 -251 1453.0 -251H1371.0Q1374.0 -309 1357.5 -342.0Q1341.0 -375 1303.0 -375Q1258.0 -375 1232.5 -333.5Q1207.0 -292 1207.0 -223Q1207.0 -165 1225.0 -122.5Q1243.0 -80 1278.0 -56.0Q1313.0 -32 1364.0 -32Q1395.0 -32 1416.0 -40.5Q1437.0 -49 1461.0 -62Q1463.0 -64 1466.5 -60.0Q1470.0 -56 1468.0 -53Q1432.0 -18 1394.5 -3.0Q1357.0 12 1314.0 12ZM1178.0 -250 1177.0 -267 1399.0 -271V-251Z"/><path d="M1703.0 13Q1661.0 13 1625.0 -10.5Q1589.0 -34 1567.5 -77.0Q1546.0 -120 1546.0 -181Q1546.0 -240 1568.0 -281.5Q1590.0 -323 1624.5 -349.0Q1659.0 -375 1699.0 -387.0Q1739.0 -399 1775.0 -399Q1811.0 -399 1842.0 -389.0Q1873.0 -379 1898.0 -363L1879.0 -287Q1857.0 -330 1828.5 -352.5Q1800.0 -375 1756.0 -375Q1701.0 -375 1668.5 -336.5Q1636.0 -298 1636.0 -212Q1636.0 -155 1651.0 -114.5Q1666.0 -74 1693.0 -52.5Q1720.0 -31 1753.0 -31Q1794.0 -31 1826.0 -54.0Q1858.0 -77 1887.0 -109L1896.0 -101Q1875.0 -77 1846.5 -50.5Q1818.0 -24 1782.5 -5.5Q1747.0 13 1703.0 13ZM1940.0 -714V-114Q1940.0 -79 1947.0 -64.5Q1954.0 -50 1971.0 -50Q1979.0 -50 1990.5 -53.0Q2002.0 -56 2016.0 -62Q2019.0 -64 2022.0 -58.5Q2025.0 -53 2022.0 -51L1894.0 11Q1891.0 12 1888.0 12Q1877.0 12 1868.0 -12.0Q1859.0 -36 1859.0 -82V-592Q1859.0 -626 1853.0 -642.0Q1847.0 -658 1829.0 -658Q1821.0 -658 1811.0 -654.5Q1801.0 -651 1789.0 -646Q1785.0 -644 1782.0 -650.0Q1779.0 -656 1782.0 -657L1922.0 -724Q1924.0 -725 1926.0 -725Q1930.0 -725 1935.0 -721.0Q1940.0 -717 1940.0 -714Z"/><path d="M2088.0 0Q2085.0 0 2085.0 -6.0Q2085.0 -12 2088.0 -12Q2122.0 -12 2133.5 -26.0Q2145.0 -40 2145.0 -81V-263Q2145.0 -297 2138.0 -312.5Q2131.0 -328 2114.0 -328Q2106.0 -328 2096.0 -325.0Q2086.0 -322 2074.0 -316Q2070.0 -315 2067.5 -321.0Q2065.0 -327 2068.0 -328L2212.0 -395Q2214.0 -396 2215.0 -396Q2219.0 -396 2223.5 -391.5Q2228.0 -387 2228.0 -384Q2228.0 -373 2227.0 -344.0Q2226.0 -315 2226.0 -264V-81Q2226.0 -40 2237.5 -26.0Q2249.0 -12 2283.0 -12Q2286.0 -12 2286.0 -6.0Q2286.0 0 2283.0 0Q2263.0 0 2238.0 -1.0Q2213.0 -2 2185.0 -2Q2158.0 -2 2132.5 -1.0Q2107.0 0 2088.0 0ZM2180.0 -501Q2154.0 -501 2139.5 -515.0Q2125.0 -529 2125.0 -555Q2125.0 -579 2139.5 -593.0Q2154.0 -607 2180.0 -607Q2205.0 -607 2218.5 -593.0Q2232.0 -579 2232.0 -555Q2232.0 -501 2180.0 -501Z"/><path d="M2515.0 12Q2491.0 12 2467.5 4.0Q2444.0 -4 2428.5 -23.0Q2413.0 -42 2413.0 -77V-303Q2413.0 -325 2408.5 -337.0Q2404.0 -349 2393.0 -353.5Q2382.0 -358 2362.0 -358Q2358.0 -358 2358.0 -366.0Q2358.0 -374 2362.0 -374Q2409.0 -376 2438.5 -396.5Q2468.0 -417 2480.0 -455Q2481.0 -459 2488.0 -459.0Q2495.0 -459 2495.0 -455V-110Q2495.0 -69 2515.5 -51.0Q2536.0 -33 2569.0 -33Q2593.0 -33 2613.5 -42.5Q2634.0 -52 2648.0 -63Q2651.0 -65 2655.0 -60.5Q2659.0 -56 2655.0 -53Q2618.0 -19 2585.5 -3.5Q2553.0 12 2515.0 12ZM2624.0 -336Q2584.0 -345 2546.5 -348.5Q2509.0 -352 2466.0 -352V-376Q2507.0 -376 2545.5 -379.0Q2584.0 -382 2628.0 -386Q2630.0 -386 2632.5 -379.0Q2635.0 -372 2635.0 -362Q2635.0 -353 2631.5 -344.0Q2628.0 -335 2624.0 -336Z"/><path d="M2851.0 -518Q2851.0 -479 2871.0 -450.5Q2891.0 -422 2922.5 -399.0Q2954.0 -376 2989.0 -354Q3027.0 -331 3061.5 -305.0Q3096.0 -279 3118.5 -245.5Q3141.0 -212 3141.0 -164Q3141.0 -112 3114.0 -72.5Q3087.0 -33 3039.5 -10.5Q2992.0 12 2928.0 12Q2901.0 12 2871.5 7.0Q2842.0 2 2816.5 -7.0Q2791.0 -16 2775.0 -26Q2771.0 -29 2768.5 -33.0Q2766.0 -37 2765.0 -45L2759.0 -196Q2758.0 -201 2763.5 -201.5Q2769.0 -202 2770.0 -198Q2782.0 -168 2798.5 -134.5Q2815.0 -101 2837.0 -73.0Q2859.0 -45 2887.5 -27.5Q2916.0 -10 2953.0 -10Q2979.0 -10 3002.0 -19.0Q3025.0 -28 3040.0 -50.5Q3055.0 -73 3055.0 -112Q3055.0 -159 3033.5 -192.5Q3012.0 -226 2979.0 -251.0Q2946.0 -276 2910.0 -298Q2875.0 -321 2843.0 -345.0Q2811.0 -369 2790.5 -400.5Q2770.0 -432 2770.0 -477Q2770.0 -532 2800.0 -567.0Q2830.0 -602 2876.5 -619.0Q2923.0 -636 2972.0 -636Q3005.0 -636 3039.0 -630.0Q3073.0 -624 3097.0 -613Q3106.0 -610 3109.0 -605.0Q3112.0 -600 3112.0 -594L3114.0 -459Q3114.0 -455 3109.5 -454.0Q3105.0 -453 3103.0 -456Q3098.0 -471 3088.0 -497.5Q3078.0 -524 3060.0 -551.0Q3042.0 -578 3015.0 -597.0Q2988.0 -616 2949.0 -616Q2919.0 -616 2897.0 -604.0Q2875.0 -592 2863.0 -570.5Q2851.0 -549 2851.0 -518Z"/><path d="M3669.0 -1 3520.0 -303Q3499.0 -347 3486.5 -360.5Q3474.0 -374 3455.0 -374Q3453.0 -374 3453.0 -380.0Q3453.0 -386 3455.0 -386Q3470.0 -386 3488.5 -385.0Q3507.0 -384 3535.0 -384Q3571.0 -384 3596.5 -385.0Q3622.0 -386 3644.0 -386Q3646.0 -386 3646.0 -380.0Q3646.0 -374 3644.0 -374Q3617.0 -374 3602.5 -364.5Q3588.0 -355 3598.0 -335L3720.0 -94L3678.0 -22L3789.0 -292Q3805.0 -332 3788.0 -353.0Q3771.0 -374 3728.0 -374Q3725.0 -374 3725.0 -380.0Q3725.0 -386 3728.0 -386Q3751.0 -386 3772.5 -385.0Q3794.0 -384 3828.0 -384Q3852.0 -384 3866.5 -385.0Q3881.0 -386 3902.0 -386Q3905.0 -386 3905.0 -380.0Q3905.0 -374 3902.0 -374Q3875.0 -374 3854.5 -354.5Q3834.0 -335 3814.0 -290L3691.0 -1Q3690.0 3 3680.5 3.0Q3671.0 3 3669.0 -1ZM3426.0 -1 3278.0 -303Q3256.0 -348 3241.0 -361.0Q3226.0 -374 3205.0 -374Q3202.0 -374 3202.0 -380.0Q3202.0 -386 3205.0 -386Q3221.0 -386 3241.0 -385.0Q3261.0 -384 3292.0 -384Q3327.0 -384 3353.0 -385.0Q3379.0 -386 3401.0 -386Q3404.0 -386 3404.0 -380.0Q3404.0 -374 3401.0 -374Q3374.0 -374 3357.5 -366.0Q3341.0 -358 3353.0 -335L3479.0 -94L3435.0 -22L3544.0 -285L3568.0 -280L3448.0 -1Q3447.0 3 3437.5 3.0Q3428.0 3 3426.0 -1Z"/><path d="M4219.0 6Q4215.0 8 4210.0 8Q4194.0 8 4178.0 -15.0Q4162.0 -38 4162.0 -82V-258Q4162.0 -321 4149.5 -349.0Q4137.0 -377 4110.0 -377Q4085.0 -377 4071.5 -362.5Q4058.0 -348 4052.0 -329.5Q4046.0 -311 4045.0 -298Q4042.0 -273 4029.5 -260.0Q4017.0 -247 3994.0 -247Q3971.0 -247 3961.0 -257.5Q3951.0 -268 3951.0 -282Q3951.0 -304 3971.5 -324.5Q3992.0 -345 4023.5 -361.0Q4055.0 -377 4089.0 -386.5Q4123.0 -396 4149.0 -396Q4190.0 -396 4216.5 -370.0Q4243.0 -344 4243.0 -288V-108Q4243.0 -77 4253.0 -61.0Q4263.0 -45 4282.0 -45Q4298.0 -45 4318.0 -54Q4323.0 -56 4325.0 -50.5Q4327.0 -45 4322.0 -43ZM4031.0 7Q3989.0 7 3968.5 -13.0Q3948.0 -33 3948.0 -64Q3948.0 -92 3963.0 -109.5Q3978.0 -127 4005.0 -138.5Q4032.0 -150 4065.0 -162L4172.0 -202L4175.0 -187L4102.0 -156Q4090.0 -152 4076.0 -144.5Q4062.0 -137 4052.5 -125.0Q4043.0 -113 4043.0 -93Q4043.0 -69 4059.0 -54.5Q4075.0 -40 4095.0 -40Q4104.0 -40 4113.0 -42.5Q4122.0 -45 4134.0 -53L4188.0 -89L4189.0 -74L4118.0 -24Q4095.0 -8 4075.5 -0.5Q4056.0 7 4031.0 7Z"/><path d="M4652.0 0Q4649.0 0 4649.0 -6.0Q4649.0 -12 4652.0 -12Q4686.0 -12 4697.0 -26.0Q4708.0 -40 4708.0 -81V-231Q4708.0 -287 4687.5 -313.5Q4667.0 -340 4623.0 -340Q4591.0 -340 4557.5 -322.5Q4524.0 -305 4502.0 -274L4497.0 -286Q4536.0 -339 4579.5 -368.5Q4623.0 -398 4673.0 -398Q4729.0 -398 4759.0 -364.5Q4789.0 -331 4789.0 -274V-81Q4789.0 -40 4800.5 -26.0Q4812.0 -12 4846.0 -12Q4849.0 -12 4849.0 -6.0Q4849.0 0 4846.0 0Q4827.0 0 4802.0 -1.0Q4777.0 -2 4749.0 -2Q4722.0 -2 4696.5 -1.0Q4671.0 0 4652.0 0ZM4383.0 0Q4380.0 0 4380.0 -6.0Q4380.0 -12 4383.0 -12Q4417.0 -12 4428.0 -26.0Q4439.0 -40 4439.0 -81V-272Q4439.0 -304 4432.0 -319.0Q4425.0 -334 4407.0 -334Q4398.0 -334 4385.0 -330.0Q4372.0 -326 4357.0 -319Q4353.0 -318 4350.5 -323.5Q4348.0 -329 4351.0 -330L4482.0 -394Q4487.0 -396 4489.0 -396Q4499.0 -396 4509.5 -373.0Q4520.0 -350 4520.0 -306V-81Q4520.0 -40 4531.5 -26.0Q4543.0 -12 4577.0 -12Q4580.0 -12 4580.0 -6.0Q4580.0 0 4577.0 0Q4558.0 0 4533.0 -1.0Q4508.0 -2 4480.0 -2Q4453.0 -2 4427.5 -1.0Q4402.0 0 4383.0 0Z"/> </g> </svg><p style="margin-top:16px;color:rgba(244,239,230,.7);font-size:14.5px;max-width:34ch">We build your muscle. We do not rent you ours.</p></div>
+      <div><span class="label">Product</span><a href="#how-it-works">How it works</a><a href="#commercial-diligence">Commercial diligence</a><a href="#samples">Samples</a></div>
+      <div><span class="label">Buying</span><a href="#security">Security</a><a href="#trust">Before you sign</a><a href="#ways-to-work">Ways to work</a><a href="#pilot">The pilot</a></div>
+      <div><span class="label">Contact</span><a href="mailto:sales@creditswan.com">sales@creditswan.com</a><a href="#talk">Talk to us</a></div>
+    </div>
+    <div class="base"><span>© 2026 CreditSwan · creditswan.com</span><span>All examples on this site are synthetic</span></div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Shared closing band */
+  var tpl = $('ctaTpl');
+  document.querySelectorAll('[data-cta]').forEach(function (s) { s.appendChild(tpl.content.cloneNode(true)); });
+
+  /* ---------- Service ladder ---------- */
+  var LEVELS = [
+    { name: 'Self-service', who: 'Your team runs it.', pips: 1,
+      p: 'Our engineers install it in your tenant, build each job with your team and hand over the keys. From then on, your analysts run the checks, the watch and the files.',
+      li: ['Install, set-up and training by our engineers', 'Your analysts review and sign every verdict', 'Support in business hours, with playbooks for new jobs'],
+      add: { name: 'Add a named engineer', p: 'One forward-deployed engineer who learns your agreements, builds each new borrower and job with your team, sits beside your deal team on every Diligence File, and answers at any hour.' } },
+    { name: 'Concierge', who: 'We run it with you.', pips: 2,
+      p: 'We prepare the package checks, triage the weekly watch and build each Diligence File. Your analyst reads and signs every verdict. Each job comes back to your team when your team is ready for it.',
+      li: ['We prepare, your analyst signs', 'A named team, any hour', 'A handover plan for every job'] }
+  ];
+  function ladder(el, full) {
+    if (!el) return;
+    el.innerHTML = LEVELS.map(function (l, i) {
+      var pips = '<span class="pips">' + [1, 2].map(function (n) { return '<i class="' + (n <= l.pips ? 'on' : '') + '"></i>'; }).join('') + '</span>';
+      return '<div class="rv" style="--i:' + i + '"><div class="lvl"><span class="label">' + (i ? 'We run it with you' : 'You run it') + '</span>' + pips + '</div>' +
+        '<h3>' + l.name + '</h3><div class="who">' + l.who + '</div><p>' + l.p + '</p>' +
+        (full ? '<ul>' + l.li.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>' : '') +
+        (l.add ? '<div class="addon"><span class="label gold">Optional add-on</span><b>' + l.add.name + '</b><p>' + l.add.p + '</p></div>' : '') + '</div>';
+    }).join('');
+  }
+  ladder($('ladderHome'), false); ladder($('ladderFull'), true);
+
+  /* ---------- Category matrix ---------- */
+  var MX = {
+    cols: ['AI workflow tools', 'Portfolio monitoring', 'QoE and commercial DD', 'Copilot in Excel', 'CreditSwan'],
+    rows: [
+      ['Every figure recomputed in code against the agreement', ['n', 'h', 'h', 'h', 'f']],
+      ['A verdict per figure, signed by your analyst', ['n', 'h', 'f', 'n', 'f']],
+      ['Commercial diligence on every deal', ['n', 'n', 'h', 'n', 'f']],
+      ['Tested against licensed outside data', ['h', 'n', 'h', 'h', 'f']],
+      ['Baseline keeps running after close', ['n', 'f', 'n', 'n', 'f']],
+      ['Runs inside your own tenant', ['n', 'n', 'n', 'f', 'f']],
+      ['Engineers set it up beside your team', ['h', 'h', 'n', 'n', 'f']]
+    ]
+  };
+  var mx = $('matrix');
+  if (mx) {
+    mx.innerHTML = '<thead><tr><th>What your evidence needs</th>' + MX.cols.map(function (c, i) { return '<th' + (i === 4 ? ' class="us"' : '') + '>' + c + '</th>'; }).join('') + '</tr></thead><tbody>' +
+      MX.rows.map(function (r) { return '<tr><td>' + r[0] + '</td>' + r[1].map(function (v, i) { return '<td' + (i === 4 ? ' class="us"' : '') + '><i class="hb ' + (v === 'n' ? '' : v) + (i === 4 ? ' us' : '') + '" aria-label="' + ({ f: 'Yes', h: 'Partly', n: 'No' })[v] + '"></i></td>'; }).join('') + '</tr>'; }).join('') + '</tbody>';
+  }
+
+  /* ---------- Commercial diligence angles (synthetic findings) ---------- */
+  var ANG = [{"g": "Every deal", "k": "all", "a": [["Foot traffic", "Same-site visits −4.1% a year; peers −1.6%"], ["Pricing power", "Ticket +27.4% against category inflation of +24.9%"], ["Unit economics", "Four-wall margin 13% after rent; peers 17%"], ["Customer file", "Newest cohort keeps 66% at a year, not 81%"], ["Labor", "Wages up 11%, prices up 7%; employer rating lowest of nine peers"], ["Competition", "Three rivals opened inside the trade area since close"], ["Supply chain", "One distributor carries 53% of spend"], ["Marketing", "Paid share of new customers rose from 19% to 44%"], ["Same-store sales against local peers", "9 of 57 stores explain most of the decline"], ["Openings, closures and survivorship", "Add back six closed units and comps fall 1.4 points"], ["Acquisition cohorts", "Sites owned three years earn 3.1 points less than at purchase"], ["Trade area", "Household income 14% below the figure in the deck"], ["Reviews and reputation", "Rating down 0.4 stars at the 15 weakest sites"], ["Hiring demand", "Job postings up 1.9 times: turnover, not growth"], ["Cash conversion", "Cash EBITDA is 0.46 of adjusted; peers 0.81"], ["Seasonality and weather", "44% of annual EBITDA lands in twelve weeks"], ["Real estate and rent", "Rent is 13% of sales after the sale-leaseback; peers 8%"], ["Regulatory and litigation", "Three open wage-and-hour claims, none in the data room"], ["Plan credibility", "Management hit its first-year plan in two of six years"]]}, {"g": "Consumer products", "k": "cp", "a": [["Attribution and measurement", "Ad platforms claim 1.4 times the sales the till records"], ["Brand search", "Two-thirds of paid search buys customers already typing the brand"], ["Site and app funnel", "Mobile checkout loses 2.6 times the shoppers desktop does"], ["Returns", "Six styles drive 38% of returns: a fit problem"], ["Promotion depth", "37% of revenue now sold on promotion, up from 21%"], ["Channel mix", "Wholesale doors down 17%; direct sales fill a third of the gap"], ["Inventory health", "27% of inventory is more than nine months old"]]}, {"g": "Consumer services", "k": "cs", "a": [["Membership and ramp", "New sites break even in 17 months, not the 11 in the model"], ["Franchise system health", "One franchisee in four runs below break-even"], ["Capacity and utilization", "Bays busy 57% of open hours; the plan assumes 78%"], ["Vendor rebates", "Rebates are 8.5% of revenue and shrink with volume"], ["Cost pass-through", "88% of cost increases recovered; margin still down 3 points"]]}, {"g": "Food and beverage", "k": "fb", "a": [["Daypart and day of week", "Late-night sales down 23%; daytime up 2%"], ["Menu mix and attachment", "Second-item attachment down 5 points"], ["Local price position", "The same item costs 17% more than nearby rivals"], ["Commodity exposure", "Each point on coffee costs moves margin 30 basis points"], ["Delivery and third-party channels", "Delivery is 29% of sales at 14 points less margin"]]}, {"g": "Commercial services", "k": "bs", "a": [["Customer concentration", "Top customer is 31% of revenue, not 20%"], ["Contract renewals", "Four of the top twelve contracts renew within a year"], ["Win rate and pipeline", "Win rate fell from 38% to 26% in two years"], ["Utilization", "Billable utilization 64%; the plan assumes 74%"]]}];
+  var marq = $('angMarq');
+  if (marq) {
+    var names = [];
+    ANG.forEach(function (g) { g.a.forEach(function (x, i) { if (g.k !== 'all' || i >= 8) names.push(x[0]); }); });
+    var row = names.map(function (n) { return '<span>' + esc(n) + '</span>'; }).join('');
+    marq.innerHTML = row + row;
+  }
+  var angTabs = $('angTabs'), angList = $('angList');
+  if (angTabs) {
+    var total = 0;
+    angTabs.innerHTML = '<button role="tab" data-k="*" aria-selected="true">All <span class="mono">40</span></button>' + ANG.map(function (g) { total += g.a.length; return '<button role="tab" data-k="' + g.k + '" aria-selected="false">' + g.g + ' <span class="mono">' + g.a.length + '</span></button>'; }).join('');
+    var n0 = 0;
+    angList.innerHTML = ANG.map(function (g) {
+      return '<div class="ang-g" data-k="' + g.k + '"><h3>' + g.g + '</h3><ol>' + g.a.map(function (x) { n0++; return '<li><span class="mono">' + (n0 < 10 ? '0' : '') + n0 + '</span><div><b>' + esc(x[0]) + '</b><span>' + esc(x[1]) + '</span></div></li>'; }).join('') + '</ol></div>';
+    }).join('');
+    angTabs.addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      angTabs.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+      angList.querySelectorAll('.ang-g').forEach(function (g) { g.hidden = !(b.dataset.k === '*' || g.dataset.k === b.dataset.k); });
+    });
+  }
+
+  /* ---------- Thesis readings (synthetic sample file, Exhibits 1.04 and 1.05) ---------- */
+  var FIN = 'Read in Part 08 of the file as an observation on the proposed financing, for the lender\'s own underwriting.';
+  var R = [
+    { d: 'Deal A', id: 'M1', k: 'l', t: 'Underperformance is clinic-specific and curable by closing clinics', r: 'Partially supported, leans supported',
+      h: '104 of the 119 clinics in the second closure round sit in the lender\'s bottom quartile; closing them takes the loss-making share from 19.5% to 11.4% and the clinic margin from 12.8% to 14.4% (FY26).',
+      n: 'The decline runs across the clinics kept: with quartiles fixed at FY23, the top half\'s clinic EBITDA fell 16% to FY26, and comparable traffic at the 824 clinics kept fell 3.2%.',
+      c: 'FY27 results of the clinics kept, by quartile fixed at FY23.' },
+    { d: 'Deal A', id: 'M2', k: 'p', t: 'First-round closures delivered a realised benefit', r: 'Partially supported',
+      h: 'The closed clinics had lost $16.0m of clinic EBITDA in FY25, and the round realised about $24m of net proceeds.',
+      n: 'Reported EBITDA excluding disposal gains still fell 33.2% in FY26; the files do not allow sales recapture to be measured.',
+      c: 'Sales and addresses of the 129 clinics closed in the first round.' },
+    { d: 'Deal A', id: 'M3', k: 'i', t: 'The second round creates value after all costs', r: 'Not enough evidence',
+      h: 'The clinic list values the round at +$7.2m to +$20.4m a year if the benefit is the reversal of the clinics\' "Profit co-op" loss.',
+      n: 'On the company\'s "Contribution" measure, which its workbook does not define, the same cases give −$11.8m to +$0.6m; 30 of 109 leases expire within 21 months.',
+      c: 'The definition of "Contribution"; the lease-exit plan; the overhead budget after closures.' },
+    { d: 'Deal A', id: 'M4', k: 'l', t: 'The remaining platform supports the quality premise', r: 'Partially supported, leans supported',
+      h: '983 clinics and $1,029.1m of FY26 revenue; after finance-lease cost the clinics kept earn 12.5%, in the lower half of the 10.7–17.4% peer band.',
+      n: 'Last of three on traffic: −3.2% in FY26 and −4.0% in the first quarter of FY27, against −2.0% to −2.8% at the two peers.',
+      c: 'July–September trading; traffic at the clinics kept moving into the peer range.' },
+    { d: 'Deal A', id: 'M5', k: 'c', t: 'Low-leverage financing is resilient', r: 'Contradicted as resilient at low leverage', h: FIN, n: FIN, c: FIN },
+    { d: 'Deal B', id: 'MS1', k: 'p', t: 'Newer cohorts have better sustainable economics', r: 'Partially supported',
+      h: 'The newest cohort earned 18.9% in its 2025 owned months, as the company states (18%), and 19.3% on 26 clinics over the twelve months to July.',
+      n: 'The first-year sales dip has not narrowed in the company\'s own data; the first-half 2024 deals fell from 0.48x to 0.23x of seller EBITDA in their second year.',
+      c: 'A second owned year for the 2025 cohort; a key from each deal to its clinic IDs.' },
+    { d: 'Deal B', id: 'MS2', k: 'p', t: 'Clinics sit in higher-income, denser markets', r: 'Partially supported',
+      h: 'Higher household income on the company\'s data ($63,374 against $47,928) and on census data; visit comparables by market attribute reproduce exactly (+2.8% against −8.4%).',
+      n: 'The company\'s and the public household counts point opposite ways and are not on the same basis; no acquisition returns by market.',
+      c: 'The trade-area definition, vendor and data year behind the company\'s figures.' },
+    { d: 'Deal B', id: 'MS3', k: 'p', t: 'Reporting is cleaner in 2026', r: 'Partially supported',
+      h: 'The 2026 figures reconcile to within $1.0k.',
+      n: 'Reported EBITDA was negative in every year from 2023 to the twelve months to March 2026; the FY25 adjustment share is above every peer.',
+      c: 'The quality-of-earnings roll-forward with bank-to-ledger ties.' },
+    { d: 'Deal B', id: 'MS4', k: 'i', t: 'Infrastructure supports nearly twice the size', r: 'Not enough evidence, leaning against',
+      h: 'The plan grows revenue 1.57x on 0.93x overhead, and corporate heads per clinic fell from 0.76 to 0.46.',
+      n: 'Overhead per clinic rose from $96.0k in FY24 to $137.1k in the twelve months to March 2026; the integration budget is 13–31% of the cost observed in 2023–25.',
+      c: 'A costed plan for twice the present size, reconciled to the acquisition add-backs.' },
+    { d: 'Deal B', id: 'MS5', k: 'i', t: 'The wellness clinics hold their economics and disposal value', r: 'Not enough evidence',
+      h: 'Revenue per visit inside the wellness clinic range; marketing spend data confirm the pause the company names among the causes.',
+      n: 'Four-wall EBITDA 25.9% below the seller\'s same months; visit count −16.1% in the second quarter; the claimed recovery rests on weekly data not supplied.',
+      c: 'The weekly same-store visit file; the four-wall bridge for labour, rebates and royalty.' },
+    { d: 'Deal B', id: 'MS6', k: 'c', t: 'Low leverage, pricing and upside compensate', r: 'Contradicted on trailing leverage, cover and funding', h: FIN, n: FIN, c: FIN },
+    { d: 'Deal C', id: 'ST1', k: 'p', t: 'A particularly attractive platform', r: 'Partially supported',
+      h: 'Audited FY2025 clinic margin of 21.3% on book rent and 22.3% on cash rent after rebates; 38 of 86 clinics above 21%.',
+      n: 'Same-store sales on the common definition fell 3.2% in the second quarter; same-store clinic EBITDA fell 5.8% over the twelve months to July.',
+      c: 'August–September same-store results; a clinic rent roll and rebate dollars.' },
+    { d: 'Deal C', id: 'ST2', k: 'c', t: 'Demonstrated differentiation on acquired clinics', r: 'Contradicted',
+      h: 'Gross margin does rise on the same sites after purchase: +591bp pooled, against the 584bp claimed.',
+      n: 'Clinic EBITDA-margin uplift is +145bp pooled, against the 594bp claimed; acquired clinics earn 0.93x entry EBITDA against 1.15–1.63x at peers.',
+      c: 'The basis of each buy-down multiple, with seller P&Ls that show rent on owned property.' },
+    { d: 'Deal C', id: 'ST3', k: 'i', t: 'Underwriting earnings are supportable', r: 'Not enough evidence; cash earnings contradicted',
+      h: 'An unmodified FY2025 audit opinion; without affiliate bonuses, deal costs sit inside the peer range.',
+      n: '$9.2m of the lender\'s $29.4m underwriting EBITDA is pre-acquisition earnings; cash EBITDA is 0.28–0.31 of pro forma against a 0.73 peer median.',
+      c: 'The quality-of-earnings report; the affiliate-bonus agreements and whether they end.' },
+    { d: 'Deal C', id: 'ST4a', k: 'c', t: '5.3x leverage is supportable (option two)', r: 'Contradicted', h: FIN, n: FIN, c: FIN },
+    { d: 'Deal C', id: 'ST4b', k: 'i', t: '5.3x leverage is supportable (option one)', r: 'Not enough evidence: sponsor-instrument terms missing', h: FIN, n: FIN, c: FIN }
+  ];
+  var KCLS = { c: 'v-no', p: 'v-part', l: 'v-part', i: 'v-ins' };
+  function grid(el, interactive) {
+    if (!el) return;
+    var deals = ['Deal A', 'Deal B', 'Deal C'];
+    el.innerHTML = deals.map(function (d) {
+      var items = R.filter(function (x) { return x.d === d; });
+      var cells = items.map(function (x) {
+        var idx = R.indexOf(x);
+        return interactive
+          ? '<button class="tile ' + x.k + '" data-r="' + idx + '" aria-pressed="false" aria-label="' + esc(x.id + ': ' + x.r) + '">' + x.id.replace(/[ab]$/, '') + '</button>'
+          : '<span class="tile ' + x.k + '" style="cursor:default" title="' + esc(x.id + ': ' + x.r) + '">' + x.id.replace(/[ab]$/, '') + '</span>';
+      });
+      while (cells.length < 6) cells.push('<span class="tile empty"></span>');
+      return '<div class="rrow"><span class="dl">' + d + '</span>' + cells.join('') + '</div>';
+    }).join('');
+    if (interactive) {
+      el.querySelectorAll('.tile[data-r]').forEach(function (b) { b.addEventListener('click', function () { pick(+b.dataset.r); }); });
+    }
+  }
+  function pick(i) {
+    var x = R[i], p = $('rpanel');
+    document.querySelectorAll('#bigGrid .tile[data-r]').forEach(function (b) { b.setAttribute('aria-pressed', +b.dataset.r === i ? 'true' : 'false'); });
+    var fin = x.h === FIN;
+    p.innerHTML = '<span class="label">' + esc(x.d) + ' · ' + esc(x.id.replace(/[ab]$/, '')) + '</span><h3>' + esc(x.t) + '</h3><span class="v ' + KCLS[x.k] + '">' + esc(x.r) + '</span>' +
+      (fin ? '<div class="sec"><p>' + esc(FIN) + '</p></div>' :
+        '<div class="sec"><span class="label">What holds</span><p>' + esc(x.h) + '</p></div>' +
+        '<div class="sec"><span class="label">What does not</span><p>' + esc(x.n) + '</p></div>' +
+        '<div class="sec"><span class="label gold">What would change it</span><p>' + esc(x.c) + '</p></div>');
+  }
+  grid($('miniGrid'), false); grid($('bigGrid'), true); if ($('rpanel')) pick(12);
+
+  /* ---------- Eight areas ---------- */
+  var MODS = [
+    { n: '01', t: 'Volume and demand', q: 'Is demand holding, or is growth bought with price and promotion?',
+      how: 'Comparable traffic and ticket split by operator and economic environment, on one common same-store definition.',
+      data: 'Clinic-level KPI packs, household spending and pet ownership series, foot traffic',
+      f: 'Outside 2020, half of core operator-years moved comparable traffic by −3.8% to +3.0%; the median was −0.1% (2007–2025).' },
+    { n: '02', t: 'Pricing power', q: 'Can the business keep raising price without losing customers?',
+      how: 'Ticket growth set against category price inflation and wage inflation, window by window.',
+      data: 'Operator ticket data, consumer price series, wage series',
+      f: 'Comparable ticket matched or beat veterinary price inflation in 5 of 6 operator windows and beat veterinary wages in all 6.' },
+    { n: '03', t: 'Margin consistency', q: 'How steady is the site-level margin, and what sits between it and cash?',
+      how: 'Gross and four-wall margins by operator, on named rent and rebate treatments, never pooled.',
+      data: 'Clinic P&Ls, audited statements, vendor rebate schedules',
+      f: 'Rebates at the largest operator rose from 3.4% to 9.0% of clinic sales, reaching 42% of four-wall contribution.' },
+    { n: '04', t: 'Unit economics', q: 'What does a site earn, and what does it cost to add one?',
+      how: 'Median four-wall dollars per site, built versus acquired returns, and the cost of each route.',
+      data: 'Site-level databases, acquisition records, capex files',
+      f: 'Built clinics return 44–77% a year from year three, against 14–30% for acquired add-ons on purchase price.' },
+    { n: '05', t: 'Same-store sales', q: 'How does the business behave through a downturn?',
+      how: 'Comparable sales by economic environment, from the financial crisis to the present, across every operator with data.',
+      data: 'Operator comp histories, filings back to the mid-1990s',
+      f: 'Median same-store sales were negative in 4 of 19 years, deepest at −5.9% in 2020.' },
+    { n: '06', t: 'Cash conversion', q: 'How much of adjusted EBITDA becomes cash?',
+      how: 'Six named EBITDA levels from reported to cash; "one-time" costs tracked for recurrence.',
+      data: 'QoE workbooks, cash flow statements, deal cost ledgers',
+      f: '"One-time" cash costs recurred for three to nine consecutive years at every acquisitive platform.' },
+    { n: '07', t: 'Multiples and leverage', q: 'Is the price and the leverage in line with comparable deals over time?',
+      how: 'Entry and add-on multiples on stated EBITDA rungs, and closing leverage by vintage, synergised and standalone.',
+      data: 'Your past deals, comparable transactions, financing terms',
+      f: 'On the same transaction, synergised EBITDA lowers the multiple by up to 6.2 turns across 15 core deals.' },
+    { n: '08', t: 'Competitive position', q: 'Is the company gaining or losing ground against named rivals?',
+      how: 'Rival proximity, trade-area income, customer and employer reviews, read for each site list.',
+      data: 'Competitor locations, census income, review sites',
+      f: 'A rival clinic of the largest operator stood within three miles of 38.8% of one deal\'s clinics and 5.6% of another\'s.' }
+  ];
+  var mods = $('mods');
+  if (mods) mods.innerHTML = MODS.map(function (m, i) {
+    return '<div class="mod rv" style="--i:' + (i % 2) + '"><div class="top"><span class="label">Area ' + m.n + '</span><span class="syn">Every deal</span></div><h3>' + m.t + '</h3><div class="q">' + m.q + '</div>' +
+      '<dl><dt>How we test</dt><dd>' + m.how + '</dd><dt>Against</dt><dd>' + m.data + '</dd></dl>' +
+      '<div class="find"><span class="label">Finding · sample file</span>' + esc(m.f) + '</div></div>';
+  }).join('');
+
+  /* ---------- Claims tested ---------- */
+  var CL = [
+    { w: 'Deal C · gross margin gain on acquired clinics', s: 'Same sites, before and after purchase, pooled cohorts', a: 584, b: 591, max: 800, f: function (v) { return '+' + v + 'bp'; }, v: 'ok', vt: 'Reproduces' },
+    { w: 'Deal B · newest cohort clinic margin', s: '2025 owned months, 17 clinics', a: 18, b: 18.9, max: 25, f: function (v) { return v + '%'; }, v: 'ok', vt: 'Reproduces' },
+    { w: 'Deal B · older cohorts clinic margin', s: '2023-and-earlier cohort, book rent, 2025', a: 9, b: 7.6, max: 25, f: function (v) { return v + '%'; }, v: 'part', vt: 'Below claim' },
+    { w: 'Deal C · clinic EBITDA margin uplift', s: 'Same sites, before and after purchase, pooled cohorts', a: 594, b: 145, max: 800, f: function (v) { return '+' + v + 'bp'; }, v: 'no', vt: 'Not supported' },
+    { w: 'Deal A · pharmacy lead over market panel', s: 'Slide figure against weekly average gap, 13 weeks', a: 17.5, b: 1.3, max: 20, f: function (v) { return v + ' pts'; }, v: 'no', vt: 'Sum, not average' },
+    { w: 'Deal C · cash share of pro forma EBITDA', s: 'Peer median against Deal C, FY2025', a: 0.73, b: 0.31, max: 1, f: function (v) { return v.toFixed(2); }, v: 'no', vt: 'Below peers', la: 'Peers' }
+  ];
+  var cl = $('claims');
+  if (cl) cl.innerHTML = CL.map(function (c, i) {
+    var pa = 4 + 92 * c.a / c.max, pb = 4 + 92 * c.b / c.max, lo = Math.min(pa, pb), hi = Math.max(pa, pb);
+    return '<div class="claim"><div class="what"><b>' + c.w + '</b><span>' + c.s + '</span></div>' +
+      '<div class="dbell" data-a="' + pa + '" data-b="' + pb + '"><span class="axis"></span><span class="seg" style="left:' + lo + '%;width:' + (hi - lo) + '%"></span>' +
+      '<span class="pt claim-pt" style="left:' + pa + '%"><b>' + (c.la || 'Claimed') + ' ' + c.f(c.a) + '</b></span>' +
+      '<span class="pt found" style="left:' + pa + '%"><b>Found ' + c.f(c.b) + '</b></span></div>' +
+      '<div><span class="v v-' + c.v + '">' + c.vt + '</span></div></div>';
+  }).join('');
+
+  /* ---------- EBITDA ladder (illustrative) ---------- */
+  var EB = [['Reported', 58], ['Adjusted', 82], ['Pro forma', 100], ['Run-rate', 96], ['Underwriting', 92], ['Cash', 41]];
+  var eb = $('ebit');
+  if (eb) eb.innerHTML = EB.map(function (e, i) {
+    return '<div class="erow"><span class="nm">E' + (i + 1) + ' · ' + e[0] + '</span><span class="tr"><span class="fl grow" style="width:' + e[1] + '%;--i:' + i + '"></span></span><span class="vv">' + e[1] + '</span></div>';
+  }).join('');
+
+  /* ---------- Deal-room folders (sample file, Exhibit 1.16) ---------- */
+  var FO = [['Operator 1', 46, ''], ['Emergency and specialty', 34, 'ctx'], ['Wellness clinics', 30, 'ctx'], ['Deal B', 28, 'live'], ['Operator 2', 23, ''], ['Deal A', 21, 'live'], ['Deal C', 16, 'live'], ['Operator 8', 14, ''], ['Operator 5', 13, ''], ['Operator 3', 13, ''], ['Operator 6', 12, ''], ['Operator 4', 11, ''], ['Operator 7', 8, '']];
+  var fo = $('folders');
+  if (fo) fo.innerHTML = FO.map(function (f, i) {
+    return '<div class="hbr ' + f[2] + '"><span>' + f[0] + '</span><span class="t2"><i class="grow" style="width:' + (f[1] / 46 * 100) + '%;--i:' + i + '"></i></span><span class="n">' + f[1] + '</span></div>';
+  }).join('');
+
+  /* ---------- Weekly watch charts (illustrative) ---------- */
+  var WK = [2.1, 1.4, 2.8, 0.9, 1.6, 0.2, -0.8, 1.1, -0.4, -1.9, -0.6, -2.4, -1.2, -3.6, -4.9, -5.8, -6.8];
+  function watchChart(svg, W, H) {
+    if (!svg) return;
+    var L = 40, Rr = 12, T = 16, B = 30, lo = -9, hi = 6;
+    var x = function (i) { return L + (W - L - Rr) * i / (WK.length - 1); };
+    var y = function (v) { return T + (H - T - B) * (hi - v) / (hi - lo); };
+    var s = '';
+    [-8, -4, 0, 4].forEach(function (g) { s += '<line x1="' + L + '" x2="' + (W - Rr) + '" y1="' + y(g) + '" y2="' + y(g) + '" stroke="rgba(22,33,31,.10)"/><text x="' + (L - 6) + '" y="' + (y(g) + 3) + '" text-anchor="end">' + (g > 0 ? '+' : '') + g + '%</text>'; });
+    s += '<rect class="pop" x="' + L + '" y="' + y(5) + '" width="' + (W - L - Rr) + '" height="' + (y(-3) - y(5)) + '" fill="rgba(28,74,69,.08)"/>';
+    s += '<text x="' + (W - Rr - 4) + '" y="' + (y(5) + 12) + '" text-anchor="end" style="fill:#1C4A45">BAND SET AT CLOSE</text>';
+    var d = WK.map(function (v, i) { return (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1); }).join(' ');
+    s += '<path class="draw" d="' + d + '" fill="none" stroke="#16211F" stroke-width="2" style="--len:900"/>';
+    [14, 15, 16].forEach(function (i, k) { s += '<circle class="pop" style="--i:' + (6 + k) + '" cx="' + x(i) + '" cy="' + y(WK[i]) + '" r="4.5" fill="#A98543"/>'; });
+    s += '<text x="' + L + '" y="' + (H - 8) + '">WK 1</text><text x="' + (W - Rr) + '" y="' + (H - 8) + '" text-anchor="end">THIS WEEK</text>';
+    svg.innerHTML = s;
+  }
+  watchChart($('watchMini'), 480, 190); watchChart($('watchBig'), 560, 240);
+
+  /* ---------- Diligence File parts ---------- */
+  var PARTS = [['dd01', '01', 'Overview', 'The answer, three theses, sixteen readings, the evidence base'], ['dd03', '03', 'Sector assessment', 'Volume, price, margins, unit economics, same-store sales, cash'], ['dd04', '04', 'Multiples and benchmark', 'Valuation and leverage over time; the operator benchmark'], ['dd05', '05', 'Deal A', 'Closures, retained clinics, cash conversion, requests'], ['dd06', '06', 'Deal B', 'Acquisition cohorts, markets, reporting quality, capacity'], ['dd07', '07', 'Deal C', 'Business quality, claimed differentiation, earnings quality'], ['dd08', '08', 'Financing observations', 'Each proposed financing, read for your own underwriting'], ['dd09', '09', 'Assumptions and method', 'Register, definitions, sources, evidence index'], ['dd10', '10', 'FAQ', 'What a credit committee will ask']];
+  /* ---------- Sample gate: a work email opens the full samples in this browser (lead capture, not access control) ---------- */
+  var G = atob('di9rN3EybTl4dzR0Lw=='), GK = 'cs-samples';
+  var isOpen = function () { try { if (localStorage.getItem(GK)) return true; } catch (_) {} return !!window.csOpen; };
+  function loadFrames(root) { (root || document).querySelectorAll('iframe[data-g]').forEach(function (f) { if (!f.getAttribute('src')) f.src = G + f.dataset.g; }); }
+  function openGates() {
+    document.querySelectorAll('.gate').forEach(function (g) { g.hidden = true; });
+    document.querySelectorAll('.gated').forEach(function (g) { g.hidden = false; });
+    document.querySelectorAll('a[data-g]').forEach(function (a) { a.href = G + a.dataset.g; });
+  }
+  var BAD = /^(test|example|asdf|none|no|noreply|abc)@|@(example|test|mailinator|invalid)\./i;
+  document.querySelectorAll('.gate').forEach(function (g, i) {
+    var id = 'ge-' + g.dataset.gate;
+    g.innerHTML = '<div class="gate-img" aria-hidden="true"><img src="' + g.dataset.img + '" alt="" loading="lazy" width="1280" height="800"></div>' +
+      '<form class="gate-form" novalidate><span class="label gold">Synthetic sample · opens in full</span><h3>Enter your work email to open ' + g.dataset.what + '.</h3>' +
+      '<p>It opens straight away, and stays open in this browser. We use your address only to follow up about CreditSwan.</p>' +
+      '<div class="gate-row"><label class="vh" for="' + id + '">Work email</label><input type="email" id="' + id + '" name="email" placeholder="you@yourfirm.com" autocomplete="email" required>' +
+      '<button class="btn btn-gold" type="submit">Open <span class="arr">→</span></button></div><p class="gate-err" role="alert"></p></form>';
+    var f = g.querySelector('form'), inp = f.querySelector('input'), err = f.querySelector('.gate-err');
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var v = inp.value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(v) || BAD.test(v)) { err.textContent = 'Please enter a valid work email.'; inp.focus(); return; }
+      err.textContent = '';
+      try { localStorage.setItem(GK, v); } catch (_) {}
+      window.csOpen = true;
+      try { var fd = new FormData(); fd.append('email', v); fd.append('sample', g.dataset.gate); fd.append('page', location.href); fd.append('_subject', 'Sample opened: ' + v); fetch('https://formspree.io/f/xqpeybqv', { method: 'POST', body: fd, headers: { Accept: 'application/json' }, keepalive: true }).catch(function () {}); } catch (_) {}
+      try { fetch('/api/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, keepalive: true, body: JSON.stringify({ email: v, sample: g.dataset.gate, page: location.href }) }).catch(function () {}); } catch (_) {}
+      openGates(); loadFrames(g.parentNode);
+      observe(g.parentNode);
+    });
+  });
+  if (isOpen()) openGates();
+
+  var parts = $('parts'), frame = $('ddFrame');
+  if (parts) {
+    parts.innerHTML = PARTS.map(function (p, i) { return '<button class="part" data-tab="' + p[0] + '" aria-pressed="' + (i ? 'false' : 'true') + '"><span class="mono">PART ' + p[1] + '</span><b>' + p[2] + '</b><span>' + p[3] + '</span></button>'; }).join('');
+    parts.addEventListener('click', function (e) {
+      var b = e.target.closest('.part'); if (!b) return;
+      parts.querySelectorAll('.part').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      if (!frame.getAttribute('src')) frame.src = G + 'dd.html#' + b.dataset.tab;
+      else try { frame.contentWindow.location.hash = b.dataset.tab; } catch (_) { frame.src = G + 'dd.html#' + b.dataset.tab; }
+      var v = frame.closest('.viewer'); window.scrollTo({ top: v.getBoundingClientRect().top + scrollY - 88, behavior: reduce ? 'auto' : 'smooth' });
+    });
+  }
+  window.addEventListener('message', function (e) { if (e.data && e.data.cs === 'open-pdf') window.open(G + 'CreditSwan_Sample_Diligence_File.pdf', '_blank', 'noopener'); });
+
+  /* ---------- Sample tabs ---------- */
+  var STABS = ['file', 'm365', 'monthly', 'weekly'];
+  function sampleTab(k) {
+    STABS.forEach(function (t) {
+      var on = t === k;
+      $('st-' + t).setAttribute('aria-selected', on ? 'true' : 'false');
+      $('sp-' + t).hidden = !on;
+    });
+    observe($('sp-' + k));
+    if (isOpen()) loadFrames($('sp-' + k));
+  }
+  STABS.forEach(function (t) { $('st-' + t).addEventListener('click', function () { history.replaceState(null, '', '#samples' + (t === 'file' ? '' : '/' + t)); sampleTab(t); }); });
+
+  /* ---------- Juniper package trace ---------- */
+  var rows = [
+    { name: 'Net revenue, Aug-26', rep: '$4.20m', rec: '$4.17m', chg: '−0.7%', v: 'ok', vt: 'Supported',
+      clause: 'Revenue, as reported in the monthly financial statements (Schedule 1)', source: 'Package p.4, revenue by location; deal-room sales ledger extract',
+      steps: ['Summed revenue by location from the package schedule.', 'Removed a $0.03m credit note booked after month end.', 'Result is within the 1% tolerance agreed for this borrower.'], note: 'Difference is timing only. No action.' },
+    { name: 'Cash at month end', rep: '$2.10m', rec: '$2.10m', chg: '0.0%', v: 'ok', vt: 'Supported',
+      clause: 'Unrestricted cash, clause 1.1', source: 'Package p.7, bank statement summary; restricted cash note p.9',
+      steps: ['Matched the bank statement balances to the package.', 'Confirmed no restricted balances are included.'], note: 'Agrees to the bank statement.' },
+    { name: 'Covenant EBITDA, TTM', rep: '$9.6m', rec: '$8.4m', chg: '−12.5%', v: 'part', vt: 'Partly supported',
+      clause: 'Consolidated EBITDA, clause 1.1, paragraph (c): add-backs capped at 10% and limited to identified items', source: 'Compliance certificate p.2; add-back schedule p.11; credit agreement s.1.1',
+      steps: ['Rebuilt TTM EBITDA from the monthly statements.', 'Excluded $0.7m of restructuring costs above the 10% cap.', 'Excluded $0.5m of projected synergies with no identified action, outside the definition.'], note: 'Two add-backs sit outside the definition. Raise with the sponsor before the next test date.' },
+    { name: 'Total leverage', rep: '3.4x', rec: '3.9x', chg: '+0.5x', v: 'part', vt: 'Partly supported',
+      clause: 'Total Net Leverage Ratio, clause 22.1, maximum 4.0x', source: 'Debt schedule p.8; recomputed covenant EBITDA above',
+      steps: ['Took total debt net of unrestricted cash from the debt schedule.', 'Divided by recomputed covenant EBITDA of $8.4m.', 'Headroom to the 4.0x limit falls from 15% to under 3%.'], note: 'Inside the limit, with thin headroom. Flagged in Teams.' },
+    { name: 'Top customer share, TTM', rep: '18%', rec: '26%', chg: '+8 pts', v: 'no', vt: 'Not supported',
+      clause: 'Customer concentration reporting, Schedule 4; affiliates under common control count as one customer', source: 'Customer schedule p.12; deal-room customer list at close',
+      steps: ['Grouped customer revenue by ultimate parent.', 'Two entities under common control were reported separately.', 'Combined, the largest customer is 26% of TTM revenue.'], note: 'Above the 20% level noted at close. Request the borrower\'s explanation.' },
+    { name: 'Visit growth, YoY · foot traffic', rep: '+12%', rec: '+3%', chg: '−9 pts', v: 'no', vt: 'Not supported', dlabel: 'Claim tested',
+      clause: 'Management case: visit growth of 12% year on year across the network', source: 'Management presentation p.14; licensed foot-traffic data for the same locations, TTM to Aug-26',
+      steps: ['Matched each location to licensed foot-traffic data for the same months.', 'Compared visits for the twelve months to Aug-26 with the twelve months before.', 'Locations open in both periods show +3%; the reported +12% includes sites opened during the year.'], note: 'Growth comes from new sites, not existing ones. The weekly watch keeps this signal running; ask the sponsor for same-location sales.' }
+  ];
+  var tbody = document.querySelector('#sampleTable tbody'), table = $('sampleTable'), trace = $('trace');
+  var cls = { ok: 'v-ok', part: 'v-part', no: 'v-no' };
+  rows.forEach(function (r, i) {
+    var tr = document.createElement('tr');
+    tr.tabIndex = 0; tr.setAttribute('role', 'button'); tr.setAttribute('aria-selected', 'false');
+    tr.innerHTML = '<td>' + r.name + '</td><td class="n"><span class="rec-val">' + r.rec + '</span><span class="rep-val">' + r.rep + '</span></td><td class="n">' + r.chg + '</td><td><span class="v ' + cls[r.v] + '">' + r.vt + '</span></td>';
+    tr.addEventListener('click', function () { select(i); });
+    tr.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(i); } });
+    tbody.appendChild(tr);
+  });
+  function select(i) {
+    var r = rows[i];
+    tbody.querySelectorAll('tr').forEach(function (tr, j) { tr.setAttribute('aria-selected', j === i ? 'true' : 'false'); });
+    trace.innerHTML = '<span class="label">Trace · ' + esc(r.name) + '</span><div><span class="v ' + cls[r.v] + '">' + r.vt + '</span></div>' +
+      '<div class="nums"><div><span class="label">Reported</span><b>' + r.rep + '</b></div><div><span class="label">Checked</span><b>' + r.rec + '</b></div></div>' +
+      '<div><span class="label">' + (r.dlabel || 'Definition used') + '</span><p class="muted" style="font-size:14.5px;margin-top:4px">' + esc(r.clause) + '</p></div>' +
+      '<div><span class="label">How it was recomputed</span><ol style="margin-top:6px">' + r.steps.map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ol></div>' +
+      '<div><span class="label">Sources</span><p class="muted" style="font-size:14.5px;margin-top:4px">' + esc(r.source) + '</p></div>' +
+      '<div style="border-top:1px solid var(--line);padding-top:12px"><span class="label gold">Analyst note</span><p style="font-size:14.5px;margin-top:4px">' + esc(r.note) + '</p></div>';
+  }
+  select(2);
+  function mode(rep) { table.classList.toggle('show-reported', rep); $('tRec').setAttribute('aria-pressed', rep ? 'false' : 'true'); $('tRep').setAttribute('aria-pressed', rep ? 'true' : 'false'); }
+  $('tRec').addEventListener('click', function () { mode(false); });
+  $('tRep').addEventListener('click', function () { mode(true); });
+
+  /* ---------- Contact: submits to Formspree ---------- */
+  var form = $('contactForm'), err = $('formErr');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = form.name.value.trim(), firm = form.firm.value.trim(), email = form.email.value.trim();
+    if (!name || !firm || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { err.textContent = 'Add your name, firm and a work email so we can reply.'; err.hidden = false; return; }
+    err.hidden = true;
+    var btn = form.querySelector('button[type=submit]'); btn.disabled = true; btn.firstChild.textContent = 'Sending… ';
+    var data = new FormData(form); data.append('_subject', 'Website enquiry: ' + name + ', ' + firm); data.append('_replyto', email);
+    fetch('https://formspree.io/f/xqpeybqv', { method: 'POST', body: data, headers: { Accept: 'application/json' } })
+      .then(function (r) { if (!r.ok) throw 0; form.style.display = 'none'; $('formSent').hidden = false; })
+      .catch(function () { err.textContent = 'That did not go through. Please try again, or email sales@creditswan.com.'; err.hidden = false; btn.disabled = false; btn.firstChild.textContent = 'Send message '; });
+  });
+
+  /* ---------- Motion: reveal, draw, count ---------- */
+  function prep(root) {
+    root.querySelectorAll('.draw').forEach(function (p) { try { var l = Math.ceil(p.getTotalLength()); if (l) p.style.setProperty('--len', l); } catch (_) {} });
+  }
+  function count(el) {
+    var to = +el.dataset.count, fmt = function (v) { return Math.round(v).toLocaleString('en-US'); };
+    if (reduce || !to) { el.textContent = fmt(to); return; }
+    var t0 = null;
+    function step(t) { if (!t0) t0 = t; var k = Math.min(1, (t - t0) / 1000); el.textContent = fmt(to * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+  function dbell(el) {
+    el.querySelectorAll('.dbell').forEach(function (d) { var f = d.querySelector('.found'); f.style.left = d.dataset.b + '%'; });
+  }
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var el = e.target; el.classList.add('in'); io.unobserve(el);
+      el.querySelectorAll('[data-count]').forEach(count);
+      if (el.matches('[data-count]')) count(el);
+      dbell(el);
+    });
+  }, { threshold: 0.15 }) : null;
+  function observe(root) {
+    if (!root) return;
+    prep(root);
+    var els = root.querySelectorAll('.rv, [data-anim], .stats, .claims');
+    els.forEach(function (el) {
+      el.classList.remove('in');
+      if (io && !reduce) io.observe(el); else { el.classList.add('in'); el.querySelectorAll('[data-count]').forEach(count); dbell(el); }
+    });
+  }
+
+  /* ---------- Router ---------- */
+  var pages = ['home', 'how-it-works', 'commercial-diligence', 'samples', 'security', 'ways-to-work', 'pilot'];
+  var inner = { trust: 'security', talk: 'pilot' };
+  var alias = { 'what-we-do': 'how-it-works', sample: 'samples', microsoft: 'security' };
+  var nav = $('primaryNav'), toggle = $('menuToggle'), hero = document.querySelector('.cdv');
+  function show() {
+    var h = decodeURIComponent((location.hash || '#home').slice(1)), parts = h.split('/');
+    if (alias[parts[0]]) parts[0] = alias[parts[0]];
+    var page = pages.indexOf(parts[0]) >= 0 ? parts[0] : (inner[parts[0]] || 'home');
+    var target = inner[parts[0]] ? parts[0] : parts[1];
+    pages.forEach(function (p) {
+      var el = $('page-' + p), on = p === page;
+      el.hidden = !on;
+      if (on) document.title = el.dataset.title;
+    });
+    nav.querySelectorAll('a[data-page]').forEach(function (a) { if (a.dataset.page === page) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+    nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false');
+    if (page === 'samples') sampleTab(STABS.indexOf(parts[1]) > 0 ? parts[1] : 'file');
+    observe($('page-' + page));
+    if (page === 'home' && hero && hero.classList.contains('in') && !reduce) { hero.classList.remove('in'); void hero.offsetWidth; requestAnimationFrame(function () { hero.classList.add('in'); }); }
+    var t = target && page !== 'samples' && $(target);
+    if (t) requestAnimationFrame(function () { var y = t.getBoundingClientRect().top + scrollY - 90; window.scrollTo(0, y); });
+    else window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', show);
+  toggle.addEventListener('click', function () { var o = nav.classList.toggle('open'); toggle.setAttribute('aria-expanded', o ? 'true' : 'false'); });
+  show();
+})();
+
+</script>
+</body>
+</html>
